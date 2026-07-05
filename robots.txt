@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://escoladepaisonline.com.br/sitemap.xml
