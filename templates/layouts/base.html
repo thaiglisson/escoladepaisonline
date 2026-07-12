@@ -87,7 +87,73 @@
     </a>
 
     <div class="wrapper">
-      <!-- Header -->
+      <header class="site-header">
+        <div class="container site-header__inner">
+          <a
+            class="site-logo"
+            href="/"
+            aria-label="Escola de Pais Online — Página inicial"
+          >
+            <picture>
+              <source
+                srcset="/assets/images/logo-horizontal.webp"
+                type="image/webp"
+              >
+              <img
+                src="/assets/images/logo-horizontal.png"
+                width="1200"
+                height="281"
+                alt="Escola de Pais Online — Guia para pais que ensinam"
+              >
+            </picture>
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-principal"
+          >
+            <span class="visually-hidden menu-toggle__label">Abrir menu</span>
+            <span class="menu-toggle__icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+
+          <nav
+            class="site-nav"
+            id="menu-principal"
+            aria-label="Navegação principal"
+          >
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="/">Início</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="/blog/">Blog</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="/blog/matematica/">
+                  Matemática
+                </a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="/recursos/">Recursos</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="/sobre/">Sobre</a>
+              </li>
+              <li class="site-nav__item site-nav__item--cta">
+                <a class="button button--full-mobile" href="/">
+                  Conhecer o Explicador Matemático
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
       <main class="site-main" id="conteudo-principal">
         <!-- Conteúdo específico -->
