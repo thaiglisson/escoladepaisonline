@@ -649,13 +649,29 @@ Checklist
 - [x] Revisão concluída.
 - [x] Feature aprovada.
 
-Footer
+## Feature 02 — Footer Global
 
-[ ] Estrutura HTML.
-[ ] Links institucionais.
-[ ] Direitos autorais.
-[ ] Revisão.
-[ ] Aprovação.
+Status: ✅ Concluído
+
+Checklist
+
+- [x] Estrutura HTML criada.
+- [x] Logo integrada.
+- [x] Descrição institucional implementada.
+- [x] Links de Navegação implementados.
+- [x] Links Institucionais implementados.
+- [x] CTA do produto implementado.
+- [x] Copyright implementado.
+- [x] Aviso educacional implementado.
+- [x] Estilos adicionados ao global.css.
+- [x] Layout mobile first implementado.
+- [x] Responsividade validada.
+- [x] Navegação por teclado validada.
+- [x] Links e botão testados.
+- [x] Integração com base.html validada.
+- [x] Testes no Live Server concluídos.
+- [x] Revisão concluída.
+- [x] Feature aprovada.
 
 ------------------------------------------------------------
 
@@ -729,15 +745,8 @@ Footer
 
 ## Próxima ação definida
 
-Implementar a Feature 02 — Footer.
+Implementar a Página Inicial do Blog — `/blog/`.
 
 Objetivo:
 
-Criar o Footer reutilizável que será utilizado em todas as páginas da Escola de Pais Online.
-
-Arquivos previstos:
-
-- templates/components/footer.html
-- assets/js/main.js (caso seja necessário comportamento do menu mobile)
-
-Após a aprovação do footer, iniciar imediatamente a implementação de Estrutura do Blog.
+Criar a estrutura visual e funcional da página inicial do Blog, reutilizando o Header Global, o Footer Global e os componentes do Design System.

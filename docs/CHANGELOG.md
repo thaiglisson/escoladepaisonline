@@ -25,15 +25,40 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 - Fechamento do menu pela tecla ESC.
 - Compatibilidade com Cloudflare Pages.
 
+## Feature 02 — Footer Global
+
+### Adicionado
+
+- Componente reutilizável `templates/components/footer.html`.
+- Integração do Footer ao template `templates/layouts/base.html`.
+- Seção de marca com logo e descrição institucional.
+- Grupos de links de Navegação e Institucional.
+- CTA “Conhecer o Explicador Matemático”.
+- Área inferior com copyright e aviso educacional.
+- Estilos responsivos no `assets/css/global.css`.
+- Layout mobile first.
+- Acessibilidade por teclado e foco visível.
+- Reutilização do botão global.
+- Uso exclusivo das variáveis do Design System.
+
+### Validação
+
+- Testes em desktop, tablet e celular.
+- Validação em 390 px e 768 px.
+- Rolagem e responsividade aprovadas.
+- Navegação por Tab e Enter aprovada.
+- Links, logo e CTA testados.
+- Integração com Header Global e template base aprovada.
+- Ausência de erros do componente no Console.
+
 ### Próximas implementações
 
 - Header Global. Status: ✅ Concluído
-- Footer Global.
-- Navegação mobile.
-- Página inicial do blog.
-- Categoria Matemática.
-- Template de artigo.
-- Páginas institucionais.
+- Footer Global. Status: ✅ Concluído
+- Página inicial do Blog
+- Categoria Matemática
+- Template de artigo
+- Páginas institucionais
 
 ---
 
