@@ -1,0 +1,319 @@
+/* ===========================================================================
+   Escola de Pais Online — Página inicial do Blog
+   Estilos específicos da Feature 03A.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Hero do Blog
+   -------------------------------------------------------------------------- */
+
+.blog-hero {
+  padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+  background-color: var(--color-primary-light);
+}
+
+.blog-hero__inner {
+  max-width: var(--container-hero-width);
+  text-align: center;
+}
+
+.blog-hero__eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blog-hero__title {
+  margin-bottom: var(--space-5);
+}
+
+.blog-hero__description {
+  max-width: var(--container-reading-width);
+  margin: 0 auto var(--space-8);
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.blog-hero__cta {
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   2. Barra de pesquisa
+   -------------------------------------------------------------------------- */
+
+.blog-search {
+  padding-block: var(--space-10);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+
+.blog-search__inner {
+  max-width: var(--container-reading-width);
+}
+
+.blog-search__form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-3);
+}
+
+.blog-search__input,
+.blog-search__button {
+  min-height: var(--control-height);
+}
+
+.blog-search__button {
+  width: 100%;
+}
+
+.blog-search__helper {
+  margin: var(--space-3) 0 0;
+  color: var(--color-text-light);
+  font-size: var(--font-size-sm);
+}
+
+/* --------------------------------------------------------------------------
+   3. Artigo em destaque
+   -------------------------------------------------------------------------- */
+
+.featured-article,
+.recent-articles {
+  padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+}
+
+.featured-article__heading,
+.recent-articles__heading {
+  margin-bottom: var(--space-8);
+}
+
+.featured-card {
+  display: grid;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-sm);
+}
+
+.featured-card__picture,
+.article-card__picture {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+
+.featured-card__image,
+.article-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-card__image:not([src]),
+.article-card__image:not([src]) {
+  visibility: hidden;
+}
+
+.featured-card__content {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(var(--space-6), 5vw, var(--space-10));
+}
+
+.featured-card__category,
+.article-card__category {
+  margin-bottom: var(--space-2);
+  color: var(--color-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.featured-card__title {
+  margin-bottom: var(--space-4);
+  font-size: var(--font-size-2xl);
+}
+
+.featured-card__summary,
+.article-card__summary {
+  color: var(--color-text-light);
+}
+
+.featured-card__link {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* --------------------------------------------------------------------------
+   4. Categoria Matemática
+   -------------------------------------------------------------------------- */
+
+.category-highlight {
+  padding-block: clamp(var(--space-10), 7vw, var(--space-16));
+  background-color: var(--color-surface);
+}
+
+.category-highlight__inner {
+  max-width: var(--container-reading-width);
+  text-align: center;
+}
+
+.category-highlight__title {
+  margin-bottom: var(--space-4);
+}
+
+.category-highlight__description {
+  margin-bottom: var(--space-6);
+  color: var(--color-text-light);
+}
+
+.category-highlight__link {
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   5. Artigos recentes
+   -------------------------------------------------------------------------- */
+
+.recent-articles__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--grid-gap);
+}
+
+.article-card {
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-sm);
+}
+
+.article-card__content {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--space-6);
+}
+
+.article-card__title {
+  margin-bottom: var(--space-3);
+}
+
+.article-card__link {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* --------------------------------------------------------------------------
+   6. CTA do Explicador Matemático
+   -------------------------------------------------------------------------- */
+
+.product-cta {
+  padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+  background-color: var(--color-surface);
+}
+
+.product-cta__inner {
+  max-width: var(--container-hero-width);
+  padding: clamp(var(--space-6), 6vw, var(--space-12));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.product-cta__title {
+  margin-bottom: var(--space-4);
+}
+
+.product-cta__description {
+  max-width: var(--container-reading-width);
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+}
+
+.product-cta__pain-points {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-6) 0 var(--space-8);
+  padding-left: var(--space-6);
+}
+
+.product-cta__pain-point::marker {
+  color: var(--color-primary);
+}
+
+.product-cta__button {
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   7. Adaptações progressivas
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 48rem) {
+  .blog-hero__cta,
+  .category-highlight__link,
+  .featured-card__link,
+  .article-card__link,
+  .product-cta__button {
+    width: auto;
+  }
+
+  .blog-search__form {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .blog-search__button {
+    width: auto;
+  }
+
+  .recent-articles__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-cta__inner {
+    text-align: center;
+  }
+
+  .product-cta__description {
+    margin-inline: auto;
+  }
+
+  .product-cta__pain-points {
+    width: fit-content;
+    margin-inline: auto;
+    text-align: left;
+  }
+}
+
+@media (min-width: 64rem) {
+  .featured-card {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  .featured-card__picture {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .recent-articles__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

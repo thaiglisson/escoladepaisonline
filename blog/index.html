@@ -1,10 +1,411 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
-    <title>Blog - Escola de Pais Online</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#178F3E">
+    <meta name="author" content="Escola de Pais Online">
+    <meta name="robots" content="noindex, nofollow">
 
-</body>
+    <!-- SEO provisório -->
+    <title>Blog | Escola de Pais Online</title>
+    <meta
+      name="description"
+      content="Página inicial provisória do blog da Escola de Pais Online."
+    >
+    <link rel="canonical" href="https://escoladepaisonline.com.br/blog/">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/icons/favicon-96x96.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/icons/apple-touch-icon.png"
+    >
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">
+      Pular para o conteúdo principal
+    </a>
+
+    <div class="wrapper">
+      <!-- Header Global -->
+      <header class="site-header">
+        <div class="container site-header__inner">
+          <a
+            class="site-logo"
+            href="/"
+            aria-label="Escola de Pais Online — Página inicial"
+          >
+            <picture>
+              <source
+                srcset="/assets/images/logo-horizontal.webp"
+                type="image/webp"
+              >
+              <img
+                src="/assets/images/logo-horizontal.png"
+                width="1200"
+                height="281"
+                alt="Escola de Pais Online — Guia para pais que ensinam"
+              >
+            </picture>
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-principal"
+          >
+            <span class="visually-hidden menu-toggle__label">Abrir menu</span>
+            <span class="menu-toggle__icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+
+          <nav
+            class="site-nav"
+            id="menu-principal"
+            aria-label="Navegação principal"
+          >
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="/">Início</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="/blog/">Blog</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="/blog/matematica/">
+                  Matemática
+                </a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="/recursos/">Recursos</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="/sobre/">Sobre</a>
+              </li>
+              <li class="site-nav__item site-nav__item--cta">
+                <a class="button button--full-mobile" href="/">
+                  Conhecer o Explicador Matemático
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="site-main blog-home" id="conteudo-principal">
+        <!-- Hero do Blog -->
+        <section class="blog-hero">
+          <div class="container blog-hero__inner">
+            <p class="blog-hero__eyebrow">Blog Escola de Pais Online</p>
+            <h1 class="blog-hero__title">Título provisório do Blog</h1>
+            <p class="blog-hero__description">
+              Texto introdutório provisório para apresentar o conteúdo do blog.
+            </p>
+            <a class="button blog-hero__cta" href="/blog/matematica/">
+              Chamada provisória
+            </a>
+          </div>
+        </section>
+
+        <!-- Barra de Pesquisa -->
+        <section class="blog-search" aria-label="Pesquisa de artigos">
+          <div class="container blog-search__inner">
+            <form class="blog-search__form" role="search">
+              <label class="visually-hidden" for="busca-blog">
+                Buscar no blog
+              </label>
+              <input
+                class="blog-search__input"
+                id="busca-blog"
+                name="busca"
+                type="search"
+                placeholder="Buscar artigos..."
+              >
+              <button class="button blog-search__button" type="button">
+                Buscar
+              </button>
+            </form>
+            <p class="blog-search__helper">
+              Texto auxiliar provisório para orientar futuras pesquisas no blog.
+            </p>
+          </div>
+        </section>
+
+        <!-- Artigo em Destaque -->
+        <section class="featured-article">
+          <div class="container featured-article__inner">
+            <h2 class="featured-article__heading">Artigo em Destaque</h2>
+
+            <article class="featured-card">
+              <picture class="featured-card__picture">
+                <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
+                <img
+                  class="featured-card__image"
+                  width="1200"
+                  height="675"
+                  alt="Imagem provisória do artigo em destaque"
+                >
+              </picture>
+              <div class="featured-card__content">
+                <p class="featured-card__category">Categoria provisória</p>
+                <h3 class="featured-card__title">Título provisório do artigo</h3>
+                <p class="featured-card__summary">
+                  Resumo provisório do artigo em destaque.
+                </p>
+                <a class="button featured-card__link" href="#">
+                  Ler artigo
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Categoria Matemática -->
+        <section class="category-highlight">
+          <div class="container category-highlight__inner">
+            <h2 class="category-highlight__title">Categoria Matemática</h2>
+            <p class="category-highlight__description">
+              Texto provisório para apresentar a categoria Matemática.
+            </p>
+            <a class="button category-highlight__link" href="/blog/matematica/">
+              Acessar categoria
+            </a>
+          </div>
+        </section>
+
+        <!-- Artigos Recentes -->
+        <section class="recent-articles">
+          <div class="container recent-articles__inner">
+            <h2 class="recent-articles__heading">Artigos Recentes</h2>
+
+            <div class="recent-articles__grid">
+              <article class="article-card">
+                <picture class="article-card__picture">
+                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
+                  <img
+                    class="article-card__image"
+                    width="800"
+                    height="450"
+                    alt="Imagem provisória do artigo"
+                    loading="lazy"
+                  >
+                </picture>
+                <div class="article-card__content">
+                  <p class="article-card__category">Categoria provisória</p>
+                  <h3 class="article-card__title">Título provisório do artigo</h3>
+                  <p class="article-card__summary">Resumo provisório do artigo.</p>
+                  <a class="button article-card__link" href="#">Ler artigo</a>
+                </div>
+              </article>
+
+              <article class="article-card">
+                <picture class="article-card__picture">
+                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
+                  <img
+                    class="article-card__image"
+                    width="800"
+                    height="450"
+                    alt="Imagem provisória do artigo"
+                    loading="lazy"
+                  >
+                </picture>
+                <div class="article-card__content">
+                  <p class="article-card__category">Categoria provisória</p>
+                  <h3 class="article-card__title">Título provisório do artigo</h3>
+                  <p class="article-card__summary">Resumo provisório do artigo.</p>
+                  <a class="button article-card__link" href="#">Ler artigo</a>
+                </div>
+              </article>
+
+              <article class="article-card">
+                <picture class="article-card__picture">
+                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
+                  <img
+                    class="article-card__image"
+                    width="800"
+                    height="450"
+                    alt="Imagem provisória do artigo"
+                    loading="lazy"
+                  >
+                </picture>
+                <div class="article-card__content">
+                  <p class="article-card__category">Categoria provisória</p>
+                  <h3 class="article-card__title">Título provisório do artigo</h3>
+                  <p class="article-card__summary">Resumo provisório do artigo.</p>
+                  <a class="button article-card__link" href="#">Ler artigo</a>
+                </div>
+              </article>
+
+              <article class="article-card">
+                <picture class="article-card__picture">
+                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
+                  <img
+                    class="article-card__image"
+                    width="800"
+                    height="450"
+                    alt="Imagem provisória do artigo"
+                    loading="lazy"
+                  >
+                </picture>
+                <div class="article-card__content">
+                  <p class="article-card__category">Categoria provisória</p>
+                  <h3 class="article-card__title">Título provisório do artigo</h3>
+                  <p class="article-card__summary">Resumo provisório do artigo.</p>
+                  <a class="button article-card__link" href="#">Ler artigo</a>
+                </div>
+              </article>
+
+              <article class="article-card">
+                <picture class="article-card__picture">
+                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
+                  <img
+                    class="article-card__image"
+                    width="800"
+                    height="450"
+                    alt="Imagem provisória do artigo"
+                    loading="lazy"
+                  >
+                </picture>
+                <div class="article-card__content">
+                  <p class="article-card__category">Categoria provisória</p>
+                  <h3 class="article-card__title">Título provisório do artigo</h3>
+                  <p class="article-card__summary">Resumo provisório do artigo.</p>
+                  <a class="button article-card__link" href="#">Ler artigo</a>
+                </div>
+              </article>
+
+              <article class="article-card">
+                <picture class="article-card__picture">
+                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
+                  <img
+                    class="article-card__image"
+                    width="800"
+                    height="450"
+                    alt="Imagem provisória do artigo"
+                    loading="lazy"
+                  >
+                </picture>
+                <div class="article-card__content">
+                  <p class="article-card__category">Categoria provisória</p>
+                  <h3 class="article-card__title">Título provisório do artigo</h3>
+                  <p class="article-card__summary">Resumo provisório do artigo.</p>
+                  <a class="button article-card__link" href="#">Ler artigo</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA do Explicador Matemático -->
+        <section class="product-cta">
+          <div class="container product-cta__inner">
+            <h2 class="product-cta__title">Título provisório do CTA</h2>
+            <p class="product-cta__description">
+              Descrição provisória do Explicador Matemático.
+            </p>
+            <ul class="product-cta__pain-points">
+              <li class="product-cta__pain-point">Dor evitada provisória 1.</li>
+              <li class="product-cta__pain-point">Dor evitada provisória 2.</li>
+              <li class="product-cta__pain-point">Dor evitada provisória 3.</li>
+            </ul>
+            <a class="button product-cta__button" href="/">
+              Conhecer o Explicador Matemático
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer Global -->
+      <footer class="site-footer">
+        <div class="container site-footer__inner">
+          <!-- Marca -->
+          <section class="site-footer__brand" aria-label="Escola de Pais Online">
+            <a class="site-logo" href="/" aria-label="Escola de Pais Online — Página inicial">
+              <picture>
+                <source srcset="/assets/images/logo-horizontal.webp" type="image/webp">
+                <img
+                  src="/assets/images/logo-horizontal.png"
+                  width="1200"
+                  height="281"
+                  alt="Escola de Pais Online — Guia para pais que ensinam"
+                >
+              </picture>
+            </a>
+
+            <p>
+              A Escola de Pais Online acolhe pais e responsáveis que sentem dificuldade
+              ao explicar as tarefas de matemática aos filhos.
+            </p>
+          </section>
+
+          <nav class="site-footer__navigation" aria-label="Links do rodapé">
+            <!-- Navegação -->
+            <section class="site-footer__area">
+              <h2 class="site-footer__heading">Navegação</h2>
+              <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/blog/matematica/">Matemática</a></li>
+                <li><a href="/recursos/">Recursos</a></li>
+              </ul>
+            </section>
+
+            <!-- Institucional -->
+            <section class="site-footer__area">
+              <h2 class="site-footer__heading">Institucional</h2>
+              <ul>
+                <li><a href="/sobre/">Sobre</a></li>
+                <li><a href="/contato/">Contato</a></li>
+                <li>
+                  <a href="/politica-de-privacidade/">Política de Privacidade</a>
+                </li>
+                <li><a href="/termos-de-uso/">Termos de Uso</a></li>
+              </ul>
+            </section>
+
+            <!-- Produto -->
+            <section class="site-footer__area site-footer__area--product">
+              <h2 class="site-footer__heading">Produto</h2>
+              <a class="button button--full-mobile" href="/">
+                Conhecer o Explicador Matemático
+              </a>
+            </section>
+          </nav>
+        </div>
+
+        <!-- Área inferior -->
+        <div class="site-footer__bottom">
+          <div class="container">
+            <p class="site-footer__copyright">
+              © 2026 Escola de Pais Online. Todos os direitos reservados.
+            </p>
+            <p class="site-footer__disclaimer">
+              O conteúdo disponibilizado possui finalidade educacional e não substitui
+              acompanhamento pedagógico individual quando necessário.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
 </html>

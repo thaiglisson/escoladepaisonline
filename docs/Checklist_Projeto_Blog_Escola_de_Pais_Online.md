@@ -677,14 +677,37 @@ Checklist
 
 ### Fase 3 — Estrutura do Blog
 
-[ ] Página inicial (/blog/).
-[ ] CSS do Blog.
+[x] Estrutura e estilização base da Página inicial (/blog/) — Feature 03A.
+[x] CSS do Blog.
 [ ] Categoria Matemática.
 [ ] Template de artigo.
 [ ] Página Sobre.
 [ ] Página Contato.
 [ ] Política de Privacidade.
 [ ] Termos de Uso.
+
+## Feature 03A — Estrutura da Página Inicial do Blog
+
+Status: ✅ Concluída
+
+Checklist
+
+- [x] Estrutura HTML semântica criada em `blog/index.html`.
+- [x] Header Global e Footer Global integrados.
+- [x] Hero do Blog implementado.
+- [x] Barra de pesquisa visual implementada.
+- [x] Artigo em destaque estruturado.
+- [x] Bloco da categoria Matemática estruturado.
+- [x] Grade com seis cards provisórios implementada.
+- [x] CTA do Explicador Matemático implementado.
+- [x] Espaços de imagem preparados para a Feature 03B.
+- [x] Arquivo `assets/css/blog.css` criado e integrado.
+- [x] Layout mobile first implementado.
+- [x] Responsividade validada em 390 px, 768 px e desktop.
+- [x] Ausência de rolagem horizontal validada.
+- [x] Estrutura HTML e CSS revisada.
+- [x] Testes visuais concluídos.
+- [x] Feature aprovada.
 
 ------------------------------------------------------------
 
@@ -745,8 +768,8 @@ Checklist
 
 ## Próxima ação definida
 
-Implementar a Página Inicial do Blog — `/blog/`.
+Implementar a Feature 03B — Conteúdo da Página Inicial do Blog.
 
 Objetivo:
 
-Criar a estrutura visual e funcional da página inicial do Blog, reutilizando o Header Global, o Footer Global e os componentes do Design System.
+Substituir os textos e imagens provisórios da página `/blog/` pelo conteúdo definitivo, preservando a estrutura e a estilização aprovadas na Feature 03A.

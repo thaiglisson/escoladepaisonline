@@ -8,6 +8,38 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 ## [Não publicado]
 
+## Feature 03A — Estrutura da Página Inicial do Blog
+
+### Adicionado
+
+- Estrutura HTML semântica da Página Inicial do Blog em `blog/index.html`.
+- Hero do Blog com subtítulo institucional, título, descrição e CTA.
+- Barra de pesquisa visual preparada para evolução futura.
+- Card de artigo em destaque.
+- Bloco da categoria Matemática.
+- Grade com seis cards provisórios de artigos recentes.
+- CTA do Explicador Matemático com título, descrição, lista e botão.
+- Arquivo `assets/css/blog.css` com os estilos específicos da página.
+- Integração do `blog.css` ao `blog/index.html`.
+- Espaços de imagem preparados para receber o conteúdo definitivo na Feature 03B.
+
+### Implementado
+
+- Layout mobile first alinhado ao Design System.
+- Grade responsiva com uma, duas e três colunas.
+- Artigo em destaque com adaptação para duas colunas no desktop.
+- Fallback visual para imagens ainda não definidas.
+- Reutilização do Header Global, Footer Global e componentes existentes.
+- Foco visível, controles adequados para toque e prevenção de rolagem horizontal.
+
+### Validação
+
+- Estrutura HTML e CSS revisada e aprovada.
+- Testes responsivos concluídos em 390 px, 768 px e desktop.
+- Layout validado em celular, tablet e desktop.
+- Grade, cards, campos e botões validados nas larguras previstas.
+- Ausência de erros de carregamento do `blog.css` no navegador.
+
 ## Feature 01 — Header Global
 
 ### Adicionado
@@ -55,7 +87,8 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 - Header Global. Status: ✅ Concluído
 - Footer Global. Status: ✅ Concluído
-- Página inicial do Blog
+- Feature 03A — Estrutura da Página Inicial do Blog. Status: ✅ Concluída
+- Feature 03B — Conteúdo da Página Inicial do Blog
 - Categoria Matemática
 - Template de artigo
 - Páginas institucionais

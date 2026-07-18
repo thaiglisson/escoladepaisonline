@@ -866,11 +866,22 @@ Resumo técnico do Footer:
 ---
 
 ### Fase 3 — Blog
-⬜ Não iniciada
+🟨 Em andamento
 
-Previsto:
+Concluído:
 
-- Página inicial do Blog
+- Feature 03A — Estrutura da Página Inicial do Blog;
+- estrutura HTML semântica da página `/blog/`;
+- Hero, pesquisa visual, artigo em destaque e categoria Matemática;
+- grade responsiva de artigos recentes;
+- CTA do Explicador Matemático;
+- estilização base mobile first em `assets/css/blog.css`;
+- integração do `blog.css` ao `blog/index.html`;
+- validação da estrutura HTML e CSS em celular, tablet e desktop.
+
+Próximas implementações:
+
+- Feature 03B — Conteúdo da Página Inicial do Blog
 - Categoria Matemática
 - Template de Artigo
 - Página Sobre
@@ -922,7 +933,7 @@ Fase 2 — Componentes
 
 Fase 3 — Blog
 
-░░░░░░░░░░░░░░░░░░░░ 0%
+█████░░░░░░░░░░░░░░░ 25%
 
 Fase 4 — Conteúdo
 
@@ -936,14 +947,8 @@ Fase 5 — Otimização
 
 ## Próxima Implementação
 
-Página Inicial do Blog — `/blog/`
+Feature 03B — Conteúdo da Página Inicial do Blog
 
 Objetivo:
 
-Desenvolver a página inicial do Blog reutilizando os componentes globais já aprovados.
-
-Arquivos previstos:
-
-- blog/index.html
-- assets/css/blog.css
-- templates/layouts/base.html, apenas como referência estrutural
+Substituir os textos e imagens provisórios da página `/blog/` pelo conteúdo definitivo, preservando a estrutura e a estilização aprovadas na Feature 03A.
