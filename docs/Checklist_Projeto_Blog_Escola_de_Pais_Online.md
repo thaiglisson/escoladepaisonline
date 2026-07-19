@@ -678,6 +678,7 @@ Checklist
 ### Fase 3 — Estrutura do Blog
 
 [x] Estrutura e estilização base da Página inicial (/blog/) — Feature 03A.
+[x] Conteúdo definitivo da Página inicial (/blog/) — Feature 03B.
 [x] CSS do Blog.
 [ ] Categoria Matemática.
 [ ] Template de artigo.
@@ -707,6 +708,54 @@ Checklist
 - [x] Ausência de rolagem horizontal validada.
 - [x] Estrutura HTML e CSS revisada.
 - [x] Testes visuais concluídos.
+- [x] Feature aprovada.
+
+------------------------------------------------------------
+
+## Feature 03B — Conteúdo da Página Inicial do Blog
+
+Status: ✅ Concluída
+
+Planejamento Editorial
+
+- [x] Planejamento Editorial da Home do Blog concluído e aprovado.
+- [x] Hero definitivo e CTA principal definidos.
+- [x] Artigo pilar em destaque definido.
+- [x] Seis artigos iniciais definidos.
+- [x] Títulos, resumos, categorias e slugs oficiais definidos.
+- [x] Briefings e textos alternativos das imagens definidos.
+- [x] Conteúdo do bloco da categoria Matemática definido.
+- [x] Texto auxiliar da pesquisa definido.
+- [x] CTA do Explicador Matemático definido.
+
+Implementação
+
+- [x] Conteúdo definitivo implementado somente em `blog/index.html`.
+- [x] Placeholders visíveis substituídos pelo conteúdo aprovado.
+- [x] Hero e CTA principal implementados.
+- [x] Artigo pilar em destaque implementado.
+- [x] Seis cards iniciais implementados.
+- [x] Categoria, títulos, resumos, links e CTAs implementados.
+- [x] Textos alternativos aprovados aplicados aos placeholders das imagens.
+- [x] Bloco da categoria Matemática implementado.
+- [x] Texto auxiliar da pesquisa implementado.
+- [x] CTA do Explicador Matemático implementado.
+- [x] Estrutura HTML e hierarquia das seções preservadas.
+- [x] CSS, Header, Footer e Design System preservados.
+
+Validação
+
+- [x] Visual validado em desktop, tablet e celular.
+- [x] Responsividade validada.
+- [x] Ausência de rolagem horizontal indevida validada.
+- [x] Header e Footer preservados.
+- [x] Menu mobile validado.
+- [x] Navegação por teclado validada.
+- [x] Links e slugs conferidos.
+- [x] Campo e botão de pesquisa validados sem erros.
+- [x] Placeholders visuais das imagens validados.
+- [x] Ausência de textos provisórios no conteúdo visível confirmada.
+- [x] Console validado sem erros relacionados à implementação.
 - [x] Feature aprovada.
 
 ------------------------------------------------------------
@@ -768,8 +817,8 @@ Checklist
 
 ## Próxima ação definida
 
-Implementar a Feature 03B — Conteúdo da Página Inicial do Blog.
+Implementar a Página da Categoria Matemática em `/blog/matematica/`.
 
 Objetivo:
 
-Substituir os textos e imagens provisórios da página `/blog/` pelo conteúdo definitivo, preservando a estrutura e a estilização aprovadas na Feature 03A.
+Organizar o artigo pilar e os conteúdos do primeiro cluster editorial na categoria Matemática, preservando os componentes globais e o Design System aprovado.

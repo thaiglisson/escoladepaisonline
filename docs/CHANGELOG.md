@@ -8,6 +8,50 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 ## [Não publicado]
 
+## Feature 03B — Conteúdo da Página Inicial do Blog
+
+### Adicionado
+
+- Planejamento Editorial definitivo da Home do Blog.
+- Hero e CTA principal definitivos.
+- Artigo pilar “Como explicar matemática para uma criança entender” em destaque.
+- Seis artigos iniciais com títulos, resumos, categorias, slugs oficiais e CTAs.
+- Textos alternativos aprovados para as futuras imagens dos artigos.
+- Conteúdo definitivo do bloco da categoria Matemática.
+- Texto auxiliar da pesquisa visual.
+- Conteúdo definitivo do CTA do Explicador Matemático.
+
+### Alterado
+
+- Placeholders visíveis de `blog/index.html` substituídos pelo conteúdo editorial aprovado.
+- Implementação realizada exclusivamente em `blog/index.html`.
+- Estrutura HTML, CSS, Header Global, Footer Global e Design System preservados.
+
+### Validação
+
+- Página validada visualmente em desktop, tablet e celular.
+- Responsividade e ausência de rolagem horizontal indevida aprovadas.
+- Hero, artigo em destaque, categoria, seis cards e CTA do produto aprovados.
+- Menu mobile e navegação por teclado aprovados.
+- Links e slugs dos artigos conferidos.
+- Campo e botão de pesquisa validados sem erros.
+- Placeholders visuais das imagens aprovados.
+- Ausência de textos provisórios no conteúdo visível confirmada.
+- Console validado sem erros relacionados à implementação.
+
+### Documentação
+
+- Documentação Geral e Checklist do Projeto atualizados para registrar a conclusão da Feature 03B.
+- Próxima implementação definida como a Página da Categoria Matemática em `/blog/matematica/`.
+
+### Pendências intencionais
+
+- As imagens definitivas dos artigos serão inseridas futuramente.
+- As páginas dos artigos ainda não existem e serão criadas nas features de conteúdo.
+- A Home permanece temporariamente com `noindex, nofollow` e metadados provisórios.
+- A revisão de SEO, Open Graph, sitemap e liberação para indexação será realizada em uma etapa específica antes da publicação indexável.
+- Estas pendências fazem parte do planejamento e não representam erros da Feature 03B.
+
 ## Feature 03A — Estrutura da Página Inicial do Blog
 
 ### Adicionado
@@ -88,7 +132,8 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 - Header Global. Status: ✅ Concluído
 - Footer Global. Status: ✅ Concluído
 - Feature 03A — Estrutura da Página Inicial do Blog. Status: ✅ Concluída
-- Feature 03B — Conteúdo da Página Inicial do Blog
+- Feature 03B — Conteúdo da Página Inicial do Blog. Status: ✅ Concluída
+- Testes realizados em ambiente local (Live Server) e aprovados antes do deploy.
 - Categoria Matemática
 - Template de artigo
 - Páginas institucionais

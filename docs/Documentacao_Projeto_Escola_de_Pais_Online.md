@@ -871,17 +871,22 @@ Resumo técnico do Footer:
 Concluído:
 
 - Feature 03A — Estrutura da Página Inicial do Blog;
+- Feature 03B — Conteúdo da Página Inicial do Blog;
 - estrutura HTML semântica da página `/blog/`;
-- Hero, pesquisa visual, artigo em destaque e categoria Matemática;
-- grade responsiva de artigos recentes;
-- CTA do Explicador Matemático;
+- planejamento editorial da Home do Blog;
+- Hero e CTA principal definitivos;
+- artigo pilar em destaque e seis artigos iniciais definidos;
+- títulos, resumos, categorias, slugs oficiais e textos alternativos das imagens;
+- bloco da categoria Matemática e texto auxiliar da pesquisa;
+- CTA definitivo do Explicador Matemático;
+- substituição dos placeholders visíveis somente em `blog/index.html`;
 - estilização base mobile first em `assets/css/blog.css`;
 - integração do `blog.css` ao `blog/index.html`;
-- validação da estrutura HTML e CSS em celular, tablet e desktop.
+- estrutura HTML, CSS, Header, Footer e Design System preservados;
+- validação da página em celular, tablet e desktop.
 
 Próximas implementações:
 
-- Feature 03B — Conteúdo da Página Inicial do Blog
 - Categoria Matemática
 - Template de Artigo
 - Página Sobre
@@ -933,7 +938,7 @@ Fase 2 — Componentes
 
 Fase 3 — Blog
 
-█████░░░░░░░░░░░░░░░ 25%
+████████░░░░░░░░░░░░ 40%
 
 Fase 4 — Conteúdo
 
@@ -947,8 +952,8 @@ Fase 5 — Otimização
 
 ## Próxima Implementação
 
-Feature 03B — Conteúdo da Página Inicial do Blog
+Página da Categoria Matemática — `/blog/matematica/`
 
 Objetivo:
 
-Substituir os textos e imagens provisórios da página `/blog/` pelo conteúdo definitivo, preservando a estrutura e a estilização aprovadas na Feature 03A.
+Implementar a página da categoria Matemática para organizar o artigo pilar e os conteúdos do primeiro cluster editorial, preservando os componentes globais e o Design System aprovado.
