@@ -680,8 +680,8 @@ Checklist
 [x] Estrutura e estilização base da Página inicial (/blog/) — Feature 03A.
 [x] Conteúdo definitivo da Página inicial (/blog/) — Feature 03B.
 [x] CSS do Blog.
-[ ] Categoria Matemática.
-[ ] Template de artigo.
+[x] Página da Categoria Matemática — Features 04A e 04B. Status: ✅ Concluída.
+[ ] Template de artigo — Feature 05A.
 [ ] Página Sobre.
 [ ] Página Contato.
 [ ] Política de Privacidade.
@@ -760,6 +760,72 @@ Validação
 
 ------------------------------------------------------------
 
+## Feature 04A — Estrutura da Página da Categoria Matemática
+
+Status: ✅ Concluída
+
+Checklist
+
+- [x] Estrutura HTML semântica criada em `blog/matematica/index.html`.
+- [x] Header Global e Footer Global preservados.
+- [x] Breadcrumb da categoria implementado.
+- [x] Hero da categoria implementado.
+- [x] Artigo pilar em destaque estruturado.
+- [x] Grade responsiva preparada para seis artigos.
+- [x] Bloco visual da isca digital implementado sem formulário.
+- [x] CTA do Explicador Matemático implementado com o componente global.
+- [x] Espaços visuais das imagens preparados para a Feature 04B.
+- [x] Estilos existentes de `assets/css/blog.css` reutilizados.
+- [x] Layout mobile first implementado.
+- [x] Responsividade validada em 390 px, 768 px e desktop.
+- [x] Ausência de rolagem horizontal validada.
+- [x] Hierarquia de headings, foco visível e navegação por teclado validados.
+- [x] Estrutura revisada e aprovada.
+- [x] Feature aprovada.
+
+------------------------------------------------------------
+
+## Feature 04B — Conteúdo da Página da Categoria Matemática
+
+Status: ✅ Concluída
+
+Conteúdo Editorial
+
+- [x] Hero definitivo da categoria implementado.
+- [x] Artigo pilar oficial implementado.
+- [x] Seis artigos oficiais da Home do Blog aplicados na mesma ordem editorial.
+- [x] Títulos, resumos, categorias e slugs oficiais preservados.
+- [x] Textos alternativos aprovados aplicados aos placeholders das imagens.
+- [x] Conteúdo definitivo do bloco da isca digital implementado.
+- [x] Conteúdo definitivo do CTA do Explicador Matemático implementado.
+
+Implementação
+
+- [x] Conteúdo definitivo implementado somente em `blog/matematica/index.html`.
+- [x] Placeholders visíveis substituídos pelo conteúdo aprovado.
+- [x] Estrutura HTML da Feature 04A preservada.
+- [x] CSS, JavaScript, Header Global, Footer Global e Home do Blog preservados.
+- [x] `noindex, nofollow` e metadados provisórios preservados.
+- [x] Espaços visuais provisórios das imagens preservados.
+- [x] Nenhum formulário ou captura de e-mail implementado.
+
+Validação
+
+- [x] Visual validado em 390 px, 768 px e desktop.
+- [x] Grade validada com uma, duas e três colunas.
+- [x] Ausência de rolagem horizontal indevida validada.
+- [x] Exatamente seis cards confirmados.
+- [x] Slugs conferidos com a Home do Blog.
+- [x] Hierarquia H1, H2 e H3 validada.
+- [x] Header e Footer preservados.
+- [x] Menu mobile e navegação por teclado validados.
+- [x] Ausência de textos provisórios no conteúdo visível confirmada.
+- [x] Console validado sem erros relacionados à implementação.
+- [x] Estrutura e conteúdo aprovados.
+- [x] Feature aprovada.
+
+------------------------------------------------------------
+
 ### Fase 4 — Captura
 
 [ ] Finalizar a isca inicial.
@@ -817,8 +883,8 @@ Validação
 
 ## Próxima ação definida
 
-Implementar a Página da Categoria Matemática em `/blog/matematica/`.
+Implementar a Feature 05A — Estrutura do Template de Artigo.
 
 Objetivo:
 
-Organizar o artigo pilar e os conteúdos do primeiro cluster editorial na categoria Matemática, preservando os componentes globais e o Design System aprovado.
+Criar a estrutura HTML e CSS reutilizável do Template de Artigo, preservando os componentes globais e o Design System aprovado, sem implementar ainda o conteúdo definitivo dos artigos.

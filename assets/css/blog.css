@@ -1,6 +1,6 @@
 /* ===========================================================================
-   Escola de Pais Online — Página inicial do Blog
-   Estilos específicos da Feature 03A.
+   Escola de Pais Online — Blog
+   Estilos compartilhados pela Home e pelas páginas de categoria.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -263,7 +263,41 @@
 }
 
 /* --------------------------------------------------------------------------
-   7. Adaptações progressivas
+   7. Página da categoria Matemática
+   -------------------------------------------------------------------------- */
+
+.category-page__breadcrumb {
+  margin-bottom: var(--space-8);
+  text-align: left;
+}
+
+.lead-magnet {
+  padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+  background-color: var(--color-surface);
+}
+
+.lead-magnet__inner {
+  max-width: var(--container-hero-width);
+}
+
+.lead-magnet__title {
+  margin-bottom: var(--space-4);
+}
+
+.lead-magnet__description {
+  max-width: var(--container-reading-width);
+  margin: 0 auto var(--space-8);
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.lead-magnet__button {
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   8. Adaptações progressivas
    -------------------------------------------------------------------------- */
 
 @media (min-width: 48rem) {
@@ -271,6 +305,7 @@
   .category-highlight__link,
   .featured-card__link,
   .article-card__link,
+  .lead-magnet__button,
   .product-cta__button {
     width: auto;
   }

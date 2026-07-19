@@ -872,6 +872,8 @@ Concluído:
 
 - Feature 03A — Estrutura da Página Inicial do Blog;
 - Feature 03B — Conteúdo da Página Inicial do Blog;
+- Feature 04A — Estrutura da Página da Categoria Matemática;
+- Feature 04B — Conteúdo da Página da Categoria Matemática;
 - estrutura HTML semântica da página `/blog/`;
 - planejamento editorial da Home do Blog;
 - Hero e CTA principal definitivos;
@@ -883,12 +885,16 @@ Concluído:
 - estilização base mobile first em `assets/css/blog.css`;
 - integração do `blog.css` ao `blog/index.html`;
 - estrutura HTML, CSS, Header, Footer e Design System preservados;
-- validação da página em celular, tablet e desktop.
+- validação da página em celular, tablet e desktop;
+- Página da Categoria Matemática implementada em `/blog/matematica/`;
+- Hero da categoria, breadcrumb, artigo pilar, grade de seis artigos, bloco da isca digital e CTA do produto implementados;
+- estrutura e conteúdo da Página da Categoria Matemática revisados e aprovados;
+- títulos, resumos, categorias, slugs e textos alternativos oficiais aplicados à categoria;
+- responsividade, navegação por teclado, menu mobile, ausência de rolagem horizontal e console validados.
 
 Próximas implementações:
 
-- Categoria Matemática
-- Template de Artigo
+- Feature 05A — Estrutura do Template de Artigo
 - Página Sobre
 - Página Contato
 - Política de Privacidade
@@ -938,7 +944,7 @@ Fase 2 — Componentes
 
 Fase 3 — Blog
 
-████████░░░░░░░░░░░░ 40%
+██████████░░░░░░░░░░ 50%
 
 Fase 4 — Conteúdo
 
@@ -952,8 +958,8 @@ Fase 5 — Otimização
 
 ## Próxima Implementação
 
-Página da Categoria Matemática — `/blog/matematica/`
+Feature 05A — Estrutura do Template de Artigo
 
 Objetivo:
 
-Implementar a página da categoria Matemática para organizar o artigo pilar e os conteúdos do primeiro cluster editorial, preservando os componentes globais e o Design System aprovado.
+Implementar a estrutura HTML e CSS reutilizável do Template de Artigo, preservando os componentes globais e o Design System aprovado, sem criar ainda o conteúdo definitivo dos artigos.

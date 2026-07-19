@@ -8,6 +8,84 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 ## [Não publicado]
 
+## Feature 04B — Conteúdo da Página da Categoria Matemática
+
+### Adicionado
+
+- Hero definitivo da categoria Matemática.
+- Artigo pilar oficial “Como explicar matemática para uma criança entender”.
+- Seis artigos oficiais da Home do Blog, preservados na mesma ordem editorial.
+- Categorias, títulos, resumos, slugs oficiais, CTAs e textos alternativos aprovados.
+- Conteúdo definitivo do bloco da isca digital.
+- Conteúdo definitivo do CTA do Explicador Matemático.
+
+### Alterado
+
+- Placeholders visíveis de `blog/matematica/index.html` substituídos pelo conteúdo editorial aprovado.
+- Comentários temporários das imagens substituídos por orientações neutras para uma etapa futura.
+- Implementação e limpeza realizadas exclusivamente em `blog/matematica/index.html`.
+- Estrutura HTML da Feature 04A, CSS, JavaScript, Header Global, Footer Global, Home do Blog e Design System preservados.
+
+### Validação
+
+- Página validada visualmente em 390 px, 768 px e desktop.
+- Grade responsiva validada com uma, duas e três colunas.
+- Ausência de rolagem horizontal indevida confirmada.
+- Exatamente seis cards e um H1 confirmados.
+- Hierarquia H1, H2 e H3 validada.
+- Slugs, títulos, resumos, categorias e textos alternativos conferidos com a Home do Blog.
+- Header Global e Footer Global confirmados sem alterações.
+- Menu mobile, navegação por teclado e fechamento pela tecla Esc validados.
+- Ausência de textos provisórios no conteúdo visível confirmada.
+- Console validado sem erros relacionados à implementação.
+- Estrutura e conteúdo da Página da Categoria Matemática aprovados.
+
+### Documentação
+
+- Documentação Geral, Checklist do Projeto e CHANGELOG atualizados após a aprovação da Feature 04B.
+- Próxima implementação definida como Feature 05A — Estrutura do Template de Artigo.
+
+### Pendências intencionais
+
+- As imagens definitivas dos artigos serão inseridas futuramente.
+- As páginas dos artigos ainda não existem e serão criadas nas features de conteúdo.
+- A Página da Categoria Matemática permanece temporariamente com `noindex, nofollow` e metadados provisórios.
+- A landing page da isca digital ainda não foi implementada; o CTA permanece apontando para `/recursos/`.
+- Formulário, captura de e-mail, SEO final, Open Graph, Schema.org, sitemap e liberação para indexação serão tratados em etapas futuras.
+- Estas pendências fazem parte do planejamento e não representam erros da Feature 04B.
+
+## Feature 04A — Estrutura da Página da Categoria Matemática
+
+### Adicionado
+
+- Estrutura HTML semântica da Página da Categoria Matemática em `blog/matematica/index.html`.
+- Hero da categoria com breadcrumb, título, descrição e CTA.
+- Card de artigo pilar em destaque.
+- Grade responsiva preparada para seis artigos.
+- Bloco visual da isca digital sem formulário.
+- CTA do Explicador Matemático com reutilização do componente global.
+- Espaços visuais preparados para receber as imagens definitivas em etapa futura.
+
+### Implementado
+
+- Layout mobile first alinhado ao Design System.
+- Grade responsiva com uma, duas e três colunas.
+- Artigo pilar com adaptação para duas colunas no desktop.
+- Reutilização dos componentes, classes e padrões existentes na Home do Blog.
+- Estilos estritamente necessários da página adicionados a `assets/css/blog.css`.
+- Header Global, Footer Global e funcionalidades existentes preservados.
+- Foco visível, navegação por teclado, controles adequados para toque e prevenção de rolagem horizontal.
+- Compatibilidade com Cloudflare Pages preservada.
+
+### Validação
+
+- Estrutura HTML e CSS revisada e aprovada.
+- Testes responsivos concluídos em 390 px, 768 px e desktop.
+- Hero, breadcrumb, artigo pilar, grade de seis artigos, bloco da isca e CTA do produto validados.
+- Menu mobile e navegação por teclado validados.
+- Ausência de rolagem horizontal indevida confirmada.
+- Console validado sem erros relacionados à implementação.
+
 ## Feature 03B — Conteúdo da Página Inicial do Blog
 
 ### Adicionado
@@ -133,9 +211,10 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 - Footer Global. Status: ✅ Concluído
 - Feature 03A — Estrutura da Página Inicial do Blog. Status: ✅ Concluída
 - Feature 03B — Conteúdo da Página Inicial do Blog. Status: ✅ Concluída
+- Feature 04A — Estrutura da Página da Categoria Matemática. Status: ✅ Concluída
+- Feature 04B — Conteúdo da Página da Categoria Matemática. Status: ✅ Concluída
 - Testes realizados em ambiente local (Live Server) e aprovados antes do deploy.
-- Categoria Matemática
-- Template de artigo
+- Feature 05A — Estrutura do Template de Artigo
 - Páginas institucionais
 
 ---
