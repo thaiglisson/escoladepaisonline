@@ -8,6 +8,66 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 ## [Não publicado]
 
+## Feature 05 — Template de Artigo e Primeiro Artigo Pilar
+
+### Adicionado
+
+- Template oficial reutilizável dos artigos.
+- Breadcrumb.
+- Cabeçalho editorial.
+- Imagem principal preparada.
+- Índice opcional.
+- Estrutura completa de conteúdo.
+- CTA contextual.
+- Bloco da isca digital.
+- FAQ.
+- Artigos relacionados.
+- CTA final.
+- Primeiro artigo pilar: “Como explicar matemática para uma criança entender”.
+- Novo componente editorial: “Resumo rápido”.
+
+### Alterado
+
+- Criação do primeiro artigo utilizando o Template oficial.
+- Padronização do componente “Resumo rápido” em todos os artigos futuros.
+- Template oficial definido como estrutura obrigatória para as próximas publicações do blog.
+
+### Validação
+
+- Apenas um H1 confirmado.
+- HTML semântico validado.
+- Estrutura reutilizável aprovada.
+- Ausência de rolagem horizontal confirmada.
+- Testes concluídos em 390 px.
+- Testes concluídos em 768 px.
+- Desktop aprovado.
+- Console validado sem erros relacionados à implementação.
+- FAQ funcional.
+- CTAs funcionais.
+- Acessibilidade preservada.
+- Template e artigo utilizando exatamente a mesma estrutura do componente “Resumo rápido”.
+
+### Documentação
+
+- Documentação Geral, Checklist do Projeto e CHANGELOG atualizados após a aprovação da Feature 05.
+- Feature 05A e Feature 05B registradas como concluídas.
+- Percentual geral estimado do projeto atualizado para 63%.
+- Próxima implementação definida como a criação dos artigos restantes previstos para a Home e para a Categoria Matemática.
+
+### Pendências intencionais
+
+- Imagens definitivas.
+- SEO final.
+- Open Graph.
+- Schema.org.
+- Canonical.
+- Liberação para indexação.
+- Sitemap final.
+- Captura de e-mail.
+- Landing Page da Isca.
+- Páginas institucionais restantes.
+- Estas pendências fazem parte do planejamento e não representam erros da Feature 05.
+
 ## Feature 04B — Conteúdo da Página da Categoria Matemática
 
 ### Adicionado
@@ -214,8 +274,10 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 - Feature 04A — Estrutura da Página da Categoria Matemática. Status: ✅ Concluída
 - Feature 04B — Conteúdo da Página da Categoria Matemática. Status: ✅ Concluída
 - Testes realizados em ambiente local (Live Server) e aprovados antes do deploy.
-- Feature 05A — Estrutura do Template de Artigo
-- Páginas institucionais
+- Feature 05A — Estrutura do Template de Artigo. Status: ✅ Concluída
+- Feature 05B — Conteúdo do Primeiro Artigo Pilar. Status: ✅ Concluída
+- Próxima implementação: artigos restantes previstos para a Home e para a Categoria Matemática.
+- Na sequência: Recursos Gratuitos, Landing Page da Isca, Página de Obrigado, páginas institucionais, captura de e-mail, SEO final e liberação para indexação.
 
 ---
 

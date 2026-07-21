@@ -498,6 +498,7 @@ Breadcrumb de artigo:
 - data de atualização;
 - imagem principal;
 - introdução que responde rapidamente à dúvida;
+- componente editorial “Resumo rápido” com até cinco orientações principais;
 - índice, quando necessário;
 - H2/H3, exemplos e orientações práticas;
 - CTA contextual no meio;
@@ -874,6 +875,8 @@ Concluído:
 - Feature 03B — Conteúdo da Página Inicial do Blog;
 - Feature 04A — Estrutura da Página da Categoria Matemática;
 - Feature 04B — Conteúdo da Página da Categoria Matemática;
+- Feature 05A — Estrutura do Template de Artigo;
+- Feature 05B — Conteúdo do Primeiro Artigo Pilar;
 - estrutura HTML semântica da página `/blog/`;
 - planejamento editorial da Home do Blog;
 - Hero e CTA principal definitivos;
@@ -890,28 +893,40 @@ Concluído:
 - Hero da categoria, breadcrumb, artigo pilar, grade de seis artigos, bloco da isca digital e CTA do produto implementados;
 - estrutura e conteúdo da Página da Categoria Matemática revisados e aprovados;
 - títulos, resumos, categorias, slugs e textos alternativos oficiais aplicados à categoria;
-- responsividade, navegação por teclado, menu mobile, ausência de rolagem horizontal e console validados.
+- responsividade, navegação por teclado, menu mobile, ausência de rolagem horizontal e console validados;
+- Template oficial de artigos implementado em `blog/matematica/template-artigo.html`;
+- primeiro artigo pilar “Como explicar matemática para uma criança entender” implementado;
+- estrutura editorial definitiva com breadcrumb, cabeçalho editorial, imagem principal preparada, introdução, índice opcional, conteúdo semântico, CTA contextual, bloco da isca, FAQ, artigos relacionados e CTA final;
+- componente “Resumo rápido” incorporado ao Template de Artigo e ao primeiro artigo pilar;
+- Template de Artigo reutilizável e obrigatório para todas as próximas publicações do blog.
 
 Próximas implementações:
 
-- Feature 05A — Estrutura do Template de Artigo
-- Página Sobre
-- Página Contato
-- Política de Privacidade
-- Termos de Uso
+- artigos restantes previstos para a Home e para a Categoria Matemática;
+- Recursos Gratuitos;
+- Landing Page da Isca;
+- Página de Obrigado;
+- Página Sobre;
+- Página Contato;
+- complementos das páginas legais;
+- captura de e-mail;
+- SEO final e liberação para indexação.
 
 ---
 
 ### Fase 4 — Conteúdo
-⬜ Não iniciada
+🟨 Em andamento
+
+Concluído:
+
+- Artigo Pilar “Como explicar matemática para uma criança entender”.
 
 Previsto:
 
-- Artigo Pilar
-- Artigos das quatro operações
-- Artigos de dor
-- Artigos de atividades
-- Estratégia de links internos
+- artigos das quatro operações;
+- artigos de dor;
+- artigos de atividades;
+- estratégia de links internos.
 
 ---
 
@@ -944,22 +959,35 @@ Fase 2 — Componentes
 
 Fase 3 — Blog
 
-██████████░░░░░░░░░░ 50%
+█████████████░░░░░░░ 65%
 
 Fase 4 — Conteúdo
 
-░░░░░░░░░░░░░░░░░░░░ 0%
+███░░░░░░░░░░░░░░░░░ 15%
 
 Fase 5 — Otimização
 
 ░░░░░░░░░░░░░░░░░░░░ 0%
 
+Conclusão geral estimada do projeto: **63%**.
+
 ---
 
 ## Próxima Implementação
 
-Feature 05A — Estrutura do Template de Artigo
+Criação dos artigos restantes previstos para a Home e para a Categoria Matemática.
 
 Objetivo:
 
-Implementar a estrutura HTML e CSS reutilizável do Template de Artigo, preservando os componentes globais e o Design System aprovado, sem criar ainda o conteúdo definitivo dos artigos.
+Publicar os conteúdos restantes utilizando obrigatoriamente o Template oficial de artigos, incluindo o componente “Resumo rápido” e preservando a estrutura editorial aprovada na Feature 05.
+
+Na sequência:
+
+1. Recursos Gratuitos;
+2. Landing Page da Isca;
+3. Página de Obrigado;
+4. Página Sobre;
+5. Página Contato;
+6. complementos das páginas legais;
+7. captura de e-mail;
+8. SEO final e liberação para indexação.

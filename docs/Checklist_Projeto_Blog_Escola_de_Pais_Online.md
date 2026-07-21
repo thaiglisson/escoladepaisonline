@@ -681,7 +681,8 @@ Checklist
 [x] Conteúdo definitivo da Página inicial (/blog/) — Feature 03B.
 [x] CSS do Blog.
 [x] Página da Categoria Matemática — Features 04A e 04B. Status: ✅ Concluída.
-[ ] Template de artigo — Feature 05A.
+[x] Template de artigo — Feature 05A. Status: ✅ Concluída.
+[x] Primeiro artigo pilar — Feature 05B. Status: ✅ Concluída.
 [ ] Página Sobre.
 [ ] Página Contato.
 [ ] Política de Privacidade.
@@ -826,6 +827,75 @@ Validação
 
 ------------------------------------------------------------
 
+## Feature 05A — Estrutura do Template de Artigo
+
+Status: ✅ Concluída
+
+Implementação
+
+- [x] Template reutilizável criado em `blog/matematica/template-artigo.html`.
+- [x] Header Global e Footer Global preservados.
+- [x] Breadcrumb e cabeçalho editorial implementados.
+- [x] Espaço responsivo da imagem principal preparado.
+- [x] Introdução e índice opcional estruturados.
+- [x] Estrutura semântica preparada para H2, H3, listas, citações, exemplos, destaques, observações, dicas e alertas.
+- [x] CTA contextual implementado com componente existente.
+- [x] Bloco visual da isca digital implementado sem formulário.
+- [x] FAQ e artigos relacionados implementados.
+- [x] CTA final do Explicador Matemático preservado.
+- [x] Componente editorial “Resumo rápido” incorporado ao padrão do Template de Artigo.
+- [x] Estrutura pronta para reutilização obrigatória nos próximos artigos.
+
+Validação
+
+- [x] HTML semântico e apenas um H1 confirmados.
+- [x] Template validado em 390 px, 768 px e desktop.
+- [x] Ausência de rolagem horizontal confirmada.
+- [x] Acessibilidade, foco visível e navegação por teclado preservados.
+- [x] Console validado sem erros relacionados à implementação.
+- [x] Feature aprovada.
+
+------------------------------------------------------------
+
+## Feature 05B — Conteúdo do Primeiro Artigo Pilar
+
+Status: ✅ Concluída
+
+Conteúdo Editorial
+
+- [x] Artigo pilar “Como explicar matemática para uma criança entender” implementado.
+- [x] Conteúdo definitivo revisado com linguagem simples, acolhedora e prática.
+- [x] Introdução, índice, H2, H3, listas, exemplos e blocos editoriais preenchidos.
+- [x] Componente “Resumo rápido” preenchido com cinco orientações principais.
+- [x] CTA contextual do Explicador Matemático implementado.
+- [x] Conteúdo oficial do Kit Gratuito de Atividades de Matemática aplicado.
+- [x] FAQ com perguntas reais implementado.
+- [x] Artigos relacionados com títulos e slugs oficiais aplicados.
+- [x] CTA final preservado.
+
+Implementação
+
+- [x] Primeiro artigo criado em `blog/matematica/como-explicar-matematica-para-criancas/index.html`.
+- [x] Template oficial utilizado sem alteração da arquitetura aprovada.
+- [x] Template e artigo utilizando exatamente a mesma estrutura do componente “Resumo rápido”.
+- [x] `noindex, nofollow` preservado.
+- [x] Canonical, Open Graph e Schema.org mantidos fora desta etapa.
+- [x] Template reutilizável preservado para futuras publicações.
+
+Validação
+
+- [x] Apenas um H1 e hierarquia correta de H2 e H3 confirmados.
+- [x] Ausência de textos provisórios no artigo definitivo confirmada.
+- [x] FAQ e CTAs validados.
+- [x] Artigos relacionados e links internos conferidos.
+- [x] Leitura validada em 390 px, 768 px e desktop.
+- [x] Ausência de rolagem horizontal confirmada.
+- [x] Acessibilidade e navegação preservadas.
+- [x] Console validado sem erros relacionados à implementação.
+- [x] Artigo pilar e Feature 05 aprovados.
+
+------------------------------------------------------------
+
 ### Fase 4 — Captura
 
 [ ] Finalizar a isca inicial.
@@ -840,7 +910,7 @@ Validação
 
 ### Fase 5 — Conteúdo Inicial
 
-[ ] Publicar artigo pilar.
+[x] Publicar artigo pilar.
 [ ] Publicar os quatro artigos das operações.
 [ ] Publicar dois artigos de dor emocional.
 [ ] Publicar um artigo de atividades.
@@ -883,8 +953,20 @@ Validação
 
 ## Próxima ação definida
 
-Implementar a Feature 05A — Estrutura do Template de Artigo.
+Criar os artigos restantes previstos para a Home e para a Categoria Matemática.
 
 Objetivo:
 
-Criar a estrutura HTML e CSS reutilizável do Template de Artigo, preservando os componentes globais e o Design System aprovado, sem implementar ainda o conteúdo definitivo dos artigos.
+Utilizar obrigatoriamente o Template oficial de artigos e o componente “Resumo rápido” em todas as próximas publicações.
+
+Sequência posterior:
+
+1. Recursos Gratuitos;
+2. Landing Page da Isca;
+3. Página de Obrigado;
+4. Página Sobre;
+5. Página Contato;
+6. complementos das páginas legais;
+7. captura de e-mail;
+8. SEO final;
+9. liberação para indexação.
