@@ -756,6 +756,190 @@ O arquivo `Checklist_Projeto_Blog_Escola_de_Pais_Online.md` contém o checklist 
 
 ---
 
+# Diretrizes Oficiais para Produção de Artigos
+
+Esta seção passa a integrar permanentemente a documentação oficial da Escola de Pais Online e deve ser seguida em qualquer implementação futura de artigos. Estas diretrizes substituem orientações informais utilizadas anteriormente.
+
+## Objetivo Editorial
+
+Todos os artigos da Escola de Pais Online devem ser escritos para ajudar pais e responsáveis a compreender como explicar matemática às crianças de maneira simples, acolhedora e prática.
+
+Cada artigo deve resolver uma intenção de busca específica e, ao mesmo tempo, fortalecer toda a arquitetura de conteúdo do blog.
+
+O objetivo não é apenas responder uma pergunta isolada.
+
+O objetivo é construir um cluster de conhecimento completo.
+
+## Escrita orientada a Cluster de Conteúdo
+
+Cada artigo deve fazer parte de um conjunto maior de conteúdos.
+
+Antes de iniciar um novo artigo deve-se:
+
+- analisar os artigos já existentes;
+- identificar quais assuntos já foram aprofundados;
+- identificar quais assuntos pertencem a outros artigos;
+- evitar repetição de conteúdo;
+- criar conexões naturais entre páginas.
+
+Sempre que um assunto já possuir um artigo específico, fazer apenas uma breve introdução e direcionar o leitor para esse conteúdo.
+
+Cada artigo deve acrescentar conhecimento novo ao cluster.
+
+Nunca competir com artigos existentes.
+
+## Jornada do Leitor
+
+Todo artigo deve considerar que o visitante pode estar chegando diretamente pelo Google.
+
+Durante a leitura o conteúdo deve conduzir naturalmente para o próximo passo.
+
+Os links internos devem representar uma sequência lógica de aprendizagem.
+
+Nunca inserir links apenas para SEO.
+
+Todo link interno deve possuir justificativa editorial.
+
+Ao terminar um artigo o leitor deve saber naturalmente qual conteúdo ler em seguida.
+
+## Continuidade do Cluster
+
+Antes de produzir qualquer artigo novo:
+
+- revisar os conteúdos já publicados;
+- identificar oportunidades de ligação;
+- compreender a arquitetura do cluster.
+
+Durante a escrita:
+
+- aprofundar apenas o tema daquele artigo;
+- preparar naturalmente futuras conexões;
+- evitar sobreposição de conteúdos.
+
+Todo novo artigo deve fortalecer o cluster inteiro.
+
+## Coerência entre Artigos
+
+Todos os artigos devem manter:
+
+- mesmo tom de voz;
+- mesma estrutura;
+- mesma identidade editorial;
+- mesmo padrão de escaneabilidade;
+- mesmo nível de profundidade;
+- mesma organização visual.
+
+O leitor deve perceber que todos os artigos pertencem ao mesmo projeto.
+
+## Priorização da Dor Emocional
+
+Sempre que o assunto permitir, o artigo deve começar pela identificação emocional do leitor.
+
+A ordem editorial recomendada é:
+
+1. identificação;
+2. acolhimento;
+3. redução da culpa;
+4. explicação do problema;
+5. solução prática;
+6. aprofundamento técnico;
+7. apresentação natural do produto.
+
+Nunca iniciar diretamente por conceitos técnicos quando existir uma dor emocional relacionada.
+
+## Humanização
+
+Sempre que possível utilizar pequenas cenas do cotidiano.
+
+Exemplos:
+
+- uma conversa durante a tarefa;
+- guardar brinquedos;
+- colocar a mesa;
+- dividir frutas;
+- organizar materiais escolares;
+- pequenas falas entre pais e filhos.
+
+Essas cenas devem aproximar o leitor da situação apresentada.
+
+Evitar textos excessivamente expositivos.
+
+O leitor deve conseguir imaginar a situação acontecendo.
+
+## Linguagem
+
+A linguagem oficial do projeto deve ser:
+
+- acolhedora;
+- simples;
+- conversacional;
+- respeitosa;
+- objetiva;
+- prática.
+
+Evitar:
+
+- excesso de linguagem pedagógica;
+- tom professoral;
+- julgamentos;
+- linguagem que gere culpa.
+
+## Estrutura Editorial
+
+Sempre manter:
+
+- abertura forte;
+- identificação emocional quando aplicável;
+- introdução objetiva;
+- resumo rápido;
+- índice;
+- conteúdo dividido em seções curtas;
+- exemplos reais;
+- CTA contextual;
+- FAQ;
+- artigos relacionados;
+- encerramento prático.
+
+## Links Internos
+
+Os links internos devem:
+
+- parecer naturais;
+- ampliar a compreensão do leitor;
+- conectar conteúdos complementares;
+- evitar repetição.
+
+Jamais utilizar links apenas para aumentar quantidade de páginas visitadas.
+
+## Intenção de Busca
+
+Antes de escrever cada novo artigo responder internamente:
+
+- Qual é a principal dúvida do visitante?
+- O que ele provavelmente já sabe?
+- O que precisa aprender neste artigo?
+- Qual será o próximo artigo recomendado?
+
+Essas respostas devem orientar toda a construção do conteúdo.
+
+## Qualidade Editorial
+
+Antes de considerar um artigo concluído verificar:
+
+- resolve completamente a intenção de busca;
+- acrescenta conhecimento novo ao cluster;
+- possui boa escaneabilidade;
+- possui exemplos reais;
+- possui linguagem acolhedora;
+- mantém coerência editorial;
+- possui CTA natural;
+- possui links internos relevantes;
+- conduz o leitor para o próximo passo.
+
+Somente após todas essas verificações o artigo deve ser considerado aprovado.
+
+---
+
 # 14. Estratégia de Crescimento
 
 Curto prazo
@@ -877,6 +1061,7 @@ Concluído:
 - Feature 04B — Conteúdo da Página da Categoria Matemática;
 - Feature 05A — Estrutura do Template de Artigo;
 - Feature 05B — Conteúdo do Primeiro Artigo Pilar;
+- Feature 06 — Conteúdo Inicial do Cluster Matemática, composta pelas Features 06A a 06G;
 - estrutura HTML semântica da página `/blog/`;
 - planejamento editorial da Home do Blog;
 - Hero e CTA principal definitivos;
@@ -896,13 +1081,14 @@ Concluído:
 - responsividade, navegação por teclado, menu mobile, ausência de rolagem horizontal e console validados;
 - Template oficial de artigos implementado em `blog/matematica/template-artigo.html`;
 - primeiro artigo pilar “Como explicar matemática para uma criança entender” implementado;
+- sete artigos complementares do Cluster Matemática implementados, cobrindo dificuldade para explicar, soma, subtração, multiplicação, divisão, estresse durante a tarefa e atividades para fazer em casa;
+- links internos contextuais implementados entre o artigo pilar, os artigos emocionais e os conteúdos específicos das quatro operações;
 - estrutura editorial definitiva com breadcrumb, cabeçalho editorial, imagem principal preparada, introdução, índice opcional, conteúdo semântico, CTA contextual, bloco da isca, FAQ, artigos relacionados e CTA final;
 - componente “Resumo rápido” incorporado ao Template de Artigo e ao primeiro artigo pilar;
 - Template de Artigo reutilizável e obrigatório para todas as próximas publicações do blog.
 
 Próximas implementações:
 
-- artigos restantes previstos para a Home e para a Categoria Matemática;
 - Recursos Gratuitos;
 - Landing Page da Isca;
 - Página de Obrigado;
@@ -915,18 +1101,49 @@ Próximas implementações:
 ---
 
 ### Fase 4 — Conteúdo
-🟨 Em andamento
+✅ Concluída
 
 Concluído:
 
 - Artigo Pilar “Como explicar matemática para uma criança entender”.
+- Feature 06A — “Eu sei a resposta, mas não sei explicar matemática”;
+- Feature 06B — “Como ensinar soma para crianças de forma simples”;
+- Feature 06C — “Como ensinar subtração para crianças”;
+- Feature 06D — “Como ensinar multiplicação para crianças sem decorar a tabuada”;
+- Feature 06E — “Como ensinar divisão para crianças de forma simples”;
+- Feature 06F — “Toda tarefa de matemática vira estresse: o que fazer”;
+- Feature 06G — “Atividades de matemática para fazer em casa”.
 
-Previsto:
+Resumo técnico da Feature 06:
 
-- artigos das quatro operações;
-- artigos de dor;
-- artigos de atividades;
-- estratégia de links internos.
+- sete novos artigos criados em diretórios próprios dentro de `blog/matematica/`;
+- Template Oficial de Artigos reutilizado sem alteração de estrutura, CSS ou JavaScript;
+- Header Global, Footer Global, componentes e padrões editoriais preservados;
+- componente “Resumo rápido” aplicado com cinco orientações em todos os artigos;
+- conteúdo original distribuído entre artigos emocionais, quatro operações e atividades cotidianas, sem sobreposição de intenção de busca;
+- CTAs contextuais do Explicador Matemático, bloco da isca, FAQ e artigos relacionados implementados;
+- links internos descritivos conectando o artigo pilar e os conteúdos complementares;
+- favicon SVG padronizado nos arquivos do Template e dos artigos;
+- `noindex, nofollow` mantido, sem canonical, Schema.org ou Open Graph definitivo nesta etapa.
+
+Entregáveis:
+
+- cluster inicial de Matemática com oito artigos concluído;
+- quatro artigos específicos das operações concluídos;
+- dois artigos de dor emocional concluídos;
+- um artigo prático de atividades concluído;
+- jornada interna de leitura entre os conteúdos implementada.
+
+Validações executadas:
+
+- HTML semântico, hierarquia de títulos e apenas um H1 por artigo;
+- Resumo rápido, índice, CTA contextual, bloco da isca, FAQ, artigos relacionados, CTA final e Footer;
+- links internos, botões, destinos dos artigos relacionados e arquivos de favicon;
+- leitura em 390 px, 768 px e 1440 px;
+- ausência de rolagem horizontal;
+- console sem erros relacionados à implementação;
+- ausência de textos provisórios, imagens definitivas, canonical, Schema.org e Open Graph;
+- documentação, CSS, JavaScript e componentes globais preservados durante a criação dos artigos.
 
 ---
 
@@ -963,31 +1180,30 @@ Fase 3 — Blog
 
 Fase 4 — Conteúdo
 
-███░░░░░░░░░░░░░░░░░ 15%
+████████████████████ 100%
 
 Fase 5 — Otimização
 
 ░░░░░░░░░░░░░░░░░░░░ 0%
 
-Conclusão geral estimada do projeto: **63%**.
+Conclusão geral estimada do projeto: **78%**.
 
 ---
 
 ## Próxima Implementação
 
-Criação dos artigos restantes previstos para a Home e para a Categoria Matemática.
+Implementação da área de Recursos Gratuitos.
 
 Objetivo:
 
-Publicar os conteúdos restantes utilizando obrigatoriamente o Template oficial de artigos, incluindo o componente “Resumo rápido” e preservando a estrutura editorial aprovada na Feature 05.
+Preparar a estrutura inicial dos recursos gratuitos e avançar para a implementação da isca digital de atividades de matemática.
 
 Na sequência:
 
-1. Recursos Gratuitos;
-2. Landing Page da Isca;
-3. Página de Obrigado;
-4. Página Sobre;
-5. Página Contato;
-6. complementos das páginas legais;
-7. captura de e-mail;
-8. SEO final e liberação para indexação.
+1. Landing Page da Isca;
+2. Página de Obrigado;
+3. Página Sobre;
+4. Página Contato;
+5. complementos das páginas legais;
+6. captura de e-mail;
+7. SEO final e liberação para indexação.

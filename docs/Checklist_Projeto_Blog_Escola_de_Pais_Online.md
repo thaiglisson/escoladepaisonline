@@ -683,6 +683,7 @@ Checklist
 [x] Página da Categoria Matemática — Features 04A e 04B. Status: ✅ Concluída.
 [x] Template de artigo — Feature 05A. Status: ✅ Concluída.
 [x] Primeiro artigo pilar — Feature 05B. Status: ✅ Concluída.
+[x] Conteúdo inicial do Cluster Matemática — Feature 06. Status: ✅ Concluída.
 [ ] Página Sobre.
 [ ] Página Contato.
 [ ] Política de Privacidade.
@@ -896,6 +897,53 @@ Validação
 
 ------------------------------------------------------------
 
+## Feature 06 — Conteúdo Inicial do Cluster Matemática
+
+Status: ✅ Concluída
+
+Entregáveis
+
+- [x] Feature 06A — artigo “Eu sei a resposta, mas não sei explicar matemática” criado.
+- [x] Feature 06B — artigo “Como ensinar soma para crianças de forma simples” criado.
+- [x] Feature 06C — artigo “Como ensinar subtração para crianças” criado.
+- [x] Feature 06D — artigo “Como ensinar multiplicação para crianças sem decorar a tabuada” criado.
+- [x] Feature 06E — artigo “Como ensinar divisão para crianças de forma simples” criado.
+- [x] Feature 06F — artigo “Toda tarefa de matemática vira estresse: o que fazer” criado.
+- [x] Feature 06G — artigo “Atividades de matemática para fazer em casa” criado.
+
+Implementação
+
+- [x] Sete artigos complementares criados em diretórios próprios dentro de `blog/matematica/`.
+- [x] Template Oficial de Artigos reutilizado sem alteração de arquitetura.
+- [x] Header Global, Footer Global, CSS, JavaScript e componentes globais preservados.
+- [x] Estrutura oficial mantida na ordem aprovada em todos os artigos.
+- [x] Componente “Resumo rápido” preenchido com exatamente cinco orientações por artigo.
+- [x] Conteúdo original criado para artigos emocionais, quatro operações e atividades cotidianas.
+- [x] CTAs contextuais do Explicador Matemático implementados com linguagem natural.
+- [x] Bloco oficial da isca digital e CTA final preservados.
+- [x] FAQs inéditos e artigos relacionados implementados.
+- [x] Links internos contextuais conectando o artigo pilar e os demais conteúdos do cluster.
+- [x] Favicon SVG padronizado com preservação do favicon PNG, Apple Touch Icon e `site.webmanifest`.
+- [x] `noindex, nofollow` mantido, sem canonical, Schema.org ou Open Graph definitivo.
+- [x] Placeholders das imagens principais preservados e nenhuma imagem criada.
+
+Testes e validação
+
+- [x] Apenas um H1 e HTML semântico confirmados em todos os novos artigos.
+- [x] Hierarquia de títulos, Resumo rápido, índice e ordem dos componentes conferidos.
+- [x] CTAs contextuais e finais testados.
+- [x] FAQs testados e funcionais.
+- [x] Artigos relacionados e links internos testados.
+- [x] Favicons e recursos referenciados validados sem erro.
+- [x] Leitura validada em 390 px, 768 px e 1440 px.
+- [x] Ausência de rolagem horizontal confirmada.
+- [x] Ausência de textos provisórios confirmada.
+- [x] Console validado sem erros relacionados à implementação.
+- [x] Template, artigos existentes e documentação preservados durante a implementação das Features 06A a 06G.
+- [x] Feature 06 validada e aprovada.
+
+------------------------------------------------------------
+
 ### Fase 4 — Captura
 
 [ ] Finalizar a isca inicial.
@@ -911,10 +959,12 @@ Validação
 ### Fase 5 — Conteúdo Inicial
 
 [x] Publicar artigo pilar.
-[ ] Publicar os quatro artigos das operações.
-[ ] Publicar dois artigos de dor emocional.
-[ ] Publicar um artigo de atividades.
-[ ] Conectar todos por links internos.
+[x] Publicar os quatro artigos das operações.
+[x] Publicar dois artigos de dor emocional.
+[x] Publicar um artigo de atividades.
+[x] Conectar todos por links internos.
+
+Status: ✅ Concluída
 
 ------------------------------------------------------------
 
@@ -953,20 +1003,19 @@ Validação
 
 ## Próxima ação definida
 
-Criar os artigos restantes previstos para a Home e para a Categoria Matemática.
+Implementar a área de Recursos Gratuitos.
 
 Objetivo:
 
-Utilizar obrigatoriamente o Template oficial de artigos e o componente “Resumo rápido” em todas as próximas publicações.
+Preparar a estrutura inicial dos recursos gratuitos e avançar para a implementação da isca digital de atividades de matemática.
 
 Sequência posterior:
 
-1. Recursos Gratuitos;
-2. Landing Page da Isca;
-3. Página de Obrigado;
-4. Página Sobre;
-5. Página Contato;
-6. complementos das páginas legais;
-7. captura de e-mail;
-8. SEO final;
-9. liberação para indexação.
+1. Landing Page da Isca;
+2. Página de Obrigado;
+3. Página Sobre;
+4. Página Contato;
+5. complementos das páginas legais;
+6. captura de e-mail;
+7. SEO final;
+8. liberação para indexação.

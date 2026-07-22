@@ -8,6 +8,76 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 ## [Não publicado]
 
+## Feature 06 — Conteúdo Inicial do Cluster Matemática
+
+**Data:** 21 de julho de 2026
+
+### Resumo
+
+- Conclusão da primeira fase editorial do Cluster Matemática.
+- Publicação de sete artigos complementares ao artigo pilar.
+- Cobertura dos quatro conteúdos de operação, dois conteúdos de dor emocional e um guia de atividades para fazer em casa.
+- Conexão editorial entre os oito artigos por links internos contextuais e artigos relacionados.
+
+### Arquivos criados
+
+- `blog/matematica/eu-sei-a-resposta-mas-nao-sei-explicar-matematica/index.html`.
+- `blog/matematica/como-ensinar-soma-para-criancas/index.html`.
+- `blog/matematica/como-ensinar-subtracao-para-criancas/index.html`.
+- `blog/matematica/como-ensinar-multiplicacao-para-criancas-sem-decorar-a-tabuada/index.html`.
+- `blog/matematica/como-ensinar-divisao-para-criancas-de-forma-simples/index.html`.
+- `blog/matematica/toda-tarefa-de-matematica-vira-estresse/index.html`.
+- `blog/matematica/atividades-de-matematica-para-fazer-em-casa/index.html`.
+
+### Arquivos modificados
+
+- `blog/matematica/template-artigo.html` — referência principal do favicon padronizada para SVG.
+- `blog/matematica/como-explicar-matematica-para-criancas/index.html` — referência principal do favicon padronizada para SVG.
+- `docs/Documentacao_Projeto_Escola_de_Pais_Online.md` — status, percentuais, resumo técnico, entregáveis, validações e próximos passos atualizados.
+- `docs/Checklist_Projeto_Blog_Escola_de_Pais_Online.md` — implementação, testes, validação e conclusão da Feature 06 registrados.
+- `docs/CHANGELOG.md` — registro oficial da Feature 06 adicionado.
+
+### Melhorias implementadas
+
+- Template Oficial de Artigos reutilizado em todos os novos conteúdos sem alteração de CSS, JavaScript ou componentes globais.
+- Componente “Resumo rápido” aplicado com cinco orientações em cada artigo.
+- Conteúdos originais e complementares organizados para evitar sobreposição de intenção de busca.
+- Artigos emocionais escritos com acolhimento, redução da culpa e orientações práticas.
+- Artigos das operações estruturados para explicar o significado antes dos procedimentos escolares.
+- Guia de atividades cotidianas criado com propostas curtas e sem materiais específicos.
+- CTAs contextuais do Explicador Matemático inseridos com linguagem natural.
+- FAQ, bloco da isca, artigos relacionados e CTA final preservados no padrão oficial.
+- Favicon SVG padronizado com referências PNG, Apple Touch Icon e `site.webmanifest` preservadas.
+- `noindex, nofollow` mantido, sem canonical, Schema.org ou Open Graph definitivo.
+
+### Validações executadas
+
+- HTML semântico, hierarquia de títulos e apenas um H1 por artigo confirmados.
+- Resumo rápido, índice, conteúdo, CTAs, bloco da isca, FAQ, artigos relacionados e Footer conferidos.
+- Links internos, botões, destinos relacionados e arquivos de favicon testados.
+- Leitura validada em 390 px, 768 px e 1440 px.
+- Ausência de rolagem horizontal confirmada.
+- Console validado sem erros relacionados à implementação.
+- Ausência de placeholders de texto confirmada.
+- Header Global, Footer Global, CSS, JavaScript e componentes globais preservados.
+
+### Documentação
+
+- Fase de Conteúdo atualizada de 15% para 100%.
+- Percentual geral estimado do projeto atualizado de 63% para 78%.
+- Feature 06 e Fase de Conteúdo Inicial registradas como concluídas.
+- Próxima implementação definida como a área de Recursos Gratuitos.
+
+### Pendências intencionais
+
+- Imagens definitivas dos artigos.
+- SEO final, canonical, Open Graph e Schema.org.
+- Liberação para indexação e atualização final do sitemap.
+- Implementação da área de Recursos Gratuitos, landing page da isca e Página de Obrigado.
+- Captura de e-mail e automação.
+- Páginas institucionais restantes.
+- Estas pendências fazem parte do planejamento e não representam erros da Feature 06.
+
 ## Feature 05 — Template de Artigo e Primeiro Artigo Pilar
 
 ### Adicionado
