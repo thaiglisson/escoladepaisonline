@@ -240,7 +240,7 @@ export async function onRequestPost({ request, env }) {
   };
 
   if (data.whatsapp) {
-    attributes.SMS = data.whatsapp;
+    attributes.WHATSAPP = data.whatsapp;
   }
 
   let brevoResponse;
