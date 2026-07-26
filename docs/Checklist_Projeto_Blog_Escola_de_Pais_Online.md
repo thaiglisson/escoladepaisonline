@@ -209,6 +209,8 @@ Exemplo: `Início > Blog > Matemática > Como ensinar soma`.
 │   │   ├── artigos/
 │   │   └── iscas/
 │   └── icons/
+├── downloads/
+│   └── kit-gratuito-atividades-matematica.pdf
 ├── robots.txt
 └── sitemap.xml
 ```
@@ -295,12 +297,12 @@ flowchart TD
 
 Obrigatório:
 
+- nome;
 - e-mail.
 
 Opcional:
 
-- primeiro nome;
-- faixa etária do filho: 6–7, 8–9 ou outra.
+- WhatsApp.
 
 Não solicitar nome da criança, escola, notas ou outros dados infantis. Coletar apenas o necessário para entregar o material e segmentar o conteúdo.
 
@@ -319,30 +321,36 @@ Como o site permanece em HTML no Cloudflare Pages, usar:
 1. formulário HTML no artigo ou landing page;
 2. requisição para `/api/capturar-lead`;
 3. Cloudflare Pages Function para validar e processar a inscrição;
-4. Turnstile para proteção contra bots, com validação também no servidor;
-5. envio do contato à plataforma de e-mail por API;
+4. validação dos dados no navegador e no servidor;
+5. envio do contato à API REST do Brevo;
 6. redirecionamento para a página de obrigado;
-7. disparo do evento de conversão após resposta de sucesso.
+7. automação de entrega do material por e-mail.
 
 ### Regras de segurança
 
-- Chaves da plataforma de e-mail ficam em variáveis de ambiente, nunca no HTML, JavaScript público ou GitHub.
+- Chaves do Brevo ficam nas variáveis de ambiente `BREVO_API_KEY` e `BREVO_LIST_ID`, nunca no HTML, JavaScript público ou GitHub.
 - O sucesso só é registrado depois de a API confirmar a inscrição.
 - Validar formato do e-mail e limitar tentativas repetidas.
 - Exibir mensagens claras para erro, cadastro existente e indisponibilidade temporária.
 - Não salvar uma planilha pública com e-mails.
 
-### Alternativa inicial mais simples
+### Decisão técnica consolidada
 
-Se a plataforma de e-mail fornecer formulário incorporável confiável, ele pode ser usado na primeira versão. Migrar para a Function quando for necessário controlar melhor design, tags, eventos e mensagens de erro.
+- [x] Utilizar formulário HTML próprio da Escola de Pais Online.
+- [x] Não utilizar formulário incorporado do Brevo.
+- [x] Utilizar Cloudflare Pages Functions.
+- [x] Utilizar `fetch` nativo e a API REST do Brevo.
+- [x] Manter analytics e eventos de conversão para Feature posterior.
 
 ## 10. Plataforma de e-mail
 
-### Decisão pendente
+### Decisão concluída
 
-- [ ] Confirmar a plataforma de e-mail marketing.
-- [ ] Verificar formulário, API, automações, tags, exportação e descadastro.
-- [ ] Criar lista principal: **Leads — Escola de Pais Online**.
+- [x] Brevo confirmado como plataforma de e-mail marketing.
+- [x] Formulário próprio e API validados.
+- [x] Automação de entrega validada.
+- [x] Lista principal **Leads — Escola de Pais Online** criada e funcionando.
+- [x] Captura de e-mail e WhatsApp validada.
 
 ### Tags mínimas
 
@@ -1002,16 +1010,47 @@ Validação
 
 ### Fase 4 — Captura
 
-Status: 🟨 Em andamento — 25%
+Status: ✅ Concluída — 100%
 
 [x] Página Recursos.
 [x] Landing Kit Gratuito.
-[ ] PDF do Kit.
-[ ] Página de Obrigado.
-[ ] Integração Brevo.
-[ ] Automação de envio.
-[ ] Download do material.
-[ ] Teste completo do funil.
+[x] PDF do Kit.
+[x] Página de Obrigado.
+[x] Integração Brevo.
+[x] Automação de envio.
+[x] Download do material.
+[x] Teste completo do funil.
+
+Implementação
+
+- [x] Formulário HTML próprio implementado na Landing Page.
+- [x] Captura de nome e e-mail implementada.
+- [x] Captura opcional de WhatsApp implementada.
+- [x] Cloudflare Pages Function criada em `/api/capturar-lead`.
+- [x] Integração com a API REST do Brevo implementada.
+- [x] Variáveis de ambiente `BREVO_API_KEY` e `BREVO_LIST_ID` configuradas.
+- [x] Lista “Leads — Escola de Pais Online” integrada.
+- [x] Cadastro de novos contatos funcionando.
+- [x] Atualização de contatos existentes funcionando.
+- [x] Automação de entrega por e-mail funcionando.
+- [x] Página de Obrigado implementada em `/obrigado/atividades-de-matematica/`.
+- [x] Download imediato do Kit Gratuito funcionando.
+- [x] PDF oficial do Kit Gratuito finalizado.
+
+Testes e validação
+
+- [x] Cadastro de novo lead testado.
+- [x] Envio para o Brevo testado.
+- [x] Gravação do contato testada.
+- [x] Gravação do WhatsApp testada.
+- [x] Disparo automático do e-mail testado.
+- [x] Recebimento do e-mail confirmado.
+- [x] Botão do e-mail testado.
+- [x] Download do PDF testado.
+- [x] Página de Obrigado testada.
+- [x] Fluxo testado em janela anônima.
+- [x] Integração Cloudflare + Brevo validada em produção.
+- [x] Funil completo de geração de leads aprovado.
 
 ------------------------------------------------------------
 
@@ -1043,12 +1082,12 @@ Status: ✅ Concluída
 - [ ] Blog, categoria e artigo têm identidade visual consistente.
 - [ ] O visitante entende a proposta da Escola de Pais Online.
 - [ ] Todos os artigos têm um CTA principal definido.
-- [ ] A captura grava o contato e entrega o material.
+- [x] A captura grava o contato e entrega o material.
 - [ ] Privacidade, consentimento e descadastro estão implementados.
 - [ ] Eventos aparecem no GA4/GTM.
 - [ ] Links para página de vendas e checkout funcionam.
 - [ ] Sitemap contém as páginas indexáveis.
-- [ ] Páginas de obrigado, testes e arquivos internos não são indexados indevidamente.
+- [x] Páginas de obrigado, testes e arquivos internos não são indexados indevidamente.
 - [ ] O fluxo completo foi testado em uma janela anônima e em um celular real.
 
 ## 20. Referências técnicas
@@ -1060,21 +1099,56 @@ Status: ✅ Concluída
 
 ---
 
-## Próxima ação definida
+## Próximas ações definidas
 
-Produzir o PDF do Kit Gratuito e implementar a Página de Obrigado.
+### Etapa 1 — Finalização Visual
 
-Objetivo:
+- [ ] Implementar as imagens definitivas dos artigos.
+- [ ] Implementar as imagens Open Graph.
+- [ ] Implementar as imagens definitivas das páginas.
+- [ ] Revisar os banners.
+- [ ] Executar a revisão visual geral.
 
-Concluir o material de entrega e preparar a etapa posterior ao cadastro antes da integração com a plataforma de e-mail.
+### Etapa 2 — SEO Final
 
-Sequência posterior:
+- [ ] Revisar Title.
+- [ ] Revisar Meta Description.
+- [ ] Revisar Canonical.
+- [ ] Revisar Open Graph.
+- [ ] Revisar Twitter Cards.
+- [ ] Implementar e revisar Schema.org.
+- [ ] Revisar Sitemap.
+- [ ] Revisar Robots.
+- [ ] Revisar Search Console.
 
-1. PDF do Kit;
-2. Página de Obrigado;
-3. Integração Brevo;
-4. Automação de envio;
-5. Download do material;
-6. Teste completo do funil;
-7. SEO final;
-8. Liberação para indexação.
+### Etapa 3 — Homologação
+
+- [ ] Validar todos os links.
+- [ ] Validar o formulário.
+- [ ] Validar o e-mail.
+- [ ] Validar o download.
+- [ ] Validar a responsividade.
+- [ ] Validar Analytics.
+- [ ] Validar GTM.
+- [ ] Validar Pixel.
+- [ ] Validar PageSpeed.
+- [ ] Validar favicon.
+- [ ] Validar sitemap.
+- [ ] Validar robots.
+- [ ] Validar páginas institucionais.
+
+### Etapa 4 — Publicação Oficial
+
+- [ ] Remover `noindex` das páginas públicas após aprovação.
+- [ ] Solicitar indexação no Search Console.
+- [ ] Publicar oficialmente o Blog.
+- [ ] Iniciar o acompanhamento do SEO.
+
+### Etapa 5 — Crescimento
+
+- [ ] Produzir novos artigos.
+- [ ] Criar novas iscas digitais.
+- [ ] Expandir clusters.
+- [ ] Acompanhar o Search Console.
+- [ ] Otimizar a conversão.
+- [ ] Iniciar o crescimento orgânico.

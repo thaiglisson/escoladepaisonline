@@ -8,6 +8,77 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 ## [Não publicado]
 
+## Captura de Leads e Funil do Kit Gratuito
+
+**Data:** 26 de julho de 2026
+
+### Resumo
+
+- Conclusão do PDF oficial do Kit Gratuito de Atividades de Matemática.
+- Conclusão da Página de Obrigado.
+- Integração completa com o Brevo pela API REST.
+- Cloudflare Pages Function implementada para processar a captura.
+- Captura de nome, e-mail e WhatsApp funcionando.
+- Lista “Leads — Escola de Pais Online” recebendo e atualizando contatos.
+- Automação de entrega do material por e-mail funcionando.
+- Download automático do material e acesso imediato ao Kit Gratuito funcionando.
+- Funil completo de captura validado em produção.
+- Documentação oficial atualizada para registrar a conclusão da Fase de Captura.
+
+### Adicionado
+
+- PDF oficial em `downloads/kit-gratuito-atividades-matematica.pdf`.
+- Página de Obrigado em `/obrigado/atividades-de-matematica/`.
+- Formulário próprio de captura na Landing Page do Kit Gratuito.
+- Cloudflare Pages Function em `functions/api/capturar-lead.js`.
+- JavaScript de captura, estados do formulário e redirecionamento em `assets/js/captura.js`.
+- Integração com as variáveis de ambiente `BREVO_API_KEY` e `BREVO_LIST_ID`.
+- Captura opcional de WhatsApp no atributo padrão do Brevo.
+- Redirecionamento automático para a Página de Obrigado após o cadastro.
+- Download direto do material na Página de Obrigado.
+
+### Implementado
+
+- Criação de novos contatos no Brevo.
+- Atualização de contatos já existentes sem erro para o visitante.
+- Inclusão dos contatos na lista “Leads — Escola de Pais Online”.
+- Tratamento de validações, falhas de conexão, indisponibilidade e limite de requisições.
+- Mensagens amigáveis de sucesso e erro no formulário.
+- Automação de e-mail para entrega do Kit Gratuito.
+- Botão de acesso ao material no e-mail.
+- Fluxo completo Cloudflare Pages + Brevo + Página de Obrigado + download.
+
+### Validações executadas
+
+- Cadastro de novo lead.
+- Envio dos dados para o Brevo.
+- Gravação do contato.
+- Gravação do WhatsApp.
+- Disparo automático do e-mail.
+- Recebimento do e-mail.
+- Funcionamento do botão do e-mail.
+- Download do PDF.
+- Funcionamento da Página de Obrigado.
+- Testes em janela anônima.
+- Integração Cloudflare + Brevo validada em produção.
+
+### Documentação
+
+- Fase de Captura atualizada para 100% e registrada como concluída.
+- Fase do Blog atualizada para 90%.
+- Percentual geral estimado do projeto atualizado de 79% para 84%.
+- Infraestrutura técnica principal registrada como concluída.
+- Roadmap atualizado com PDF, Página de Obrigado, Brevo, automação, download e teste completo do funil concluídos.
+- Próximas etapas redefinidas como Finalização Visual, SEO Final, Homologação, Publicação Oficial e Crescimento.
+
+### Próximas etapas
+
+- Finalização visual e implementação das imagens definitivas.
+- SEO final e preparação para indexação.
+- Homologação completa do projeto.
+- Publicação oficial do Blog.
+- Crescimento editorial, orgânico e de conversão.
+
 ## Features 08 e 09 — Recursos Gratuitos e Landing Kit Gratuito
 
 **Data:** 25 de julho de 2026

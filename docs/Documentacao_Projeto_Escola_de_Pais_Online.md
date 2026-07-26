@@ -158,6 +158,8 @@ GitHub → Cloudflare Pages (automático)
 │   │   ├── artigos/
 │   │   └── iscas/
 │   └── icons/
+├── downloads/
+│   └── kit-gratuito-atividades-matematica.pdf
 ├── explicador-matematico/
 ├── robots.txt
 ├── sitemap.xml
@@ -186,6 +188,8 @@ GitHub → Cloudflare Pages (automático)
 ## Marketing
 - Meta Pixel
 - Meta Conversions API (via Kiwify)
+- Brevo
+- Cloudflare Pages Functions para captura de leads
 
 ## Checkout
 - Kiwify
@@ -533,10 +537,10 @@ Fluxo:
 ```mermaid
 flowchart TD
     A[Artigo ou landing page] --> B[Formulário]
-    B --> C[Validação e Turnstile]
+    B --> C[Validação no navegador e no servidor]
     C --> D[Pages Function]
-    D --> E[Plataforma de e-mail]
-    E --> F[Tags e automação]
+    D --> E[API REST do Brevo]
+    E --> F[Lista e automação]
     F --> G[Página de obrigado]
     G --> H[Entrega da isca]
     H --> I[Relacionamento]
@@ -545,9 +549,9 @@ flowchart TD
 
 Campos:
 
+- nome obrigatório;
 - e-mail obrigatório;
-- primeiro nome opcional;
-- faixa etária 6–7, 8–9 ou outra, opcional.
+- WhatsApp opcional.
 
 Não coletar nome da criança, escola, notas ou dados infantis desnecessários.
 
@@ -559,13 +563,20 @@ Texto de consentimento:
 
 1. O formulário HTML envia para `/api/capturar-lead`.
 2. Uma Cloudflare Pages Function valida os dados.
-3. O token do Turnstile é validado no servidor.
-4. A Function envia o contato à plataforma de e-mail por API.
-5. As chaves ficam em variáveis de ambiente, nunca no código público.
-6. O evento `generate_lead` dispara apenas após confirmação.
-7. O visitante segue para a página de obrigado.
+3. A Function normaliza e valida nome, e-mail e WhatsApp.
+4. A Function envia o contato à API REST do Brevo.
+5. Contatos novos são criados e contatos existentes são atualizados.
+6. O contato é adicionado à lista configurada.
+7. As chaves ficam em `BREVO_API_KEY` e `BREVO_LIST_ID`, nunca no código público.
+8. A automação do Brevo envia o material por e-mail.
+9. Após a confirmação, o visitante segue para a Página de Obrigado.
 
-Como primeira versão, é aceitável usar um formulário incorporável da plataforma de e-mail. A Function entra quando houver necessidade de controlar design, tags, eventos e mensagens.
+Decisão consolidada:
+
+- utilizar formulário HTML próprio da Escola de Pais Online;
+- não utilizar formulário incorporado do Brevo;
+- utilizar Cloudflare Pages Functions e `fetch` nativo;
+- manter analytics e eventos de conversão em Feature específica posterior.
 
 ### Lista e segmentação
 
@@ -1051,7 +1062,7 @@ Resumo técnico do Footer:
 ---
 
 ### Fase 3 — Blog
-🟨 Em andamento
+🟨 Em andamento — 90%
 
 Concluído:
 
@@ -1064,6 +1075,18 @@ Concluído:
 - Feature 06 — Conteúdo Inicial do Cluster Matemática, composta pelas Features 06A a 06G;
 - Feature 08 — Página de Recursos Gratuitos em `/recursos/`;
 - Feature 09 — Landing Page do Kit Gratuito de Atividades de Matemática em `/recursos/atividades-de-matematica/`;
+- PDF oficial do Kit Gratuito de Atividades de Matemática;
+- Página de Obrigado em `/obrigado/atividades-de-matematica/`;
+- formulário próprio de captura implementado na Landing Page;
+- integração completa com Brevo pela API REST;
+- Cloudflare Pages Function implementada em `/api/capturar-lead`;
+- variáveis de ambiente `BREVO_API_KEY` e `BREVO_LIST_ID` configuradas;
+- lista “Leads — Escola de Pais Online” integrada e funcionando;
+- captura de nome, e-mail e WhatsApp funcionando;
+- atualização de contatos existentes no Brevo funcionando;
+- automação de entrega do Kit por e-mail funcionando;
+- download direto do PDF funcionando;
+- fluxo completo de captura validado em produção;
 - estrutura HTML semântica da página `/blog/`;
 - planejamento editorial da Home do Blog;
 - Hero e CTA principal definitivos;
@@ -1091,27 +1114,45 @@ Concluído:
 - Central de Recursos criada para reunir os materiais gratuitos disponíveis;
 - Kit Gratuito de Atividades de Matemática apresentado como primeiro recurso da biblioteca;
 - Landing Page do Kit Gratuito criada com Hero, benefícios, cards das quatro operações, orientações de uso e CTA do produto;
-- estrutura visual preparada para a futura captura de e-mail, sem formulário funcional;
+- formulário funcional integrado ao Brevo implementado na Landing Page;
 - Header Global e Footer Global reutilizados sem alterações;
 - Design System, responsividade, acessibilidade e padrões de SEO preservados.
 
 Situação atual da captura:
 
-- a integração com Brevo ainda não foi implementada;
-- a Página de Obrigado ainda não foi criada;
-- o PDF do Kit ainda não está disponível;
-- o download do material ainda não foi implementado;
-- a automação de envio e o teste completo do funil permanecem pendentes.
+- Captura de Leads concluída;
+- integração Cloudflare Pages Functions + Brevo validada;
+- cadastro de novos leads e atualização de contatos existentes funcionando;
+- e-mail e WhatsApp gravados corretamente no Brevo;
+- lista “Leads — Escola de Pais Online” recebendo os contatos;
+- automação de e-mail disparando após o cadastro;
+- e-mail de entrega recebido e botão de acesso validado;
+- Página de Obrigado e download do PDF funcionando;
+- fluxo completo testado em produção e em janela anônima.
+
+Com a conclusão desta etapa, a infraestrutura técnica principal do projeto e o funil de geração de leads estão operacionais.
+
+Validações executadas:
+
+- cadastro de novo lead;
+- envio dos dados para o Brevo;
+- gravação do contato;
+- gravação do WhatsApp;
+- disparo automático do e-mail;
+- recebimento do e-mail;
+- funcionamento do botão do e-mail;
+- download do PDF;
+- funcionamento da Página de Obrigado;
+- testes em janela anônima;
+- integração Cloudflare + Brevo.
 
 Próximas implementações:
 
-- PDF do Kit Gratuito;
-- Página de Obrigado;
-- integração com Brevo e captura de e-mail;
-- automação de envio;
-- download do material;
-- teste completo do funil;
-- SEO final e liberação para indexação.
+- finalização visual do projeto;
+- SEO final;
+- homologação completa;
+- publicação oficial do Blog;
+- crescimento editorial e orgânico.
 
 ---
 
@@ -1167,11 +1208,15 @@ Validações executadas:
 
 Previsto:
 
-- Search Console
-- SEO
-- Testes de CTA
-- Crescimento dos clusters
-- Novas iscas digitais
+- implementação das imagens definitivas;
+- revisão visual geral;
+- SEO final e preparação para indexação;
+- homologação do site;
+- publicação oficial do Blog;
+- acompanhamento do Search Console;
+- testes de CTA;
+- crescimento dos clusters;
+- novas iscas digitais.
 
 ---
 
@@ -1191,9 +1236,13 @@ Fase 2 — Componentes
 
 Fase 3 — Blog
 
-███████████████░░░░░ 75%
+██████████████████░░ 90%
 
 Fase 4 — Conteúdo
+
+████████████████████ 100%
+
+Subetapa operacional — Captura de Leads
 
 ████████████████████ 100%
 
@@ -1201,24 +1250,70 @@ Fase 5 — Otimização
 
 ░░░░░░░░░░░░░░░░░░░░ 0%
 
-Conclusão geral estimada do projeto: **79%**.
+Conclusão geral estimada do projeto: **84%**.
 
 ---
 
-## Próxima Implementação
+## Próximas Etapas Oficiais
 
-Produção do PDF do Kit Gratuito e implementação da Página de Obrigado.
+### Etapa 1 — Finalização Visual
 
-Objetivo:
+Implementar as imagens definitivas do projeto:
 
-Concluir o material que será entregue, preparar a confirmação do cadastro e avançar para a integração da captura de e-mail.
+- imagens dos artigos;
+- imagens Open Graph;
+- imagens das páginas;
+- revisão dos banners;
+- revisão visual geral.
 
-Na sequência:
+### Etapa 2 — SEO Final
 
-1. PDF do Kit Gratuito;
-2. Página de Obrigado;
-3. integração com Brevo;
-4. automação de envio;
-5. download do material;
-6. teste completo do funil;
-7. SEO final e liberação para indexação.
+Preparar o site para indexação:
+
+- revisão de Title;
+- Meta Description;
+- Canonical;
+- Open Graph;
+- Twitter Cards;
+- Schema.org;
+- Sitemap;
+- Robots;
+- revisão do Search Console.
+
+### Etapa 3 — Homologação
+
+Executar o checklist completo de publicação e validar:
+
+- links;
+- formulário;
+- e-mail;
+- download;
+- responsividade;
+- Analytics;
+- GTM;
+- Pixel;
+- PageSpeed;
+- favicon;
+- sitemap;
+- robots;
+- páginas institucionais.
+
+### Etapa 4 — Publicação Oficial
+
+Após a aprovação da homologação:
+
+- remover `noindex` das páginas públicas;
+- solicitar indexação no Search Console;
+- publicar oficialmente o Blog;
+- iniciar o acompanhamento do SEO.
+
+### Etapa 5 — Crescimento
+
+Após a publicação:
+
+- produzir novos artigos;
+- criar novas iscas digitais;
+- expandir clusters;
+- acompanhar o Search Console;
+- otimizar a conversão;
+- iniciar o crescimento orgânico.
