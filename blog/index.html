@@ -8,13 +8,56 @@
     <meta name="author" content="Escola de Pais Online">
     <meta name="robots" content="noindex, nofollow">
 
-    <!-- SEO provisório -->
-    <title>Blog | Escola de Pais Online</title>
+    <!-- SEO -->
+    <title>Blog de Matemática para Pais | Escola de Pais Online</title>
     <meta
       name="description"
-      content="Página inicial provisória do blog da Escola de Pais Online."
+      content="Orientações práticas para ajudar pais a explicar matemática para crianças de 6 a 9 anos com clareza, tranquilidade e exemplos simples."
     >
     <link rel="canonical" href="https://escoladepaisonline.com.br/blog/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Escola de Pais Online">
+    <meta
+      property="og:title"
+      content="Blog de Matemática para Pais | Escola de Pais Online"
+    >
+    <meta
+      property="og:description"
+      content="Aprenda a ensinar matemática para seu filho com explicações simples, atividades práticas e orientações para a tarefa de casa."
+    >
+    <meta property="og:url" content="https://escoladepaisonline.com.br/blog/">
+    <meta
+      property="og:image"
+      content="https://escoladepaisonline.com.br/assets/images/logo-quadrada.png"
+    >
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="900">
+    <meta
+      property="og:image:alt"
+      content="Logotipo da Escola de Pais Online."
+    >
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta
+      name="twitter:title"
+      content="Blog de Matemática para Pais | Escola de Pais Online"
+    >
+    <meta
+      name="twitter:description"
+      content="Aprenda a ensinar matemática para seu filho com explicações simples, atividades práticas e orientações para a tarefa de casa."
+    >
+    <meta
+      name="twitter:image"
+      content="https://escoladepaisonline.com.br/assets/images/logo-quadrada.png"
+    >
+    <meta
+      name="twitter:image:alt"
+      content="Logotipo da Escola de Pais Online."
+    >
 
     <!-- Favicons -->
     <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
@@ -116,60 +159,38 @@
           <div class="container blog-hero__inner">
             <p class="blog-hero__eyebrow">Blog Escola de Pais Online</p>
             <h1 class="blog-hero__title">
-              Ajude seu filho a entender matemática sem transformar a tarefa em
-              estresse
+              Ajude seu filho nas tarefas de matemática
             </h1>
             <p class="blog-hero__description">
-              Encontre orientações práticas para ensinar as operações básicas,
-              acompanhar a tarefa de casa e ajudar a criança a entender cada etapa
-              sem simplesmente entregar a resposta.
+              Encontre explicações simples, orientações para ensinar em casa e
+              atividades gratuitas para imprimir.
             </p>
-            <a class="button blog-hero__cta" href="/blog/matematica/">
-              Aprender a explicar Matemática
+            <a
+              class="button blog-hero__cta"
+              href="/recursos/atividades-de-matematica/"
+            >
+              Receber atividades gratuitas
             </a>
-          </div>
-        </section>
-
-        <!-- Barra de Pesquisa -->
-        <section class="blog-search" aria-label="Pesquisa de artigos">
-          <div class="container blog-search__inner">
-            <form class="blog-search__form" role="search">
-              <label class="visually-hidden" for="busca-blog">
-                Buscar no blog
-              </label>
-              <input
-                class="blog-search__input"
-                id="busca-blog"
-                name="busca"
-                type="search"
-                placeholder="Buscar artigos de matemática..."
-              >
-              <button class="button blog-search__button" type="button">
-                Buscar
-              </button>
-            </form>
-            <p class="blog-search__helper">
-              A pesquisa será disponibilizada à medida que novos conteúdos forem
-              publicados.
-            </p>
           </div>
         </section>
 
         <!-- Artigo em Destaque -->
         <section class="featured-article">
           <div class="container featured-article__inner">
-            <h2 class="featured-article__heading">Artigo em Destaque</h2>
+            <h2 class="featured-article__heading">Artigo em destaque</h2>
 
             <article class="featured-card">
-              <picture class="featured-card__picture">
-                <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
-                <img
-                  class="featured-card__image"
-                  width="1200"
-                  height="675"
-                  alt="Responsável explica uma atividade de matemática para uma criança usando objetos sobre a mesa."
-                >
-              </picture>
+              <div
+                class="featured-card__picture article-visual"
+                role="img"
+                aria-label="Representação de uma explicação de matemática organizada em etapas simples."
+              >
+                <span class="article-visual__sheet" aria-hidden="true">
+                  <span>2 + 3 = 5</span>
+                  <span class="article-visual__line"></span>
+                  <span class="article-visual__objects">● ● &nbsp; + &nbsp; ● ● ●</span>
+                </span>
+              </div>
               <div class="featured-card__content">
                 <p class="featured-card__category">Matemática</p>
                 <h3 class="featured-card__title">
@@ -191,38 +212,24 @@
           </div>
         </section>
 
-        <!-- Categoria Matemática -->
-        <section class="category-highlight">
-          <div class="container category-highlight__inner">
-            <h2 class="category-highlight__title">Categoria Matemática</h2>
-            <p class="category-highlight__description">
-              Conteúdos para ajudar pais e responsáveis a explicar soma, subtração,
-              multiplicação e divisão, acompanhar a tarefa de casa e compreender onde
-              a criança está encontrando dificuldade.
-            </p>
-            <a class="button category-highlight__link" href="/blog/matematica/">
-              Explorar a categoria Matemática
-            </a>
-          </div>
-        </section>
-
         <!-- Artigos Recentes -->
         <section class="recent-articles">
           <div class="container recent-articles__inner">
-            <h2 class="recent-articles__heading">Artigos Recentes</h2>
+            <h2 class="recent-articles__heading">Artigos recentes</h2>
 
             <div class="recent-articles__grid">
               <article class="article-card">
-                <picture class="article-card__picture">
-                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
-                  <img
-                    class="article-card__image"
-                    width="800"
-                    height="450"
-                    alt="Responsável procura uma forma de explicar a conta mostrada no caderno da criança."
-                    loading="lazy"
-                  >
-                </picture>
+                <div
+                  class="article-card__picture article-visual"
+                  role="img"
+                  aria-label="Conta de matemática acompanhada por um ponto de interrogação."
+                >
+                  <span class="article-visual__sheet" aria-hidden="true">
+                    <span>8 − 3 = ?</span>
+                    <span class="article-visual__line"></span>
+                    <span class="article-visual__objects">Como explicar?</span>
+                  </span>
+                </div>
                 <div class="article-card__content">
                   <p class="article-card__category">Matemática</p>
                   <h3 class="article-card__title">
@@ -243,16 +250,17 @@
               </article>
 
               <article class="article-card">
-                <picture class="article-card__picture">
-                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
-                  <img
-                    class="article-card__image"
-                    width="800"
-                    height="450"
-                    alt="Adulto e criança juntam dois grupos de objetos para representar uma soma."
-                    loading="lazy"
-                  >
-                </picture>
+                <div
+                  class="article-card__picture article-visual"
+                  role="img"
+                  aria-label="Dois grupos de objetos sendo reunidos para representar uma soma."
+                >
+                  <span class="article-visual__sheet" aria-hidden="true">
+                    <span>3 + 2 = 5</span>
+                    <span class="article-visual__line"></span>
+                    <span class="article-visual__objects">● ● ● &nbsp; + &nbsp; ● ●</span>
+                  </span>
+                </div>
                 <div class="article-card__content">
                   <p class="article-card__category">Matemática</p>
                   <h3 class="article-card__title">
@@ -272,16 +280,17 @@
               </article>
 
               <article class="article-card">
-                <picture class="article-card__picture">
-                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
-                  <img
-                    class="article-card__image"
-                    width="800"
-                    height="450"
-                    alt="Criança retira objetos de um grupo para compreender uma subtração."
-                    loading="lazy"
-                  >
-                </picture>
+                <div
+                  class="article-card__picture article-visual"
+                  role="img"
+                  aria-label="Objetos sendo retirados de um grupo para representar uma subtração."
+                >
+                  <span class="article-visual__sheet" aria-hidden="true">
+                    <span>5 − 2 = 3</span>
+                    <span class="article-visual__line"></span>
+                    <span class="article-visual__objects">● ● ● <s>● ●</s></span>
+                  </span>
+                </div>
                 <div class="article-card__content">
                   <p class="article-card__category">Matemática</p>
                   <h3 class="article-card__title">
@@ -301,16 +310,17 @@
               </article>
 
               <article class="article-card">
-                <picture class="article-card__picture">
-                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
-                  <img
-                    class="article-card__image"
-                    width="800"
-                    height="450"
-                    alt="Adulto e criança organizam objetos em grupos iguais para entender a multiplicação."
-                    loading="lazy"
-                  >
-                </picture>
+                <div
+                  class="article-card__picture article-visual"
+                  role="img"
+                  aria-label="Objetos organizados em grupos iguais para representar uma multiplicação."
+                >
+                  <span class="article-visual__sheet" aria-hidden="true">
+                    <span>3 × 2 = 6</span>
+                    <span class="article-visual__line"></span>
+                    <span class="article-visual__objects">● ● &nbsp; ● ● &nbsp; ● ●</span>
+                  </span>
+                </div>
                 <div class="article-card__content">
                   <p class="article-card__category">Matemática</p>
                   <h3 class="article-card__title">
@@ -323,7 +333,7 @@
                   </p>
                   <a
                     class="button article-card__link"
-                    href="/blog/matematica/como-ensinar-multiplicacao-sem-decoracao/"
+                    href="/blog/matematica/como-ensinar-multiplicacao-para-criancas-sem-decorar-a-tabuada/"
                   >
                     Ler artigo
                   </a>
@@ -331,16 +341,17 @@
               </article>
 
               <article class="article-card">
-                <picture class="article-card__picture">
-                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
-                  <img
-                    class="article-card__image"
-                    width="800"
-                    height="450"
-                    alt="Adulto e criança repartem objetos igualmente entre pequenos grupos para representar uma divisão."
-                    loading="lazy"
-                  >
-                </picture>
+                <div
+                  class="article-card__picture article-visual"
+                  role="img"
+                  aria-label="Objetos repartidos igualmente entre grupos para representar uma divisão."
+                >
+                  <span class="article-visual__sheet" aria-hidden="true">
+                    <span>6 ÷ 2 = 3</span>
+                    <span class="article-visual__line"></span>
+                    <span class="article-visual__objects">● ● ● &nbsp; | &nbsp; ● ● ●</span>
+                  </span>
+                </div>
                 <div class="article-card__content">
                   <p class="article-card__category">Matemática</p>
                   <h3 class="article-card__title">
@@ -352,7 +363,7 @@
                   </p>
                   <a
                     class="button article-card__link"
-                    href="/blog/matematica/como-ensinar-divisao-de-forma-simples/"
+                    href="/blog/matematica/como-ensinar-divisao-para-criancas-de-forma-simples/"
                   >
                     Ler artigo
                   </a>
@@ -360,16 +371,17 @@
               </article>
 
               <article class="article-card">
-                <picture class="article-card__picture">
-                  <!-- Feature 03B: substituir pelo arquivo definitivo da imagem do artigo -->
-                  <img
-                    class="article-card__image"
-                    width="800"
-                    height="450"
-                    alt="Responsável e criança fazem uma pausa tranquila durante uma tarefa de matemática."
-                    loading="lazy"
-                  >
-                </picture>
+                <div
+                  class="article-card__picture article-visual"
+                  role="img"
+                  aria-label="Atividade de matemática em pausa para recomeçar com tranquilidade."
+                >
+                  <span class="article-visual__sheet" aria-hidden="true">
+                    <span>Pare. Respire.</span>
+                    <span class="article-visual__line"></span>
+                    <span class="article-visual__objects">Uma etapa por vez.</span>
+                  </span>
+                </div>
                 <div class="article-card__content">
                   <p class="article-card__category">Matemática</p>
                   <h3 class="article-card__title">
@@ -388,6 +400,27 @@
                 </div>
               </article>
             </div>
+          </div>
+        </section>
+
+        <!-- Isca digital -->
+        <section class="lead-magnet" aria-labelledby="titulo-kit-gratuito">
+          <div class="container lead-magnet__inner">
+            <p class="section-eyebrow">Recurso gratuito</p>
+            <h2 class="lead-magnet__title" id="titulo-kit-gratuito">
+              Kit Gratuito de Atividades de Matemática
+            </h2>
+            <p class="lead-magnet__description">
+              Pratique soma, subtração, multiplicação e divisão com propostas
+              simples para fazer em casa, sem transformar a atividade em uma
+              prova.
+            </p>
+            <a
+              class="button lead-magnet__button"
+              href="/recursos/atividades-de-matematica/"
+            >
+              Receber as atividades por e-mail
+            </a>
           </div>
         </section>
 

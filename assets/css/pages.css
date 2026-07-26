@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Escola de Pais Online — Páginas institucionais
+   Estilos específicos para páginas de propósito, confiança e informação.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Hero institucional
+   -------------------------------------------------------------------------- */
+
+.institutional-hero {
+  padding-block: clamp(var(--space-12), 7vw, var(--space-16));
+  background-color: var(--color-primary-light);
+}
+
+.institutional-hero__inner {
+  max-width: var(--container-hero-width);
+  text-align: center;
+}
+
+.institutional-hero__title {
+  margin-bottom: var(--space-5);
+}
+
+.institutional-hero__description {
+  max-width: var(--container-reading-width);
+  margin: 0 auto;
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+/* --------------------------------------------------------------------------
+   2. Conteúdo institucional
+   -------------------------------------------------------------------------- */
+
+.institutional-section {
+  padding-block: clamp(var(--space-10), 6vw, var(--space-16));
+}
+
+.institutional-section--surface {
+  background-color: var(--color-surface);
+}
+
+.institutional-section h2 {
+  margin-bottom: var(--space-5);
+}
+
+.institutional-section p:last-child {
+  margin-bottom: 0;
+}
+
+.institutional-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+/* --------------------------------------------------------------------------
+   3. CTA final
+   -------------------------------------------------------------------------- */
+
+.institutional-cta {
+  padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+}
+
+.institutional-cta__inner {
+  max-width: var(--container-hero-width);
+}
+
+.institutional-cta__description {
+  max-width: var(--container-reading-width);
+  margin: 0 auto var(--space-8);
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}

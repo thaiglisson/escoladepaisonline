@@ -1,0 +1,257 @@
+/* ==========================================================================
+   Escola de Pais Online — Recursos gratuitos
+   Estilos exclusivos da central de materiais e das etapas de uso.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Hero
+   -------------------------------------------------------------------------- */
+
+.resources-page__breadcrumb {
+  margin-bottom: var(--space-8);
+  text-align: left;
+}
+
+/* --------------------------------------------------------------------------
+   2. Recurso em destaque
+   -------------------------------------------------------------------------- */
+
+.resource-feature {
+  padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+  background-color: var(--color-surface);
+}
+
+.resource-card {
+  max-width: var(--container-hero-width);
+  min-width: 0;
+  margin-inline: auto;
+  padding: clamp(var(--space-6), 6vw, var(--space-12));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.resource-card h2 {
+  margin-bottom: var(--space-4);
+}
+
+.resource-card__description {
+  max-width: var(--container-reading-width);
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.resource-card__contents {
+  margin-block: var(--space-6);
+}
+
+.resource-card__note {
+  max-width: var(--container-reading-width);
+  margin-bottom: var(--space-8);
+}
+
+.resource-card__button {
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   3. Etapas de uso
+   -------------------------------------------------------------------------- */
+
+.usage-steps__heading {
+  max-width: var(--container-reading-width);
+  margin: 0 auto var(--space-8);
+}
+
+.usage-steps__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--grid-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: usage-step;
+}
+
+.usage-step {
+  min-width: 0;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-sm);
+  counter-increment: usage-step;
+}
+
+.usage-step::before {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: var(--space-4);
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  content: counter(usage-step);
+  font-weight: var(--font-weight-bold);
+}
+
+.usage-step h3 {
+  margin-bottom: var(--space-3);
+}
+
+.usage-step p {
+  margin-bottom: 0;
+  color: var(--color-text-light);
+}
+
+/* --------------------------------------------------------------------------
+   4. Próximos recursos
+   -------------------------------------------------------------------------- */
+
+.future-resources {
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   5. Adaptações progressivas
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 48rem) {
+  .resource-card__button {
+    width: auto;
+  }
+}
+
+@media (min-width: 64rem) {
+  .usage-steps__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================================================
+   Landing page — Kit Gratuito de Atividades de Matemática
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   6. Hero e benefícios
+   -------------------------------------------------------------------------- */
+
+.resource-landing-hero__benefits {
+  display: grid;
+  max-width: var(--container-reading-width);
+  gap: var(--space-3);
+  margin: var(--space-6) auto var(--space-8);
+  padding-left: var(--space-6);
+  color: var(--color-text);
+  text-align: left;
+}
+
+.resource-landing-hero__benefits li::marker {
+  color: var(--color-primary);
+}
+
+.resource-landing-hero__button {
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   7. Cards das operações
+   -------------------------------------------------------------------------- */
+
+.resource-section-heading {
+  max-width: var(--container-reading-width);
+  margin: 0 auto var(--space-8);
+}
+
+.operation-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--grid-gap);
+}
+
+.operation-card {
+  min-width: 0;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-sm);
+}
+
+.operation-card h3 {
+  margin-bottom: var(--space-3);
+}
+
+.operation-card p {
+  margin-bottom: 0;
+  color: var(--color-text-light);
+}
+
+/* --------------------------------------------------------------------------
+   8. Placeholder da futura captura
+   -------------------------------------------------------------------------- */
+
+.capture-placeholder-section {
+  padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+  background-color: var(--color-primary-light);
+  scroll-margin-top: calc(var(--header-height) + var(--space-4));
+}
+
+.capture-placeholder-section__inner {
+  max-width: var(--container-hero-width);
+  text-align: center;
+}
+
+.capture-placeholder-section__description {
+  max-width: var(--container-reading-width);
+  margin: 0 auto var(--space-8);
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.capture-placeholder {
+  max-width: var(--container-reading-width);
+  margin: 0 auto var(--space-6);
+  padding: clamp(var(--space-6), 5vw, var(--space-8));
+  border: 1px dashed var(--color-primary);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-background);
+}
+
+.capture-placeholder p {
+  margin-bottom: 0;
+  color: var(--color-heading);
+  font-weight: var(--font-weight-semibold);
+}
+
+.capture-placeholder-section__privacy {
+  max-width: var(--container-reading-width);
+  margin: 0 auto;
+  color: var(--color-text-light);
+  font-size: var(--font-size-sm);
+}
+
+/* --------------------------------------------------------------------------
+   9. Adaptações da landing page
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 48rem) {
+  .resource-landing-hero__benefits,
+  .operation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .resource-landing-hero__button {
+    width: auto;
+  }
+}
+
+@media (min-width: 64rem) {
+  .usage-steps__grid--four {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
