@@ -1062,6 +1062,8 @@ Concluído:
 - Feature 05A — Estrutura do Template de Artigo;
 - Feature 05B — Conteúdo do Primeiro Artigo Pilar;
 - Feature 06 — Conteúdo Inicial do Cluster Matemática, composta pelas Features 06A a 06G;
+- Feature 08 — Página de Recursos Gratuitos em `/recursos/`;
+- Feature 09 — Landing Page do Kit Gratuito de Atividades de Matemática em `/recursos/atividades-de-matematica/`;
 - estrutura HTML semântica da página `/blog/`;
 - planejamento editorial da Home do Blog;
 - Hero e CTA principal definitivos;
@@ -1085,17 +1087,30 @@ Concluído:
 - links internos contextuais implementados entre o artigo pilar, os artigos emocionais e os conteúdos específicos das quatro operações;
 - estrutura editorial definitiva com breadcrumb, cabeçalho editorial, imagem principal preparada, introdução, índice opcional, conteúdo semântico, CTA contextual, bloco da isca, FAQ, artigos relacionados e CTA final;
 - componente “Resumo rápido” incorporado ao Template de Artigo e ao primeiro artigo pilar;
-- Template de Artigo reutilizável e obrigatório para todas as próximas publicações do blog.
+- Template de Artigo reutilizável e obrigatório para todas as próximas publicações do blog;
+- Central de Recursos criada para reunir os materiais gratuitos disponíveis;
+- Kit Gratuito de Atividades de Matemática apresentado como primeiro recurso da biblioteca;
+- Landing Page do Kit Gratuito criada com Hero, benefícios, cards das quatro operações, orientações de uso e CTA do produto;
+- estrutura visual preparada para a futura captura de e-mail, sem formulário funcional;
+- Header Global e Footer Global reutilizados sem alterações;
+- Design System, responsividade, acessibilidade e padrões de SEO preservados.
+
+Situação atual da captura:
+
+- a integração com Brevo ainda não foi implementada;
+- a Página de Obrigado ainda não foi criada;
+- o PDF do Kit ainda não está disponível;
+- o download do material ainda não foi implementado;
+- a automação de envio e o teste completo do funil permanecem pendentes.
 
 Próximas implementações:
 
-- Recursos Gratuitos;
-- Landing Page da Isca;
+- PDF do Kit Gratuito;
 - Página de Obrigado;
-- Página Sobre;
-- Página Contato;
-- complementos das páginas legais;
-- captura de e-mail;
+- integração com Brevo e captura de e-mail;
+- automação de envio;
+- download do material;
+- teste completo do funil;
 - SEO final e liberação para indexação.
 
 ---
@@ -1176,7 +1191,7 @@ Fase 2 — Componentes
 
 Fase 3 — Blog
 
-█████████████░░░░░░░ 65%
+███████████████░░░░░ 75%
 
 Fase 4 — Conteúdo
 
@@ -1186,24 +1201,24 @@ Fase 5 — Otimização
 
 ░░░░░░░░░░░░░░░░░░░░ 0%
 
-Conclusão geral estimada do projeto: **78%**.
+Conclusão geral estimada do projeto: **79%**.
 
 ---
 
 ## Próxima Implementação
 
-Implementação da área de Recursos Gratuitos.
+Produção do PDF do Kit Gratuito e implementação da Página de Obrigado.
 
 Objetivo:
 
-Preparar a estrutura inicial dos recursos gratuitos e avançar para a implementação da isca digital de atividades de matemática.
+Concluir o material que será entregue, preparar a confirmação do cadastro e avançar para a integração da captura de e-mail.
 
 Na sequência:
 
-1. Landing Page da Isca;
+1. PDF do Kit Gratuito;
 2. Página de Obrigado;
-3. Página Sobre;
-4. Página Contato;
-5. complementos das páginas legais;
-6. captura de e-mail;
+3. integração com Brevo;
+4. automação de envio;
+5. download do material;
+6. teste completo do funil;
 7. SEO final e liberação para indexação.

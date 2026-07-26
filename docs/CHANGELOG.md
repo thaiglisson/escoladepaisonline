@@ -8,6 +8,48 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 ## [Não publicado]
 
+## Features 08 e 09 — Recursos Gratuitos e Landing Kit Gratuito
+
+**Data:** 25 de julho de 2026
+
+### Features implementadas
+
+- Recursos Gratuitos — `/recursos/`.
+- Landing Kit Gratuito — `/recursos/atividades-de-matematica/`.
+
+### Resumo
+
+- Nova área de recursos criada para reunir materiais gratuitos.
+- Kit Gratuito de Atividades de Matemática apresentado com conteúdos de soma, subtração, multiplicação e divisão.
+- Landing Page estruturada para a futura captura de e-mail, sem formulário funcional.
+- CTA do Explicador Matemático integrado às duas páginas.
+- SEO, canonical, Open Graph, Twitter Cards e favicons configurados.
+- Responsividade e acessibilidade preservadas.
+- Header Global, Footer Global e Design System reutilizados sem alterações.
+
+### Arquivos implementados
+
+- `recursos/index.html`.
+- `recursos/atividades-de-matematica/index.html`.
+- `assets/css/recursos.css`.
+
+### Documentação
+
+- Feature 08 e Feature 09 registradas como concluídas.
+- Fase 3 — Blog atualizada de 65% para 75%.
+- Subetapa operacional de captura registrada como 25% concluída.
+- Percentual geral estimado do projeto atualizado de 78% para 79%.
+
+### Pendências intencionais
+
+- PDF do Kit.
+- Página de Obrigado.
+- Integração com Brevo.
+- Automação de envio.
+- Download do material.
+- Teste completo do funil.
+- Estas pendências fazem parte das próximas Features e não representam erros das Features 08 e 09.
+
 ## Feature 06 — Conteúdo Inicial do Cluster Matemática
 
 **Data:** 21 de julho de 2026

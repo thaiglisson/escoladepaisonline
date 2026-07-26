@@ -191,21 +191,21 @@
 }
 
 /* --------------------------------------------------------------------------
-   8. Placeholder da futura captura
+   8. Formulário de captura
    -------------------------------------------------------------------------- */
 
-.capture-placeholder-section {
+.capture-form-section {
   padding-block: clamp(var(--space-12), 8vw, var(--space-20));
   background-color: var(--color-primary-light);
   scroll-margin-top: calc(var(--header-height) + var(--space-4));
 }
 
-.capture-placeholder-section__inner {
+.capture-form-section__inner {
   max-width: var(--container-hero-width);
   text-align: center;
 }
 
-.capture-placeholder-section__description {
+.capture-form-section__description {
   max-width: var(--container-reading-width);
   margin: 0 auto var(--space-8);
   color: var(--color-text-light);
@@ -213,26 +213,57 @@
   line-height: var(--line-height-relaxed);
 }
 
-.capture-placeholder {
+.lead-form {
+  display: grid;
   max-width: var(--container-reading-width);
-  margin: 0 auto var(--space-6);
+  gap: var(--space-5);
+  margin: 0 auto;
   padding: clamp(var(--space-6), 5vw, var(--space-8));
-  border: 1px dashed var(--color-primary);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background-color: var(--color-background);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
 }
 
-.capture-placeholder p {
-  margin-bottom: 0;
-  color: var(--color-heading);
+.lead-form__required {
+  margin: 0;
+  color: var(--color-text-light);
+  font-size: var(--font-size-sm);
+}
+
+.lead-form__fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-5);
+}
+
+.lead-form__optional {
+  color: var(--color-text-light);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+}
+
+.form-field-error {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
 }
 
-.capture-placeholder-section__privacy {
-  max-width: var(--container-reading-width);
-  margin: 0 auto;
+.lead-form .form-message {
+  margin: 0;
+}
+
+.lead-form__button {
+  width: 100%;
+}
+
+.lead-form__privacy {
+  margin: 0;
   color: var(--color-text-light);
   font-size: var(--font-size-sm);
+  text-align: center;
 }
 
 /* --------------------------------------------------------------------------
@@ -245,13 +276,141 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .resource-landing-hero__button {
+  .resource-landing-hero__button,
+  .lead-form__button {
     width: auto;
+  }
+
+  .lead-form__fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lead-form__field--full {
+    grid-column: 1 / -1;
   }
 }
 
 @media (min-width: 64rem) {
   .usage-steps__grid--four {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================================================
+   Página de obrigado — Kit Gratuito de Atividades de Matemática
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   10. Confirmação e download
+   -------------------------------------------------------------------------- */
+
+.thank-you-hero {
+  padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+  background-color: var(--color-primary-light);
+}
+
+.thank-you-hero__inner {
+  max-width: var(--container-hero-width);
+  text-align: center;
+}
+
+.thank-you-hero__icon {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto var(--space-5);
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.thank-you-hero__title {
+  margin-bottom: var(--space-5);
+}
+
+.thank-you-hero__description {
+  max-width: var(--container-reading-width);
+  margin: 0 auto var(--space-8);
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.thank-you-download {
+  max-width: var(--container-reading-width);
+  margin-inline: auto;
+  padding: clamp(var(--space-6), 6vw, var(--space-10));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-sm);
+}
+
+.thank-you-download h2 {
+  margin-bottom: var(--space-3);
+}
+
+.thank-you-download__button {
+  width: 100%;
+  margin-top: var(--space-3);
+}
+
+.thank-you-download__details {
+  margin: var(--space-4) 0 0;
+  color: var(--color-text-light);
+  font-size: var(--font-size-sm);
+}
+
+/* --------------------------------------------------------------------------
+   11. Orientação por e-mail
+   -------------------------------------------------------------------------- */
+
+.thank-you-email-note {
+  padding-left: var(--space-6);
+  border-left: 0.25rem solid var(--color-primary);
+}
+
+.thank-you-email-note p:last-child {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   12. Próximo passo e artigo recomendado
+   -------------------------------------------------------------------------- */
+
+.thank-you-secondary-cta,
+.thank-you-related {
+  max-width: var(--container-hero-width);
+}
+
+.thank-you-secondary-cta__description {
+  max-width: var(--container-reading-width);
+  margin: 0 auto var(--space-8);
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.thank-you-related__heading {
+  max-width: var(--container-reading-width);
+  margin: 0 auto var(--space-8);
+  text-align: center;
+}
+
+.thank-you-related__card {
+  max-width: var(--container-reading-width);
+  margin-inline: auto;
+}
+
+/* --------------------------------------------------------------------------
+   13. Adaptações da página de obrigado
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 48rem) {
+  .thank-you-download__button {
+    width: auto;
   }
 }

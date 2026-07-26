@@ -684,6 +684,8 @@ Checklist
 [x] Template de artigo — Feature 05A. Status: ✅ Concluída.
 [x] Primeiro artigo pilar — Feature 05B. Status: ✅ Concluída.
 [x] Conteúdo inicial do Cluster Matemática — Feature 06. Status: ✅ Concluída.
+[x] Página Recursos — Feature 08. Status: ✅ Concluída.
+[x] Landing Kit Gratuito — Feature 09. Status: ✅ Concluída.
 [ ] Página Sobre.
 [ ] Página Contato.
 [ ] Política de Privacidade.
@@ -944,15 +946,72 @@ Testes e validação
 
 ------------------------------------------------------------
 
+## Feature 08 — Página de Recursos Gratuitos
+
+Status: ✅ Concluída
+
+Implementação
+
+- [x] Central de Recursos criada em `/recursos/`.
+- [x] Kit Gratuito de Atividades de Matemática apresentado como recurso disponível.
+- [x] Conteúdos de soma, subtração, multiplicação e divisão informados.
+- [x] Público recomendado e orientações de uso implementados.
+- [x] Estrutura preparada para receber novos recursos futuramente.
+- [x] CTA para `/recursos/atividades-de-matematica/` implementado.
+- [x] CTA do Explicador Matemático integrado.
+- [x] Header Global e Footer Global reutilizados.
+- [x] Design System preservado.
+
+Validação
+
+- [x] HTML semântico e apenas um H1 confirmados.
+- [x] Responsividade validada em 390 px, 768 px e 1440 px.
+- [x] Acessibilidade e navegação por teclado preservadas.
+- [x] SEO, canonical, Open Graph, Twitter Cards e favicons configurados.
+- [x] Nenhum formulário ou integração de e-mail criado.
+- [x] Feature 08 validada e aprovada.
+
+------------------------------------------------------------
+
+## Feature 09 — Landing Page do Kit Gratuito
+
+Status: ✅ Concluída
+
+Implementação
+
+- [x] Landing Page criada em `/recursos/atividades-de-matematica/`.
+- [x] Hero, benefícios e CTA de rolagem implementados.
+- [x] Cards de Soma, Subtração, Multiplicação e Divisão implementados.
+- [x] Público recomendado e quatro etapas de utilização apresentados.
+- [x] Placeholder visual preparado para a futura captura de e-mail.
+- [x] Informação de privacidade e link para a Política de Privacidade adicionados.
+- [x] CTA do Explicador Matemático integrado.
+- [x] Header Global, Footer Global e Design System preservados.
+
+Validação
+
+- [x] HTML semântico, hierarquia de títulos e apenas um H1 confirmados.
+- [x] Responsividade validada em 390 px, 768 px e 1440 px.
+- [x] Cards adaptáveis e ausência de rolagem horizontal confirmados.
+- [x] Acessibilidade, breadcrumb e IDs únicos validados.
+- [x] SEO, canonical, Open Graph, Twitter Cards e favicons configurados.
+- [x] Nenhum formulário funcional, download ou integração criado.
+- [x] Feature 09 validada e aprovada.
+
+------------------------------------------------------------
+
 ### Fase 4 — Captura
 
-[ ] Finalizar a isca inicial.
-[ ] Escolher e configurar a plataforma de e-mail.
-[ ] Criar landing page e página de obrigado.
-[ ] Implementar formulário.
-[ ] Implementar proteção anti-spam.
-[ ] Criar tags e sequência de cinco e-mails.
-[ ] Testar cadastro, entrega, erro e descadastro.
+Status: 🟨 Em andamento — 25%
+
+[x] Página Recursos.
+[x] Landing Kit Gratuito.
+[ ] PDF do Kit.
+[ ] Página de Obrigado.
+[ ] Integração Brevo.
+[ ] Automação de envio.
+[ ] Download do material.
+[ ] Teste completo do funil.
 
 ------------------------------------------------------------
 
@@ -1003,19 +1062,19 @@ Status: ✅ Concluída
 
 ## Próxima ação definida
 
-Implementar a área de Recursos Gratuitos.
+Produzir o PDF do Kit Gratuito e implementar a Página de Obrigado.
 
 Objetivo:
 
-Preparar a estrutura inicial dos recursos gratuitos e avançar para a implementação da isca digital de atividades de matemática.
+Concluir o material de entrega e preparar a etapa posterior ao cadastro antes da integração com a plataforma de e-mail.
 
 Sequência posterior:
 
-1. Landing Page da Isca;
+1. PDF do Kit;
 2. Página de Obrigado;
-3. Página Sobre;
-4. Página Contato;
-5. complementos das páginas legais;
-6. captura de e-mail;
+3. Integração Brevo;
+4. Automação de envio;
+5. Download do material;
+6. Teste completo do funil;
 7. SEO final;
-8. liberação para indexação.
+8. Liberação para indexação.

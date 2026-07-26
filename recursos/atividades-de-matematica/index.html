@@ -12,7 +12,7 @@
     <title>Kit Gratuito de Atividades de Matemática | Escola de Pais Online</title>
     <meta
       name="description"
-      content="Baixe em breve o Kit Gratuito de Atividades de Matemática da Escola de Pais Online e pratique soma, subtração, multiplicação e divisão em casa."
+      content="Receba gratuitamente o Kit de Atividades de Matemática da Escola de Pais Online e pratique soma, subtração, multiplicação e divisão em casa."
     >
     <link
       rel="canonical"
@@ -29,7 +29,7 @@
     >
     <meta
       property="og:description"
-      content="Baixe em breve o Kit Gratuito de Atividades de Matemática e pratique soma, subtração, multiplicação e divisão em casa."
+      content="Receba gratuitamente o Kit de Atividades de Matemática e pratique soma, subtração, multiplicação e divisão em casa."
     >
     <meta
       property="og:url"
@@ -51,7 +51,7 @@
     >
     <meta
       name="twitter:description"
-      content="Baixe em breve o Kit Gratuito de Atividades de Matemática e pratique soma, subtração, multiplicação e divisão em casa."
+      content="Receba gratuitamente o Kit de Atividades de Matemática e pratique soma, subtração, multiplicação e divisão em casa."
     >
     <meta
       name="twitter:image"
@@ -60,7 +60,7 @@
     <meta name="twitter:image:alt" content="Logotipo da Escola de Pais Online.">
 
     <!-- Favicons -->
-    <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
     <link
       rel="icon"
       type="image/png"
@@ -314,34 +314,104 @@
           </div>
         </section>
 
-        <!-- Placeholder da captura -->
+        <!-- Formulário de captura -->
         <section
-          class="capture-placeholder-section"
+          class="capture-form-section"
           id="receber-kit"
           aria-labelledby="titulo-receber-kit"
         >
-          <div class="container capture-placeholder-section__inner">
+          <div class="container capture-form-section__inner">
             <h2 id="titulo-receber-kit">
               Receba gratuitamente este material
             </h2>
-            <p class="capture-placeholder-section__description">
-              Em breve esta página permitirá solicitar o kit gratuitamente por
-              e-mail.
+            <p class="capture-form-section__description">
+              Preencha seus dados para acessar o kit agora e receber uma cópia
+              por e-mail.
             </p>
-            <div class="capture-placeholder" role="note">
-              <p>
-                A integração da captura de e-mail será implementada na próxima
-                etapa do projeto.
+
+            <form
+              class="lead-form"
+              id="kit-lead-form"
+              action="/api/capturar-lead"
+              method="post"
+            >
+              <p class="lead-form__required">
+                Os campos marcados com * são obrigatórios.
               </p>
-            </div>
-            <p class="capture-placeholder-section__privacy">
-              Quando a captura estiver disponível, seus dados serão utilizados
-              apenas para enviar o material solicitado e comunicações
-              relacionadas à Escola de Pais Online.
-              <a href="/politica-de-privacidade/">
-                Consulte nossa Política de Privacidade.
-              </a>
-            </p>
+
+              <div class="lead-form__fields">
+                <div class="form-group">
+                  <label for="nome">Nome *</label>
+                  <input
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    autocomplete="name"
+                    maxlength="100"
+                    required
+                    aria-describedby="nome-erro"
+                  >
+                  <p class="form-field-error" id="nome-erro" hidden></p>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">E-mail *</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    inputmode="email"
+                    maxlength="254"
+                    required
+                    aria-describedby="email-erro"
+                  >
+                  <p class="form-field-error" id="email-erro" hidden></p>
+                </div>
+
+                <div class="form-group lead-form__field--full">
+                  <label for="whatsapp">
+                    WhatsApp
+                    <span class="lead-form__optional">(opcional)</span>
+                  </label>
+                  <input
+                    id="whatsapp"
+                    name="whatsapp"
+                    type="tel"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    maxlength="20"
+                    placeholder="(11) 99999-9999"
+                    aria-describedby="whatsapp-ajuda whatsapp-erro"
+                  >
+                  <p class="form-help" id="whatsapp-ajuda">
+                    Informe o DDD e o número.
+                  </p>
+                  <p class="form-field-error" id="whatsapp-erro" hidden></p>
+                </div>
+              </div>
+
+              <p
+                class="form-message"
+                id="form-status"
+                role="status"
+                aria-live="polite"
+                hidden
+              ></p>
+
+              <button class="button lead-form__button" type="submit">
+                Quero receber as atividades
+              </button>
+
+              <p class="lead-form__privacy" id="form-privacy">
+                Ao enviar, você concorda em receber o material e conteúdos da
+                Escola de Pais Online. Você pode cancelar a inscrição a qualquer
+                momento.
+                <a href="/politica-de-privacidade/">
+                  Consulte a Política de Privacidade.
+                </a>
+              </p>
+            </form>
           </div>
         </section>
 
@@ -445,6 +515,7 @@
       </footer>
     </div>
 
+    <script src="/assets/js/captura.js" defer></script>
     <script src="/assets/js/main.js" defer></script>
   </body>
 </html>
