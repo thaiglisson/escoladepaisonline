@@ -58,6 +58,13 @@
   text-align: center;
 }
 
+.article__hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+}
+
 /* --------------------------------------------------------------------------
    2. Conteudo editorial
    -------------------------------------------------------------------------- */

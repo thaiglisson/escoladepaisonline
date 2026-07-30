@@ -1118,6 +1118,32 @@ Concluído:
 - Header Global e Footer Global reutilizados sem alterações;
 - Design System, responsividade, acessibilidade e padrões de SEO preservados.
 
+Implementação das imagens do blog — ✅ Concluída:
+
+- integração das imagens definitivas do blog concluída;
+- oito capas oficiais dos artigos implementadas;
+- oito imagens Open Graph oficiais implementadas;
+- Home do Blog e Categoria Matemática atualizadas com as imagens definitivas;
+- imagens dos cards e das páginas publicáveis atualizadas;
+- atributos `alt`, `width`, `height`, `loading` e `decoding` configurados e validados;
+- imagens Open Graph definitivas associadas aos oito artigos;
+- capas organizadas em `assets/images/blog/capas/`;
+- imagens sociais organizadas em `assets/images/blog/og/`;
+- padrão de nomenclatura baseado no slug preservado em todas as imagens do lote.
+
+Auditoria técnica da implementação das imagens — ✅ Concluída:
+
+- caminhos físicos e referências locais validados;
+- inexistência de referências quebradas confirmada nas páginas publicáveis;
+- inexistência de placeholders visuais confirmada nas páginas publicáveis;
+- placeholders mantidos somente no template reutilizável de artigos;
+- favicons revisados e referências inexistentes substituídas pelo favicon SVG oficial;
+- dimensões declaradas da logo corrigidas para corresponder ao arquivo físico;
+- estratégias de `loading` e `decoding` revisadas para cabeçalhos, rodapés, capas e cards;
+- uso de WebP validado para as capas e imagens Open Graph dos artigos;
+- arquivos PNG mantidos somente onde atuam como fallback da logo, ícones de compatibilidade ou imagens sociais genéricas;
+- thumbnails não utilizadas pelas páginas atuais e mantidas apenas como possível evolução futura do Design System, sem caráter bloqueante.
+
 Situação atual da captura:
 
 - Captura de Leads concluída;
@@ -1153,6 +1179,8 @@ Próximas implementações:
 - homologação completa;
 - publicação oficial do Blog;
 - crescimento editorial e orgânico.
+
+Próxima etapa oficial: **Feature 09 — SEO Final**.
 
 ---
 
@@ -1218,6 +1246,11 @@ Previsto:
 - crescimento dos clusters;
 - novas iscas digitais.
 
+Atualização oficial de status:
+
+- implementação e auditoria das imagens concluídas;
+- próxima etapa oficial definida como Feature 09 — SEO Final.
+
 ---
 
 # Roadmap Visual
@@ -1266,7 +1299,11 @@ Implementar as imagens definitivas do projeto:
 - revisão dos banners;
 - revisão visual geral.
 
+Atualização de status: implementação e auditoria das imagens do blog concluídas.
+
 ### Etapa 2 — SEO Final
+
+Próxima etapa oficial: **Feature 09 — SEO Final**.
 
 Preparar o site para indexação:
 

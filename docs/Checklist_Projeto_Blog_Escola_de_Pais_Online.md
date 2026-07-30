@@ -1066,6 +1066,40 @@ Status: ✅ Concluída
 
 ------------------------------------------------------------
 
+### Implementação das Imagens do Blog
+
+Status: ✅ Concluída
+
+- [x] Integrar as imagens definitivas do blog.
+- [x] Implementar as oito capas oficiais dos artigos.
+- [x] Implementar as oito imagens Open Graph oficiais.
+- [x] Atualizar a Home do Blog.
+- [x] Atualizar a Categoria Matemática.
+- [x] Atualizar os cards dos artigos.
+- [x] Atualizar as páginas publicáveis.
+- [x] Configurar `alt`, `width`, `height`, `loading` e `decoding`.
+- [x] Configurar definitivamente as imagens Open Graph dos oito artigos.
+- [x] Preservar o padrão de nomes baseado no slug.
+
+### Auditoria Técnica das Imagens
+
+Status: ✅ Concluída
+
+- [x] Validar os caminhos físicos dos arquivos.
+- [x] Validar todas as referências locais das páginas publicáveis.
+- [x] Confirmar a inexistência de referências quebradas.
+- [x] Confirmar a inexistência de placeholders nas páginas publicáveis.
+- [x] Revisar e padronizar os favicons.
+- [x] Corrigir as dimensões declaradas da logo.
+- [x] Revisar `loading` e `decoding`.
+- [x] Validar o uso de WebP nas capas e imagens Open Graph.
+- [x] Confirmar que os placeholders permanecem somente no template reutilizável de artigos.
+- [x] Registrar as thumbnails como evolução futura não bloqueante do Design System.
+
+Próxima etapa oficial: **Feature 09 — SEO Final**.
+
+------------------------------------------------------------
+
 ### Fase 6 — Otimização
 
 [ ] Acompanhar Search Console e GA4.
@@ -1109,7 +1143,11 @@ Status: ✅ Concluída
 - [ ] Revisar os banners.
 - [ ] Executar a revisão visual geral.
 
+Implementação e auditoria técnica das imagens: ✅ Concluídas.
+
 ### Etapa 2 — SEO Final
+
+Próxima etapa oficial: **Feature 09 — SEO Final**.
 
 - [ ] Revisar Title.
 - [ ] Revisar Meta Description.

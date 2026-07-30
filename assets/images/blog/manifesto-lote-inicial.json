@@ -1,0 +1,232 @@
+{
+  "version": "1.0",
+  "category": "Matemática",
+  "source_template": {
+    "canva_design_id": "DAHQuGGMd4I",
+    "title": "Template Mestre — Capa de Artigo — Versão 1.0"
+  },
+  "export_policy": {
+    "cover": {
+      "dimensions": "1600x900",
+      "format": "webp"
+    },
+    "open_graph": {
+      "dimensions": "1200x630",
+      "format": "webp"
+    },
+    "thumbnail": {
+      "dimensions": "1200x900",
+      "format": "webp"
+    }
+  },
+  "articles": [
+    {
+      "slug": "como-explicar-matematica-para-criancas",
+      "title": "Como explicar matemática para uma criança entender",
+      "micro_description": "Explique matemática com exemplos simples que a criança acompanha.",
+      "assets": {
+        "cover": {
+          "filename": "como-explicar-matematica-para-criancas.webp",
+          "alt_text": "Personagem da Escola de Pais Online segurando um caderno ao lado do título “Como explicar matemática para uma criança entender”.",
+          "canva_design_id": "DAHQuXTU7AY",
+          "canva_url": "https://www.canva.com/d/ERaywT6FC8sNLpa"
+        },
+        "open_graph": {
+          "filename": "como-explicar-matematica-para-criancas-og.webp",
+          "alt_text": "Imagem de compartilhamento do artigo “Como explicar matemática para uma criança entender”, com personagem segurando um caderno e elementos matemáticos.",
+          "canva_design_id": "DAHQuZDt60E",
+          "canva_url": "https://www.canva.com/d/QEmNcGGU8P2LqS5"
+        },
+        "thumbnail": {
+          "filename": "como-explicar-matematica-para-criancas-thumb.webp",
+          "display_title": "Explicar matemática para crianças",
+          "alt_text": "Miniatura do artigo sobre como explicar matemática para crianças, com a personagem da Escola de Pais Online segurando um caderno.",
+          "canva_design_id": "DAHQufE1p6o",
+          "canva_url": "https://www.canva.com/d/bF8K0tMUJPyHdrC"
+        }
+      }
+    },
+    {
+      "slug": "eu-sei-a-resposta-mas-nao-sei-explicar-matematica",
+      "title": "Eu sei a resposta, mas não sei explicar matemática",
+      "micro_description": "Transforme o que você sabe em explicações claras para ajudar seu filho.",
+      "assets": {
+        "cover": {
+          "filename": "eu-sei-a-resposta-mas-nao-sei-explicar-matematica.webp",
+          "alt_text": "Personagem da Escola de Pais Online segurando um caderno ao lado do título “Eu sei a resposta, mas não sei explicar matemática”.",
+          "canva_design_id": "DAHQuXcp6hc",
+          "canva_url": "https://www.canva.com/d/d0BYSzp2HwPFuEs"
+        },
+        "open_graph": {
+          "filename": "eu-sei-a-resposta-mas-nao-sei-explicar-matematica-og.webp",
+          "alt_text": "Imagem de compartilhamento do artigo “Eu sei a resposta, mas não sei explicar matemática”, com personagem segurando um caderno e elementos matemáticos.",
+          "canva_design_id": "DAHQuVsf2pE",
+          "canva_url": "https://www.canva.com/d/lUSW4j1ZhFEQOhP"
+        },
+        "thumbnail": {
+          "filename": "eu-sei-a-resposta-mas-nao-sei-explicar-matematica-thumb.webp",
+          "display_title": "Como explicar matemática com clareza",
+          "alt_text": "Miniatura do artigo sobre explicar matemática com clareza, com a personagem da Escola de Pais Online segurando um caderno.",
+          "canva_design_id": "DAHQuZVkvGk",
+          "canva_url": "https://www.canva.com/d/2Dt6FY9goEOWX2q"
+        }
+      }
+    },
+    {
+      "slug": "como-ensinar-soma-para-criancas",
+      "title": "Como ensinar soma para crianças de forma simples",
+      "micro_description": "Ensine a ideia de juntar com objetos antes de apresentar a conta.",
+      "assets": {
+        "cover": {
+          "filename": "como-ensinar-soma-para-criancas.webp",
+          "alt_text": "Personagem da Escola de Pais Online segurando um caderno ao lado do título “Como ensinar soma para crianças de forma simples”.",
+          "canva_design_id": "DAHQubmGe1c",
+          "canva_url": "https://www.canva.com/d/IVNQWgYOPvWSI1r"
+        },
+        "open_graph": {
+          "filename": "como-ensinar-soma-para-criancas-og.webp",
+          "alt_text": "Imagem de compartilhamento do artigo sobre como ensinar soma para crianças, com personagem segurando um caderno e elementos matemáticos.",
+          "canva_design_id": "DAHQuYqx3Fo",
+          "canva_url": "https://www.canva.com/d/B0EJmVx9hMS957D"
+        },
+        "thumbnail": {
+          "filename": "como-ensinar-soma-para-criancas-thumb.webp",
+          "display_title": "Ensinar soma de forma simples",
+          "alt_text": "Miniatura do artigo sobre ensinar soma de forma simples, com a personagem da Escola de Pais Online segurando um caderno.",
+          "canva_design_id": "DAHQuZpv1Xk",
+          "canva_url": "https://www.canva.com/d/GnY3mo7YeZwjryv"
+        }
+      }
+    },
+    {
+      "slug": "como-ensinar-subtracao-para-criancas",
+      "title": "Como ensinar subtração para crianças",
+      "micro_description": "Mostre como retirar, comparar e descobrir quanto falta com exemplos.",
+      "assets": {
+        "cover": {
+          "filename": "como-ensinar-subtracao-para-criancas.webp",
+          "alt_text": "Personagem da Escola de Pais Online segurando um caderno ao lado do título “Como ensinar subtração para crianças”.",
+          "canva_design_id": "DAHQuQe94aY",
+          "canva_url": "https://www.canva.com/d/em_cHH4WRlKnDYa"
+        },
+        "open_graph": {
+          "filename": "como-ensinar-subtracao-para-criancas-og.webp",
+          "alt_text": "Imagem de compartilhamento do artigo sobre como ensinar subtração para crianças, com personagem segurando um caderno e elementos matemáticos.",
+          "canva_design_id": "DAHQuQcGf-w",
+          "canva_url": "https://www.canva.com/d/pnDv6BjDXv0YWui"
+        },
+        "thumbnail": {
+          "filename": "como-ensinar-subtracao-para-criancas-thumb.webp",
+          "display_title": "Ensinar subtração para crianças",
+          "alt_text": "Miniatura do artigo sobre ensinar subtração para crianças, com a personagem da Escola de Pais Online segurando um caderno.",
+          "canva_design_id": "DAHQuX-YMa8",
+          "canva_url": "https://www.canva.com/d/f3xEODGwSAC7T4p"
+        }
+      }
+    },
+    {
+      "slug": "como-ensinar-multiplicacao-para-criancas-sem-decorar-a-tabuada",
+      "title": "Como ensinar multiplicação para crianças sem decorar a tabuada",
+      "micro_description": "Ensine multiplicação com grupos iguais antes de decorar a tabuada.",
+      "assets": {
+        "cover": {
+          "filename": "como-ensinar-multiplicacao-para-criancas-sem-decorar-a-tabuada.webp",
+          "alt_text": "Personagem da Escola de Pais Online segurando um caderno ao lado do título “Como ensinar multiplicação para crianças sem decorar a tabuada”.",
+          "canva_design_id": "DAHQuc3qZck",
+          "canva_url": "https://www.canva.com/d/MC4OaNm19YAFZ7B"
+        },
+        "open_graph": {
+          "filename": "como-ensinar-multiplicacao-para-criancas-sem-decorar-a-tabuada-og.webp",
+          "alt_text": "Imagem de compartilhamento do artigo sobre ensinar multiplicação sem decorar a tabuada, com personagem segurando um caderno e elementos matemáticos.",
+          "canva_design_id": "DAHQuYjLuEU",
+          "canva_url": "https://www.canva.com/d/5Q9gGuF_6fcGCsa"
+        },
+        "thumbnail": {
+          "filename": "como-ensinar-multiplicacao-para-criancas-sem-decorar-a-tabuada-thumb.webp",
+          "display_title": "Multiplicação sem decorar a tabuada",
+          "alt_text": "Miniatura do artigo sobre multiplicação sem decorar a tabuada, com a personagem da Escola de Pais Online segurando um caderno.",
+          "canva_design_id": "DAHQuTxLC2Y",
+          "canva_url": "https://www.canva.com/d/iCU2PGe820v2AtJ"
+        }
+      }
+    },
+    {
+      "slug": "como-ensinar-divisao-para-criancas-de-forma-simples",
+      "title": "Como ensinar divisão para crianças de forma simples",
+      "micro_description": "Ensine divisão repartindo objetos e mostrando a lógica da conta.",
+      "assets": {
+        "cover": {
+          "filename": "como-ensinar-divisao-para-criancas-de-forma-simples.webp",
+          "alt_text": "Personagem da Escola de Pais Online segurando um caderno ao lado do título “Como ensinar divisão para crianças de forma simples”.",
+          "canva_design_id": "DAHQuTJmAds",
+          "canva_url": "https://www.canva.com/d/sXYxb-tS7JyqsdJ"
+        },
+        "open_graph": {
+          "filename": "como-ensinar-divisao-para-criancas-de-forma-simples-og.webp",
+          "alt_text": "Imagem de compartilhamento do artigo sobre como ensinar divisão para crianças, com personagem segurando um caderno e elementos matemáticos.",
+          "canva_design_id": "DAHQuV-Iyqo",
+          "canva_url": "https://www.canva.com/d/BKk9vXRWPKnKg6C"
+        },
+        "thumbnail": {
+          "filename": "como-ensinar-divisao-para-criancas-de-forma-simples-thumb.webp",
+          "display_title": "Ensinar divisão de forma simples",
+          "alt_text": "Miniatura do artigo sobre ensinar divisão de forma simples, com a personagem da Escola de Pais Online segurando um caderno.",
+          "canva_design_id": "DAHQuaBnn-k",
+          "canva_url": "https://www.canva.com/d/ZQg3Df-KCX8SCfK"
+        }
+      }
+    },
+    {
+      "slug": "toda-tarefa-de-matematica-vira-estresse",
+      "title": "Toda tarefa de matemática vira estresse: o que fazer",
+      "micro_description": "Reduza o estresse da tarefa com orientações acolhedoras e práticas.",
+      "assets": {
+        "cover": {
+          "filename": "toda-tarefa-de-matematica-vira-estresse.webp",
+          "alt_text": "Personagem da Escola de Pais Online segurando um caderno ao lado do título “Toda tarefa de matemática vira estresse: o que fazer”.",
+          "canva_design_id": "DAHQuQaMn10",
+          "canva_url": "https://www.canva.com/d/UwalqckkkuntRIL"
+        },
+        "open_graph": {
+          "filename": "toda-tarefa-de-matematica-vira-estresse-og.webp",
+          "alt_text": "Imagem de compartilhamento do artigo sobre estresse durante a tarefa de matemática, com personagem segurando um caderno e elementos matemáticos.",
+          "canva_design_id": "DAHQuZmgJfo",
+          "canva_url": "https://www.canva.com/d/iQCmr6HWh6cV0xf"
+        },
+        "thumbnail": {
+          "filename": "toda-tarefa-de-matematica-vira-estresse-thumb.webp",
+          "display_title": "Matemática sem estresse na tarefa",
+          "alt_text": "Miniatura do artigo sobre tornar a tarefa de matemática menos estressante, com a personagem da Escola de Pais Online segurando um caderno.",
+          "canva_design_id": "DAHQuV6Hrlg",
+          "canva_url": "https://www.canva.com/d/HhDh0xQrw5Rw-zo"
+        }
+      }
+    },
+    {
+      "slug": "atividades-de-matematica-para-fazer-em-casa",
+      "title": "Atividades de matemática para fazer em casa",
+      "micro_description": "Pratique matemática em casa com brincadeiras e objetos da rotina.",
+      "assets": {
+        "cover": {
+          "filename": "atividades-de-matematica-para-fazer-em-casa.webp",
+          "alt_text": "Personagem da Escola de Pais Online segurando um caderno ao lado do título “Atividades de matemática para fazer em casa”.",
+          "canva_design_id": "DAHQuTFFh_w",
+          "canva_url": "https://www.canva.com/d/15eambidTNmpUZ3"
+        },
+        "open_graph": {
+          "filename": "atividades-de-matematica-para-fazer-em-casa-og.webp",
+          "alt_text": "Imagem de compartilhamento do artigo sobre atividades de matemática para fazer em casa, com personagem segurando um caderno e elementos matemáticos.",
+          "canva_design_id": "DAHQuY5nSPU",
+          "canva_url": "https://www.canva.com/d/nLPDjNLC7YOBiD2"
+        },
+        "thumbnail": {
+          "filename": "atividades-de-matematica-para-fazer-em-casa-thumb.webp",
+          "display_title": "Atividades de matemática em casa",
+          "alt_text": "Miniatura do artigo sobre atividades de matemática em casa, com a personagem da Escola de Pais Online segurando um caderno.",
+          "canva_design_id": "DAHQuVeMUuA",
+          "canva_url": "https://www.canva.com/d/4s1jGTIxSbaAeks"
+        }
+      }
+    }
+  ]
+}

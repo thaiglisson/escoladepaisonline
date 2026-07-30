@@ -8,6 +8,55 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 ## [Não publicado]
 
+## Implementação e Auditoria das Imagens do Blog
+
+**Data:** 29 de julho de 2026
+
+### Resumo
+
+- Integração das imagens definitivas do blog concluída.
+- Oito capas oficiais dos artigos implementadas.
+- Oito imagens Open Graph oficiais implementadas.
+- Home do Blog, Categoria Matemática, cards dos artigos e páginas publicáveis atualizados.
+- Atributos de acessibilidade, dimensões e carregamento configurados.
+- Auditoria técnica completa da implementação das imagens concluída.
+- Próxima etapa oficial definida como Feature 09 — SEO Final.
+
+### Implementado
+
+- Capas definitivas integradas a cada um dos oito artigos.
+- Capas definitivas aplicadas à Home do Blog, Categoria Matemática e cards relacionados.
+- Imagens Open Graph definitivas associadas aos oito artigos.
+- Arquivos organizados em `assets/images/blog/capas/` e `assets/images/blog/og/`.
+- Padrão de nomes baseado exclusivamente no slug preservado.
+- Atributos `alt`, `width`, `height`, `loading` e `decoding` configurados nas imagens das páginas publicáveis.
+- Carregamento das logos de cabeçalho e rodapé ajustado conforme sua posição na página.
+
+### Auditoria técnica
+
+- Caminhos físicos dos arquivos e referências locais validados.
+- Capas, imagens Open Graph, logos, imagens institucionais, favicons e imagens dos recursos revisados.
+- Inexistência de referências quebradas confirmada nas páginas publicáveis.
+- Inexistência de placeholders visuais confirmada nas páginas publicáveis.
+- Referências de favicon inexistentes substituídas pelo favicon SVG oficial.
+- Dimensões declaradas da logo corrigidas para corresponder ao arquivo físico.
+- Uso de WebP validado para todas as capas e imagens Open Graph dos artigos.
+- Estratégia de fallback PNG da logo preservada.
+- Ausência de arquivos fisicamente duplicados confirmada.
+
+### Pendências intencionais
+
+- Os placeholders permanecem somente em `blog/matematica/template-artigo.html`, como parte do template reutilizável.
+- As thumbnails não são utilizadas atualmente e permanecem registradas apenas como possível evolução futura do Design System.
+- A ausência das thumbnails não é bloqueante porque nenhuma página publicável faz referência a esses arquivos.
+
+### Documentação
+
+- Documentação Geral atualizada com a conclusão da implementação e da auditoria das imagens.
+- Checklist operacional atualizado com todos os itens visuais concluídos.
+- Changelog atualizado com o marco oficial da implementação das imagens.
+- Próxima etapa oficial registrada como Feature 09 — SEO Final.
+
 ## Captura de Leads e Funil do Kit Gratuito
 
 **Data:** 26 de julho de 2026
