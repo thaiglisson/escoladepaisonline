@@ -1096,7 +1096,61 @@ Status: ✅ Concluída
 - [x] Confirmar que os placeholders permanecem somente no template reutilizável de artigos.
 - [x] Registrar as thumbnails como evolução futura não bloqueante do Design System.
 
-Próxima etapa oficial: **Feature 09 — SEO Final**.
+------------------------------------------------------------
+
+## Feature 09A — Auditoria SEO e Padronização dos Metadados
+
+Status: ✅ Concluída
+
+Data de conclusão: 30 de julho de 2026
+
+Auditoria e implementação
+
+- [x] Auditar os títulos das páginas públicas.
+- [x] Auditar e padronizar as meta descriptions.
+- [x] Implementar e validar canonicals absolutos.
+- [x] Auditar as diretivas `meta robots`.
+- [x] Implementar e padronizar Open Graph.
+- [x] Implementar e padronizar Twitter Cards.
+- [x] Validar a existência de exatamente um H1 por página.
+- [x] Validar a hierarquia de headings.
+- [x] Corrigir links internos quebrados.
+- [x] Substituir cards relacionados que apontavam para conteúdos não publicados.
+- [x] Auditar textos alternativos, dimensões e carregamento das imagens.
+- [x] Configurar prioridade para as principais imagens acima da dobra.
+- [x] Revisar favicons, Apple Touch Icon e `site.webmanifest`.
+- [x] Registrar oportunidades futuras de performance sem implementar otimizações fora do escopo.
+
+Validação
+
+- [x] Auditar as 18 páginas públicas.
+- [x] Confirmar títulos e meta descriptions únicos.
+- [x] Confirmar canonicals absolutos e coerentes.
+- [x] Confirmar ausência de propriedades Open Graph duplicadas.
+- [x] Confirmar ausência de campos Twitter Card duplicados.
+- [x] Confirmar correspondência entre metadados SEO, canonical, Open Graph e Twitter Cards.
+- [x] Confirmar exatamente um H1 em todas as páginas públicas.
+- [x] Confirmar ausência de quebras na hierarquia de headings.
+- [x] Confirmar inexistência de links internos quebrados e fragmentos inválidos.
+- [x] Confirmar existência e consistência das imagens referenciadas.
+- [x] Confirmar ausência de conflitos entre `loading="lazy"` e `fetchpriority="high"`.
+- [x] Confirmar carregamento correto dos favicons e ícones do manifesto.
+- [x] Executar `git diff --check` sem erros.
+- [x] Confirmar ausência de inconsistências técnicas remanescentes dentro do escopo da Feature 09A.
+
+Decisões e pendências da Publicação Oficial
+
+- [x] Manter temporariamente `noindex, nofollow` nas 16 páginas públicas aprovadas para futura indexação.
+- [x] Manter permanentemente `noindex, nofollow` na Página de Obrigado e no template interno.
+- [x] Preservar `robots.txt`, `sitemap.xml` e Search Console sem alterações durante a Feature 09A.
+- [ ] Alterar as 16 páginas públicas para `index, follow` somente após a aprovação da homologação.
+- [ ] Atualizar o sitemap na Publicação Oficial.
+- [ ] Executar a validação final do `robots.txt`.
+- [ ] Solicitar indexação no Google Search Console.
+- [ ] Executar Lighthouse/PageSpeed em produção.
+- [ ] Concluir os demais testes previstos para a homologação final.
+
+Próxima etapa oficial: **Homologação**.
 
 ------------------------------------------------------------
 
@@ -1147,17 +1201,19 @@ Implementação e auditoria técnica das imagens: ✅ Concluídas.
 
 ### Etapa 2 — SEO Final
 
-Próxima etapa oficial: **Feature 09 — SEO Final**.
+Status: ✅ Feature 09A concluída.
 
-- [ ] Revisar Title.
-- [ ] Revisar Meta Description.
-- [ ] Revisar Canonical.
-- [ ] Revisar Open Graph.
-- [ ] Revisar Twitter Cards.
-- [ ] Implementar e revisar Schema.org.
-- [ ] Revisar Sitemap.
-- [ ] Revisar Robots.
-- [ ] Revisar Search Console.
+- [x] Revisar Title.
+- [x] Revisar Meta Description.
+- [x] Revisar Canonical.
+- [x] Revisar Open Graph.
+- [x] Revisar Twitter Cards.
+- [x] Auditar as diretivas `meta robots` e registrar a decisão de indexação.
+- [x] Revisar headings, links internos, imagens e favicons.
+- [x] Validar tecnicamente os metadados das páginas públicas.
+- [ ] Atualizar o sitemap na Publicação Oficial.
+- [ ] Executar a validação final do `robots.txt`.
+- [ ] Revisar o Search Console na Publicação Oficial.
 
 ### Etapa 3 — Homologação
 
@@ -1169,7 +1225,8 @@ Próxima etapa oficial: **Feature 09 — SEO Final**.
 - [ ] Validar Analytics.
 - [ ] Validar GTM.
 - [ ] Validar Pixel.
-- [ ] Validar PageSpeed.
+- [ ] Validar Schema.org em produção.
+- [ ] Validar Lighthouse/PageSpeed em produção.
 - [ ] Validar favicon.
 - [ ] Validar sitemap.
 - [ ] Validar robots.
@@ -1177,7 +1234,9 @@ Próxima etapa oficial: **Feature 09 — SEO Final**.
 
 ### Etapa 4 — Publicação Oficial
 
-- [ ] Remover `noindex` das páginas públicas após aprovação.
+- [ ] Alterar as 16 páginas públicas de `noindex, nofollow` para `index, follow` após aprovação da homologação.
+- [ ] Atualizar o sitemap.
+- [ ] Executar a validação final do `robots.txt`.
 - [ ] Solicitar indexação no Search Console.
 - [ ] Publicar oficialmente o Blog.
 - [ ] Iniciar o acompanhamento do SEO.

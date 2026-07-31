@@ -8,6 +8,61 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 ## [Não publicado]
 
+## Feature 09A — Auditoria SEO e Padronização dos Metadados
+
+**Data:** 30 de julho de 2026
+
+### Resumo
+
+- Auditoria técnica de SEO concluída em todas as páginas públicas.
+- Títulos, meta descriptions, canonicals e metadados sociais revisados e padronizados.
+- Open Graph e Twitter Cards implementados e validados nas páginas auditadas.
+- Links internos quebrados eliminados e malha de conteúdos publicados fortalecida.
+- Hierarquia semântica corrigida com exatamente um H1 por página pública.
+- Imagens e favicons revisados com melhorias de dimensões, carregamento e marcação.
+
+### Implementado e corrigido
+
+- Canonicals absolutos implementados nos oito artigos do Cluster Matemática.
+- Open Graph completo implementado nos oito artigos e na Categoria Matemática.
+- Twitter Cards implementadas nos oito artigos e na Categoria Matemática.
+- Meta description definitiva aplicada à Categoria Matemática.
+- Links internos da Categoria Matemática corrigidos para as rotas canônicas.
+- Três cards relacionados atualizados integralmente para apontar a artigos já publicados.
+- H1 semântico implementado na Home comercial sem alteração visual ou editorial.
+- Pixel técnico marcado como imagem decorativa.
+- Dimensões intrínsecas adicionadas às imagens da Home comercial.
+- `fetchpriority="high"` aplicado à imagem principal da Home do Blog, da Categoria Matemática e dos oito artigos.
+- Apple Touch Icon atualizado com `sizes="180x180"`.
+
+### Validações executadas
+
+- Auditoria final das 18 páginas públicas.
+- Unicidade e adequação de títulos e meta descriptions.
+- Canonicals absolutos e coerentes com as URLs definitivas.
+- Exatamente um H1 por página e hierarquia de headings sem quebras.
+- Inexistência de links internos quebrados ou fragmentos inválidos.
+- Existência, dimensões, atributos e estratégia de carregamento das imagens.
+- Ausência de conflito entre `loading="lazy"` e `fetchpriority="high"`.
+- Carregamento e referências de favicons, Apple Touch Icon e ícones do manifesto.
+- Ausência de propriedades Open Graph e campos Twitter Card duplicados.
+- Correspondência entre metadados SEO, canonical, Open Graph e Twitter Cards.
+- `git diff --check` concluído sem erros.
+
+### Decisões de indexação
+
+- As 16 páginas públicas aprovadas para indexação permanecem temporariamente com `noindex, nofollow`.
+- A alteração para `index, follow` será realizada somente na Publicação Oficial, após a aprovação da homologação.
+- A Página de Obrigado e o template interno permanecem permanentemente com `noindex, nofollow`.
+- `robots.txt`, `sitemap.xml` e Google Search Console não foram alterados nesta etapa.
+- Nenhuma solicitação de indexação foi realizada.
+
+### Resultado
+
+- Feature 09A concluída, validada e aprovada.
+- Nenhuma inconsistência técnica de SEO permaneceu dentro do escopo da feature.
+- Próxima etapa oficial definida como Homologação.
+
 ## Implementação e Auditoria das Imagens do Blog
 
 **Data:** 29 de julho de 2026

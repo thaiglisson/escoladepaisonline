@@ -1144,6 +1144,66 @@ Auditoria técnica da implementação das imagens — ✅ Concluída:
 - arquivos PNG mantidos somente onde atuam como fallback da logo, ícones de compatibilidade ou imagens sociais genéricas;
 - thumbnails não utilizadas pelas páginas atuais e mantidas apenas como possível evolução futura do Design System, sem caráter bloqueante.
 
+Feature 09A — Auditoria SEO e Padronização dos Metadados — ✅ Concluída:
+
+**Data de conclusão:** 30 de julho de 2026
+
+Objetivo:
+
+- auditar todas as páginas públicas e padronizar o SEO técnico sem alterar layout, CSS, componentes, conteúdo editorial ou comportamento do site.
+
+Escopo executado:
+
+- revisão de títulos e meta descriptions;
+- revisão e implementação de URLs canônicas absolutas;
+- auditoria das diretivas `meta robots`;
+- padronização de Open Graph e Twitter Cards;
+- validação da hierarquia de headings;
+- auditoria e correção dos links internos;
+- revisão técnica das imagens, incluindo textos alternativos, dimensões intrínsecas e estratégia de carregamento;
+- revisão das referências de favicon, Apple Touch Icon e `site.webmanifest`;
+- levantamento de oportunidades de performance relacionadas a LCP, CLS, FCP e recursos bloqueantes.
+
+Principais entregas:
+
+- URLs canônicas implementadas nos oito artigos do Cluster Matemática;
+- Open Graph completo e consistente nos oito artigos e na Categoria Matemática;
+- Twitter Cards implementadas nos oito artigos e na Categoria Matemática;
+- meta description provisória da Categoria Matemática substituída por descrição definitiva;
+- links internos quebrados eliminados e cards relacionados atualizados com artigos já publicados;
+- Home comercial corrigida para possuir exatamente um H1, sem alteração visual ou editorial;
+- pixel técnico marcado como imagem decorativa;
+- dimensões intrínsecas adicionadas às imagens da Home comercial;
+- prioridade de carregamento configurada para a principal imagem da Home do Blog, da Categoria Matemática e dos oito artigos;
+- Apple Touch Icon padronizado com `sizes="180x180"`.
+
+Validações realizadas:
+
+- auditoria final das 18 páginas públicas;
+- títulos e meta descriptions únicos e adequados;
+- canonicals absolutos e coerentes com as URLs definitivas;
+- exatamente um H1 por página e ausência de quebras na hierarquia de headings;
+- inexistência de links internos quebrados ou fragmentos inválidos;
+- imagens referenciadas existentes, com atributos e prioridades de carregamento consistentes;
+- favicons e ícones do manifesto existentes e corretamente referenciados;
+- ausência de propriedades Open Graph e campos Twitter Card duplicados;
+- correspondência entre metadados SEO, canonical, Open Graph e Twitter Cards;
+- ausência de conflitos entre `loading="lazy"` e `fetchpriority="high"`;
+- `git diff --check` concluído sem erros.
+
+Decisão de indexação:
+
+- as 16 páginas públicas aprovadas para indexação permanecem temporariamente com `noindex, nofollow`;
+- a alteração dessas 16 páginas para `index, follow` será realizada somente na Publicação Oficial, após a conclusão e aprovação da homologação;
+- a Página de Obrigado e o template interno permanecem permanentemente com `noindex, nofollow`;
+- `robots.txt`, `sitemap.xml` e Google Search Console não foram alterados nesta etapa;
+- nenhuma solicitação de indexação foi realizada.
+
+Resultado:
+
+- a auditoria foi concluída sem inconsistências técnicas remanescentes dentro do escopo da Feature 09A;
+- a implementação e a documentação estão preparadas para integrar o mesmo commit da Feature 09A.
+
 Situação atual da captura:
 
 - Captura de Leads concluída;
@@ -1174,13 +1234,11 @@ Validações executadas:
 
 Próximas implementações:
 
-- finalização visual do projeto;
-- SEO final;
 - homologação completa;
 - publicação oficial do Blog;
 - crescimento editorial e orgânico.
 
-Próxima etapa oficial: **Feature 09 — SEO Final**.
+Próxima etapa oficial: **Homologação**.
 
 ---
 
@@ -1232,13 +1290,10 @@ Validações executadas:
 ---
 
 ### Fase 5 — Otimização
-⬜ Não iniciada
+🟨 Em andamento
 
 Previsto:
 
-- implementação das imagens definitivas;
-- revisão visual geral;
-- SEO final e preparação para indexação;
 - homologação do site;
 - publicação oficial do Blog;
 - acompanhamento do Search Console;
@@ -1249,7 +1304,8 @@ Previsto:
 Atualização oficial de status:
 
 - implementação e auditoria das imagens concluídas;
-- próxima etapa oficial definida como Feature 09 — SEO Final.
+- Feature 09A — Auditoria SEO e Padronização dos Metadados concluída;
+- próxima etapa oficial definida como Homologação.
 
 ---
 
@@ -1281,7 +1337,7 @@ Subetapa operacional — Captura de Leads
 
 Fase 5 — Otimização
 
-░░░░░░░░░░░░░░░░░░░░ 0%
+Status: em andamento — imagens e SEO técnico concluídos; homologação e Publicação Oficial pendentes.
 
 Conclusão geral estimada do projeto: **84%**.
 
@@ -1303,19 +1359,27 @@ Atualização de status: implementação e auditoria das imagens do blog conclu�
 
 ### Etapa 2 — SEO Final
 
-Próxima etapa oficial: **Feature 09 — SEO Final**.
+Status: ✅ Feature 09A concluída em 30 de julho de 2026.
 
-Preparar o site para indexação:
+Concluído:
 
 - revisão de Title;
 - Meta Description;
 - Canonical;
 - Open Graph;
 - Twitter Cards;
-- Schema.org;
-- Sitemap;
-- Robots;
-- revisão do Search Console.
+- hierarquia de headings;
+- links internos;
+- imagens e favicons;
+- auditoria das diretivas `meta robots`;
+- validação técnica final das páginas públicas.
+
+Decisão registrada:
+
+- 16 páginas públicas aprovadas para futura alteração para `index, follow`;
+- `noindex, nofollow` mantido temporariamente nessas páginas até a Publicação Oficial;
+- Página de Obrigado e template interno mantidos permanentemente bloqueados;
+- `robots.txt`, `sitemap.xml` e Search Console preservados sem alterações nesta etapa.
 
 ### Etapa 3 — Homologação
 
