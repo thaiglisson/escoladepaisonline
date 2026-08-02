@@ -17,6 +17,7 @@
   };
 
   let isSubmitting = false;
+  let isRedirectPending = false;
 
   const clearFieldError = (fieldName) => {
     const field = form.elements.namedItem(fieldName);
@@ -131,19 +132,52 @@
         return;
       }
 
+      const redirectUrl = "/obrigado/atividades-de-matematica/";
+      const gtmEventTimeout = 1500;
+      const redirectFallbackDelay = 2000;
+      let hasRedirected = false;
+      let redirectFallbackId;
+
+      const redirectOnce = () => {
+        if (hasRedirected) {
+          return;
+        }
+
+        hasRedirected = true;
+        window.clearTimeout(redirectFallbackId);
+        window.location.assign(redirectUrl);
+      };
+
+      isRedirectPending = true;
       showStatus("Cadastro realizado. Redirecionando...", "success");
       form.reset();
-      window.location.assign("/obrigado/atividades-de-matematica/");
+
+      redirectFallbackId = window.setTimeout(
+        redirectOnce,
+        redirectFallbackDelay,
+      );
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "generate_lead",
+        origem: "blog",
+        isca: "atividades-matematica",
+        eventCallback: redirectOnce,
+        eventTimeout: gtmEventTimeout,
+      });
     } catch {
       showStatus(
         "Não foi possível conectar agora. Verifique sua internet e tente novamente.",
       );
     } finally {
-      setSubmitting(false);
+      if (!isRedirectPending) {
+        setSubmitting(false);
+      }
     }
   });
 
   window.addEventListener("pageshow", () => {
+    isRedirectPending = false;
     setSubmitting(false);
   });
 })();
