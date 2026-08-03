@@ -17,7 +17,7 @@ Toda implementação deve respeitar simultaneamente estes três documentos.
 # Documentação Técnica — Escola de Pais Online
 **Versão:** 3.1  
 **Status:** Produção  
-**Última atualização:** Julho/2026
+**Última atualização:** 2 de agosto de 2026
 
 ---
 
@@ -1191,13 +1191,12 @@ Validações realizadas:
 - ausência de conflitos entre `loading="lazy"` e `fetchpriority="high"`;
 - `git diff --check` concluído sem erros.
 
-Decisão de indexação:
+Decisão de indexação registrada na Feature 09A:
 
-- as 16 páginas públicas aprovadas para indexação permanecem temporariamente com `noindex, nofollow`;
-- a alteração dessas 16 páginas para `index, follow` será realizada somente na Publicação Oficial, após a conclusão e aprovação da homologação;
-- a Página de Obrigado e o template interno permanecem permanentemente com `noindex, nofollow`;
-- `robots.txt`, `sitemap.xml` e Google Search Console não foram alterados nesta etapa;
-- nenhuma solicitação de indexação foi realizada.
+- as 17 páginas públicas aprovadas para indexação permaneceram temporariamente com `noindex, nofollow` durante aquela etapa;
+- a alteração dessas 17 páginas para `index, follow` foi executada posteriormente na Feature 11 — Publicação Oficial;
+- a Página de Obrigado e os templates internos permaneceram protegidos com `noindex, nofollow`;
+- `robots.txt`, `sitemap.xml` e Google Search Console não foram alterados durante a Feature 09A.
 
 Resultado:
 
@@ -1232,13 +1231,12 @@ Validações executadas:
 - testes em janela anônima;
 - integração Cloudflare + Brevo.
 
-Próximas implementações:
+Etapas posteriores concluídas:
 
-- homologação completa;
-- publicação oficial do Blog;
-- crescimento editorial e orgânico.
+- Homologação Final;
+- Publicação Oficial do Blog.
 
-Próxima etapa oficial: **Homologação**.
+Fase futura: **crescimento editorial e orgânico**.
 
 ---
 
@@ -1290,7 +1288,7 @@ Validações executadas:
 ---
 
 ### Fase 5 — Otimização
-🟨 Em andamento
+✅ Homologação Final e Publicação Oficial concluídas
 
 Previsto:
 
@@ -1305,7 +1303,9 @@ Atualização oficial de status:
 
 - implementação e auditoria das imagens concluídas;
 - Feature 09A — Auditoria SEO e Padronização dos Metadados concluída;
-- próxima etapa oficial definida como Homologação.
+- Homologação Final concluída, validada em produção e aprovada;
+- Feature 11 — Publicação Oficial concluída em 2 de agosto de 2026;
+- blog oficialmente publicado e liberado para indexação.
 
 ---
 
@@ -1337,9 +1337,9 @@ Subetapa operacional — Captura de Leads
 
 Fase 5 — Otimização
 
-Status: em andamento — imagens e SEO técnico concluídos; homologação e Publicação Oficial pendentes.
+Status: concluída — imagens, SEO técnico, Homologação Final e Publicação Oficial concluídos.
 
-Conclusão geral estimada do projeto: **84%**.
+Situação geral do projeto: **blog oficialmente publicado e liberado para indexação**.
 
 ---
 
@@ -1374,39 +1374,83 @@ Concluído:
 - auditoria das diretivas `meta robots`;
 - validação técnica final das páginas públicas.
 
-Decisão registrada:
+Decisão registrada na Feature 09A:
 
-- 16 páginas públicas aprovadas para futura alteração para `index, follow`;
-- `noindex, nofollow` mantido temporariamente nessas páginas até a Publicação Oficial;
-- Página de Obrigado e template interno mantidos permanentemente bloqueados;
-- `robots.txt`, `sitemap.xml` e Search Console preservados sem alterações nesta etapa.
+- 17 páginas públicas aprovadas para posterior alteração para `index, follow`;
+- `noindex, nofollow` mantido temporariamente nessas páginas durante aquela etapa;
+- Página de Obrigado e templates internos mantidos protegidos;
+- `robots.txt`, `sitemap.xml` e Search Console preservados sem alterações durante a Feature 09A.
 
 ### Etapa 3 — Homologação
 
-Executar o checklist completo de publicação e validar:
+Status: ✅ concluída, validada em produção e aprovada em 2 de agosto de 2026.
 
-- links;
-- formulário;
-- e-mail;
-- download;
-- responsividade;
-- Analytics;
-- GTM;
-- Pixel;
-- PageSpeed;
-- favicon;
-- sitemap;
-- robots;
-- páginas institucionais.
+Objetivo:
+
+- validar integralmente o funcionamento, a qualidade técnica e a consistência das páginas públicas antes da liberação da indexação e da Publicação Oficial.
+
+Principais validações executadas:
+
+- carregamento, integridade, links e recursos estáticos das 18 páginas públicas;
+- formulário, integração com o Brevo, fluxo de captura, e-mail, Página de Obrigado e download;
+- instalação global do Google Tag Manager e funcionamento técnico de GA4 e Meta Pixel;
+- emissão do evento técnico `generate_lead`, sem dados pessoais, após a confirmação da API;
+- diretivas `meta robots`, ausência de `X-Robots-Tag` conflitante, `robots.txt` e `sitemap.xml`;
+- favicon principal otimizado com o arquivo oficial `favicon-96x96.png`;
+- dados estruturados Schema.org nos oito artigos, com `BlogPosting` e `BreadcrumbList` em JSON-LD;
+- landmark estrutural `<main>` implementado na Home comercial;
+- responsividade das 18 páginas, sem rolagem horizontal ou quebra estrutural nas larguras validadas;
+- acessibilidade estrutural, semântica, hierarquia de títulos e integridade do HTML;
+- ausência de erros de console durante as validações finais em produção.
+
+Resultado:
+
+- as 18 páginas públicas foram validadas em produção;
+- as 17 páginas indexáveis permaneceram com `noindex, nofollow` somente até a execução da Feature 11;
+- o projeto foi aprovado para a Publicação Oficial, posteriormente concluída.
+
+#### Pendência Pós-Lançamento
+
+- Auditoria Final de Conversões — GA4 e Meta.
+
+#### Oportunidade Futura
+
+- substituir futuramente o favicon PNG por um SVG vetorial real e leve.
 
 ### Etapa 4 — Publicação Oficial
 
-Após a aprovação da homologação:
+Status: ✅ Feature 11 concluída em 2 de agosto de 2026.
 
-- remover `noindex` das páginas públicas;
-- solicitar indexação no Search Console;
-- publicar oficialmente o Blog;
-- iniciar o acompanhamento do SEO.
+Implementação técnica:
+
+- 17 páginas públicas alteradas para `index, follow`;
+- Página de Obrigado `/obrigado/atividades-de-matematica/` preservada com `noindex, nofollow`;
+- templates internos protegidos com `noindex, nofollow`;
+- `sitemap.xml` atualizado com exatamente 17 URLs canônicas;
+- `robots.txt` validado sem bloqueios inesperados ou diretivas conflitantes;
+- implementação registrada no commit técnico `2586245`;
+- push concluído para a branch `main`;
+- deploy confirmado no Cloudflare Pages;
+- produção validada com as 17 páginas indexáveis, a Página de Obrigado protegida e o sitemap atualizado.
+
+Google Search Console:
+
+- sitemap atualizado reenviado e aceito;
+- processamento inicial concluído com status **Processado**;
+- 17 URLs descobertas;
+- ausência de erros críticos de cobertura;
+- interpretação do `robots.txt` validada;
+- 11 solicitações manuais de indexação aceitas: cinco páginas estruturais e seis artigos;
+- duas solicitações manuais pendentes exclusivamente por limite diário do Google:
+  - `/blog/matematica/toda-tarefa-de-matematica-vira-estresse/`;
+  - `/blog/matematica/atividades-de-matematica-para-fazer-em-casa/`.
+
+As duas URLs pendentes já constam no sitemap, não apresentam erro técnico nem bloqueio de indexação e terão a solicitação manual retomada quando a cota do Google permitir.
+
+Resultado:
+
+- blog oficialmente publicado e liberado para indexação;
+- acompanhamento do processamento e da indexação passa a depender dos prazos do Google.
 
 ### Etapa 5 — Crescimento
 

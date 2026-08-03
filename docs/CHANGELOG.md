@@ -8,6 +8,91 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 
 ## [Não publicado]
 
+## Feature 11 — Publicação Oficial
+
+**Data:** 2 de agosto de 2026
+
+### Implementação técnica e publicação
+
+- 17 páginas públicas liberadas com `index, follow`.
+- Página de Obrigado `/obrigado/atividades-de-matematica/` preservada com `noindex, nofollow`.
+- Templates internos protegidos com `noindex, nofollow`.
+- `sitemap.xml` atualizado com exatamente 17 URLs canônicas.
+- `robots.txt` validado sem bloqueios inesperados ou diretivas conflitantes.
+- Implementação técnica registrada no commit `2586245`.
+- Push concluído para a branch `main`.
+- Deploy confirmado no Cloudflare Pages.
+- Produção validada com as diretivas de indexação e o sitemap atualizados.
+
+### Google Search Console
+
+- Sitemap reenviado, aceito e processado.
+- 17 URLs descobertas.
+- Ausência de erros críticos de cobertura.
+- Interpretação do `robots.txt` validada.
+- 11 solicitações manuais de indexação aceitas: cinco páginas estruturais e seis artigos.
+- Duas solicitações manuais pendentes exclusivamente por limite diário do Google:
+  - `/blog/matematica/toda-tarefa-de-matematica-vira-estresse/`;
+  - `/blog/matematica/atividades-de-matematica-para-fazer-em-casa/`.
+
+As duas URLs pendentes já estão presentes no sitemap, não apresentam erro técnico nem bloqueio de indexação e terão a solicitação manual retomada quando a cota do Google permitir.
+
+### Pendência Pós-Lançamento
+
+- Auditoria Final de Conversões — GA4 e Meta.
+
+### Resultado
+
+- Feature 11 concluída.
+- Publicação Oficial concluída.
+- Blog oficialmente publicado e liberado para indexação.
+
+## Homologação Final
+
+**Data:** 2 de agosto de 2026
+
+### Resumo
+
+- Homologação Final concluída, validada em produção e aprovada.
+- As 18 páginas públicas foram verificadas quanto a funcionamento, integridade, responsividade e acessibilidade estrutural.
+- Fluxo de captura, Brevo, e-mail automático, Página de Obrigado e download homologados.
+- Infraestrutura de mensuração por Google Tag Manager, GA4 e Meta Pixel validada tecnicamente.
+- Projeto aprovado para a etapa seguinte, posteriormente concluída na Feature 11 — Publicação Oficial.
+
+### Implementado e corrigido
+
+- Referência principal do favicon substituída pelo arquivo oficial `favicon-96x96.png` nas 18 páginas públicas, reduzindo o peso transferido e preservando a identidade visual.
+- Dados estruturados Schema.org implementados nos oito artigos em um único JSON-LD por página, com `BlogPosting` e `BreadcrumbList`.
+- Landmark semântico `<main>` implementado no contêiner principal da Home comercial, sem alteração visual ou funcional.
+- Google Tag Manager instalado globalmente nas 18 páginas públicas.
+- Evento técnico `generate_lead` integrado ao fluxo de captura após o sucesso confirmado da API, sem envio de dados pessoais.
+
+### Validações executadas em produção
+
+- Carregamento normal das 18 páginas públicas e dos recursos estáticos.
+- Favicon PNG servido corretamente, sem erros 404.
+- Exatamente um bloco JSON-LD válido em cada um dos oito artigos.
+- Exatamente um landmark `<main>` na Home comercial, sem aninhamento.
+- Responsividade validada sem rolagem horizontal ou quebra estrutural.
+- Acessibilidade estrutural, semântica e integridade do HTML verificadas.
+- Console sem erros durante as validações finais.
+- Ausência de cabeçalho `X-Robots-Tag` conflitante.
+- `noindex, nofollow` preservado até a Publicação Oficial.
+- `robots.txt`, `sitemap.xml` e Google Search Console preservados sem alterações nesta etapa.
+
+### Pendência Pós-Lançamento
+
+- Auditoria Final de Conversões — GA4 e Meta.
+
+### Oportunidade Futura
+
+- Substituir futuramente o favicon PNG por um SVG vetorial real e leve.
+
+### Resultado
+
+- Homologação Final tecnicamente concluída.
+- Publicação Oficial posteriormente concluída na Feature 11.
+
 ## Feature 09A — Auditoria SEO e Padronização dos Metadados
 
 **Data:** 30 de julho de 2026
@@ -49,19 +134,18 @@ O formato segue uma adaptação simples do padrão Keep a Changelog, organizado 
 - Correspondência entre metadados SEO, canonical, Open Graph e Twitter Cards.
 - `git diff --check` concluído sem erros.
 
-### Decisões de indexação
+### Decisões de indexação registradas na Feature 09A
 
-- As 16 páginas públicas aprovadas para indexação permanecem temporariamente com `noindex, nofollow`.
-- A alteração para `index, follow` será realizada somente na Publicação Oficial, após a aprovação da homologação.
-- A Página de Obrigado e o template interno permanecem permanentemente com `noindex, nofollow`.
-- `robots.txt`, `sitemap.xml` e Google Search Console não foram alterados nesta etapa.
-- Nenhuma solicitação de indexação foi realizada.
+- As 17 páginas públicas aprovadas para indexação permaneceram temporariamente com `noindex, nofollow` durante aquela etapa.
+- A alteração para `index, follow` foi executada posteriormente na Feature 11 — Publicação Oficial.
+- A Página de Obrigado e os templates internos permaneceram protegidos com `noindex, nofollow`.
+- `robots.txt`, `sitemap.xml` e Google Search Console não foram alterados durante a Feature 09A.
 
 ### Resultado
 
 - Feature 09A concluída, validada e aprovada.
 - Nenhuma inconsistência técnica de SEO permaneceu dentro do escopo da feature.
-- Próxima etapa oficial definida como Homologação.
+- Homologação Final e Publicação Oficial posteriormente concluídas.
 
 ## Implementação e Auditoria das Imagens do Blog
 

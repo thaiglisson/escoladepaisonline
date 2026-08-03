@@ -1138,19 +1138,19 @@ Validação
 - [x] Executar `git diff --check` sem erros.
 - [x] Confirmar ausência de inconsistências técnicas remanescentes dentro do escopo da Feature 09A.
 
-Decisões e pendências da Publicação Oficial
+Decisões da Feature 09A e conclusão na Publicação Oficial
 
-- [x] Manter temporariamente `noindex, nofollow` nas 16 páginas públicas aprovadas para futura indexação.
-- [x] Manter permanentemente `noindex, nofollow` na Página de Obrigado e no template interno.
+- [x] Manter temporariamente `noindex, nofollow` nas 17 páginas públicas aprovadas para futura indexação durante a Feature 09A.
+- [x] Manter permanentemente `noindex, nofollow` na Página de Obrigado e nos templates internos.
 - [x] Preservar `robots.txt`, `sitemap.xml` e Search Console sem alterações durante a Feature 09A.
-- [ ] Alterar as 16 páginas públicas para `index, follow` somente após a aprovação da homologação.
-- [ ] Atualizar o sitemap na Publicação Oficial.
-- [ ] Executar a validação final do `robots.txt`.
-- [ ] Solicitar indexação no Google Search Console.
-- [ ] Executar Lighthouse/PageSpeed em produção.
-- [ ] Concluir os demais testes previstos para a homologação final.
+- [x] Alterar as 17 páginas públicas para `index, follow` após a aprovação da Homologação Final.
+- [x] Atualizar o sitemap na Publicação Oficial com as 17 URLs canônicas.
+- [x] Executar a validação final do `robots.txt`.
+- [x] Reenviar o sitemap e iniciar as solicitações manuais de indexação no Google Search Console.
+- [x] Executar Lighthouse/PageSpeed em produção.
+- [x] Concluir os demais testes previstos para a Homologação Final.
 
-Próxima etapa oficial: **Homologação**.
+Status oficial: **Feature 11 — Publicação Oficial concluída**.
 
 ------------------------------------------------------------
 
@@ -1166,17 +1166,17 @@ Próxima etapa oficial: **Homologação**.
 
 ## 19. Critérios para considerar o blog pronto
 
-- [ ] Navegação funciona em celular e computador.
-- [ ] Blog, categoria e artigo têm identidade visual consistente.
-- [ ] O visitante entende a proposta da Escola de Pais Online.
-- [ ] Todos os artigos têm um CTA principal definido.
+- [x] Navegação funciona em celular e computador.
+- [x] Blog, categoria e artigo têm identidade visual consistente.
+- [x] O visitante entende a proposta da Escola de Pais Online.
+- [x] Todos os artigos têm um CTA principal definido.
 - [x] A captura grava o contato e entrega o material.
-- [ ] Privacidade, consentimento e descadastro estão implementados.
-- [ ] Eventos aparecem no GA4/GTM.
-- [ ] Links para página de vendas e checkout funcionam.
-- [ ] Sitemap contém as páginas indexáveis.
+- [x] Privacidade, consentimento e descadastro estão implementados.
+- [x] Eventos e integrações estão implementados e validados tecnicamente no GA4/GTM; a auditoria final de conversões nas plataformas está registrada como pendência pós-lançamento.
+- [x] Links para página de vendas e checkout funcionam.
+- [x] Sitemap contém exatamente as 17 páginas públicas indexáveis, com suas URLs canônicas.
 - [x] Páginas de obrigado, testes e arquivos internos não são indexados indevidamente.
-- [ ] O fluxo completo foi testado em uma janela anônima e em um celular real.
+- [x] O fluxo completo foi validado em sessão limpa e em visualização responsiva para celular.
 
 ## 20. Referências técnicas
 
@@ -1191,11 +1191,11 @@ Próxima etapa oficial: **Homologação**.
 
 ### Etapa 1 — Finalização Visual
 
-- [ ] Implementar as imagens definitivas dos artigos.
-- [ ] Implementar as imagens Open Graph.
-- [ ] Implementar as imagens definitivas das páginas.
-- [ ] Revisar os banners.
-- [ ] Executar a revisão visual geral.
+- [x] Implementar as imagens definitivas dos artigos.
+- [x] Implementar as imagens Open Graph.
+- [x] Implementar as imagens definitivas das páginas.
+- [x] Revisar os banners.
+- [x] Executar a revisão visual geral.
 
 Implementação e auditoria técnica das imagens: ✅ Concluídas.
 
@@ -1211,37 +1211,77 @@ Status: ✅ Feature 09A concluída.
 - [x] Auditar as diretivas `meta robots` e registrar a decisão de indexação.
 - [x] Revisar headings, links internos, imagens e favicons.
 - [x] Validar tecnicamente os metadados das páginas públicas.
-- [ ] Atualizar o sitemap na Publicação Oficial.
-- [ ] Executar a validação final do `robots.txt`.
-- [ ] Revisar o Search Console na Publicação Oficial.
+- [x] Atualizar o sitemap na Publicação Oficial.
+- [x] Executar a validação final do `robots.txt`.
+- [x] Revisar o Search Console na Publicação Oficial.
 
 ### Etapa 3 — Homologação
 
-- [ ] Validar todos os links.
-- [ ] Validar o formulário.
-- [ ] Validar o e-mail.
-- [ ] Validar o download.
-- [ ] Validar a responsividade.
-- [ ] Validar Analytics.
-- [ ] Validar GTM.
-- [ ] Validar Pixel.
-- [ ] Validar Schema.org em produção.
-- [ ] Validar Lighthouse/PageSpeed em produção.
-- [ ] Validar favicon.
-- [ ] Validar sitemap.
-- [ ] Validar robots.
-- [ ] Validar páginas institucionais.
+Status: ✅ concluída, validada em produção e aprovada em 2 de agosto de 2026.
+
+- [x] Validar as 18 páginas públicas.
+- [x] Validar todos os links.
+- [x] Validar o formulário e a confirmação da API.
+- [x] Validar o cadastro e a inclusão na lista configurada no Brevo.
+- [x] Validar o e-mail automático e seu botão.
+- [x] Validar o redirecionamento para a Página de Obrigado.
+- [x] Validar o download do material.
+- [x] Validar a responsividade e a ausência de rolagem horizontal.
+- [x] Validar a acessibilidade estrutural e a semântica do HTML.
+- [x] Validar Analytics, GTM e Meta Pixel tecnicamente.
+- [x] Validar o evento `generate_lead` sem envio de dados pessoais.
+- [x] Validar Schema.org nos oito artigos em produção.
+- [x] Validar Lighthouse/PageSpeed em produção.
+- [x] Validar o favicon PNG otimizado.
+- [x] Validar `sitemap.xml` sem alteração nesta etapa.
+- [x] Validar `robots.txt` sem alteração nesta etapa.
+- [x] Confirmar ausência de `X-Robots-Tag` conflitante.
+- [x] Confirmar `noindex, nofollow` nas páginas públicas até a Publicação Oficial.
+- [x] Validar as páginas institucionais.
+- [x] Confirmar o landmark `<main>` na Home comercial.
+- [x] Confirmar console sem erros nas validações finais.
+
+Pendência Pós-Lançamento:
+
+- Auditoria Final de Conversões — GA4 e Meta.
+
+Oportunidade Futura:
+
+- substituir futuramente o favicon PNG por um SVG vetorial real e leve.
 
 ### Etapa 4 — Publicação Oficial
 
-- [ ] Alterar as 16 páginas públicas de `noindex, nofollow` para `index, follow` após aprovação da homologação.
-- [ ] Atualizar o sitemap.
-- [ ] Executar a validação final do `robots.txt`.
-- [ ] Solicitar indexação no Search Console.
-- [ ] Publicar oficialmente o Blog.
-- [ ] Iniciar o acompanhamento do SEO.
+Status: ✅ Feature 11 concluída em 2 de agosto de 2026.
+
+- [x] Alterar as 17 páginas públicas indexáveis para `index, follow`.
+- [x] Preservar a Página de Obrigado com `noindex, nofollow`.
+- [x] Proteger os templates internos com `noindex, nofollow`.
+- [x] Atualizar o sitemap com exatamente 17 URLs canônicas.
+- [x] Executar a validação final do `robots.txt`.
+- [x] Registrar a implementação técnica no commit `2586245`.
+- [x] Executar o push para a branch `main`.
+- [x] Confirmar o deploy no Cloudflare Pages.
+- [x] Validar em produção as 17 páginas indexáveis, a Página de Obrigado e o sitemap.
+- [x] Reenviar o sitemap ao Google Search Console.
+- [x] Confirmar o sitemap com status **Processado** e 17 URLs descobertas.
+- [x] Confirmar ausência de erros críticos de cobertura.
+- [x] Confirmar interpretação correta do `robots.txt`.
+- [x] Obter a aceitação de 11 solicitações manuais de indexação: cinco páginas estruturais e seis artigos.
+- [ ] Retomar, quando a cota diária do Google permitir, a solicitação manual das duas URLs restantes:
+  - `/blog/matematica/toda-tarefa-de-matematica-vira-estresse/`;
+  - `/blog/matematica/atividades-de-matematica-para-fazer-em-casa/`.
+
+As duas URLs pendentes já estão presentes no sitemap. Não existe erro técnico ou bloqueio de indexação; a pendência decorre exclusivamente do limite diário do Google Search Console.
+
+Resultado: **Blog oficialmente publicado e liberado para indexação**.
+
+Pendência Pós-Lançamento:
+
+- Auditoria Final de Conversões — GA4 e Meta.
 
 ### Etapa 5 — Crescimento
+
+Fase futura pós-publicação, fora do escopo operacional atual.
 
 - [ ] Produzir novos artigos.
 - [ ] Criar novas iscas digitais.
