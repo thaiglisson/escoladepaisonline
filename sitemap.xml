@@ -9,4 +9,68 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         <priority>1.0</priority>
     </url>
 
+    <url>
+        <loc>https://escoladepaisonline.com.br/blog/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/blog/matematica/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/blog/matematica/atividades-de-matematica-para-fazer-em-casa/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/blog/matematica/como-ensinar-divisao-para-criancas-de-forma-simples/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/blog/matematica/como-ensinar-multiplicacao-para-criancas-sem-decorar-a-tabuada/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/blog/matematica/como-ensinar-soma-para-criancas/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/blog/matematica/como-ensinar-subtracao-para-criancas/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/blog/matematica/como-explicar-matematica-para-criancas/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/blog/matematica/eu-sei-a-resposta-mas-nao-sei-explicar-matematica/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/blog/matematica/toda-tarefa-de-matematica-vira-estresse/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/recursos/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/recursos/atividades-de-matematica/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/sobre/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/contato/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/politica-de-privacidade/</loc>
+    </url>
+
+    <url>
+        <loc>https://escoladepaisonline.com.br/termos-de-uso/</loc>
+    </url>
+
 </urlset>
